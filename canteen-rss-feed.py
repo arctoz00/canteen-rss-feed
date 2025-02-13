@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 
-# URL of the canteen menu
+# URL of the canteen menu webpage
 MENU_URL = "https://hubnordic.madkastel.dk/"
 RSS_FILE = "feed.xml"
 
@@ -20,19 +20,17 @@ def get_rendered_html():
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")
-    # Create the driver instance (adjust path if necessary)
+    # Create the Chrome driver (adjust the path if necessary)
     driver = webdriver.Chrome(options=chrome_options)
     
     driver.get(MENU_URL)
-    
     try:
-        # Wait for at least one hub container to load (adjust the CSS selector if needed)
+        # Wait until at least one hub container (div with class "et_pb_text_inner") loads.
         wait = WebDriverWait(driver, 15)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    
-    # Additional wait to ensure all JavaScript content has rendered
+    # Extra wait to ensure all JavaScript has rendered.
     time.sleep(2)
     html = driver.page_source
     driver.quit()
@@ -40,48 +38,46 @@ def get_rendered_html():
 
 def scrape_weekly_menus():
     """
-    Parses the rendered HTML and extracts the weekly menus for all hubs.
+    Parses the rendered HTML and extracts the weekly menus for each hub.
     Returns a dictionary structured as:
-      { hub_name: { day: [menu item strings] } }
+      { hub_name: { day (in lowercase): [list of menu item strings] } }
     """
     html = get_rendered_html()
     soup = BeautifulSoup(html, "html.parser")
     
-    # Find all containers that hold hub content.
-    # (Based on the provided HTML snippets, each hub is inside a div with class "et_pb_text_inner")
+    # Find all hub containers; each hub's content is assumed to be in a div with class "et_pb_text_inner"
     hub_divs = soup.find_all("div", class_="et_pb_text_inner")
     menus_by_hub = {}
     
-    # List of valid Danish weekday names (in lowercase)
+    # Valid Danish weekday names (in lowercase)
     valid_days = ['mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag', 'søndag']
     
     for div in hub_divs:
-        # Each hub is expected to have an <h4> header with its name and time.
+        # Each hub should have an <h4> header with its name and time.
         header = div.find("h4")
         if not header:
             continue
         hub_header_text = header.get_text(separator=" ", strip=True)
-        # For consistency, if this is HUB1, rename it as desired.
+        # For HUB1, rename it to the desired format.
         if "hub1" in hub_header_text.lower():
             hub_name = "HUB1 – Kays Verdenskøkken"
         else:
-            hub_name = hub_header_text  # For HUB2, HUB3, etc.
+            # Use the header text as-is for other hubs.
+            hub_name = hub_header_text
         
-        # Initialize a dictionary for this hub’s weekly menu.
         hub_menus = {}
         current_day = None
         
-        # Iterate over all <p> tags in the container in order.
+        # Iterate over all <p> tags in order within this hub container.
         for p in div.find_all("p"):
             text = p.get_text(separator=" ", strip=True)
-            # Check if this paragraph is a day heading.
-            # Day headings might be like "MANDAG:" or "TIRSDAG:" etc.
-            norm_text = text.replace(":", "").lower()
-            if norm_text in valid_days:
-                current_day = norm_text
+            # Normalize by removing colons and lowercasing to detect day headings.
+            day_candidate = text.replace(":", "").lower()
+            if day_candidate in valid_days:
+                current_day = day_candidate
                 hub_menus[current_day] = []  # Start a new list for this day.
             else:
-                # Only add text if a day heading has been seen.
+                # If we have an active day, add the text as part of that day's menu.
                 if current_day:
                     hub_menus[current_day].append(text)
         if hub_menus:
@@ -91,10 +87,10 @@ def scrape_weekly_menus():
 
 def get_today_menus(menus_by_hub):
     """
-    From the full weekly menus, extract today’s menu for each hub.
-    Returns a list of strings, one per hub.
+    From the full weekly menus, extract today's menu for each hub.
+    Returns a list of strings (one per hub) with today's menu.
     """
-    # Map English weekdays to Danish (lowercase)
+    # Mapping from English weekday names to Danish (all in lowercase)
     weekday_mapping = {
         "Monday": "mandag",
         "Tuesday": "tirsdag",
@@ -110,7 +106,7 @@ def get_today_menus(menus_by_hub):
     today_menus = []
     for hub, menu_dict in menus_by_hub.items():
         if today_da in menu_dict:
-            # Combine all menu items for today (separated by " | " for clarity)
+            # Join all menu items for today with " | " as a separator.
             menu_text = " | ".join(menu_dict[today_da])
             today_menus.append(f"{hub}: {menu_text}")
         else:
@@ -119,7 +115,7 @@ def get_today_menus(menus_by_hub):
 
 def generate_rss(menu_items):
     """
-    Generates an RSS feed entry with today's menu and saves it to the RSS_FILE.
+    Generates an RSS feed entry with today's menu and writes it to RSS_FILE.
     """
     fg = FeedGenerator()
     fg.title("Hub Nordic Canteen Menu")
@@ -133,7 +129,7 @@ def generate_rss(menu_items):
     entry.link(href=MENU_URL)
     entry.description("<br>".join(menu_items))
     
-    # Use timezone-aware UTC datetime
+    # Set a timezone-aware publication date (UTC)
     utc_time = datetime.datetime.now(pytz.utc)
     entry.pubDate(utc_time)
     
@@ -141,17 +137,18 @@ def generate_rss(menu_items):
     print("✅ RSS feed updated!")
 
 if __name__ == "__main__":
-    # Scrape the weekly menus from all hubs
+    # Scrape weekly menus from all hubs on the webpage.
     menus_by_hub = scrape_weekly_menus()
-    # For debugging: print the full weekly menus (optional)
+    
+    # (Optional) For debugging, you can print the entire weekly menus structure.
     # import pprint
     # pprint.pprint(menus_by_hub)
     
-    # Extract today's menu for each hub
+    # Extract today's menus from each hub.
     today_menus = get_today_menus(menus_by_hub)
     print("Today's menus:")
     for menu in today_menus:
         print(menu)
     
-    # Generate and save the RSS feed
+    # Generate (or update) the RSS feed with today's menus.
     generate_rss(today_menus)
