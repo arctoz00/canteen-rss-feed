@@ -1,33 +1,35 @@
-name: Update Canteen RSS Feed
+name: Opdater Canteen RSS Feed
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Runs daily at 06:00 UTC (adjust if needed)
-  workflow_dispatch:  # Allows manual runs
+    - cron: "0 6 * * *"  # Kører dagligt kl. 06:00 UTC; tilpas efter behov
+  workflow_dispatch:  # Mulighed for manuelt at køre workflow'en
 
 jobs:
   update-feed:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set Up Python
+      - name: Opsæt Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      - name: Install Dependencies
-        run: pip install requests beautifulsoup4 feedgen pytz
+      - name: Installer afhængigheder
+        run: |
+          pip install selenium beautifulsoup4 feedgen pytz
 
-      - name: Run Scraper
-        run: python canteen_rss_scraper.py
+      - name: Kør scraper-scriptet
+        run: python canteen-rss-scraper.py
 
-      - name: Commit and Push RSS Feed
+      - name: Commit og push opdateret feed.xml
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add feed.xml
-          git commit -m "Updated RSS feed" || echo "No changes to commit"
+          git commit -m "Opdateret RSS feed" || echo "Ingen ændringer at committe"
           git push
+
