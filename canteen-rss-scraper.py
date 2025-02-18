@@ -116,6 +116,10 @@ def get_today_menus(menus_by_hub):
     today_en = datetime.datetime.today().strftime("%A")
     today_da = weekday_mapping.get(today_en, "").lower()
     
+    # Debug-udskrift for at se systemets dag og mappingen
+    print("Systemets dag (engelsk):", today_en)
+    print("Mapper til (dansk):", today_da)
+    
     today_menus = []
     for hub, menu_dict in menus_by_hub.items():
         if today_da in menu_dict:
