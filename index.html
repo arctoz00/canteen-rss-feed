@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>RSS Feed</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/js/jquery.feedek.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/css/feedek.min.css" />
-</head>
-<body>
-  <div id="rssFeed"></div>
-  <script>
-    $(document).ready(function() {
-      $("#rssFeed").FeedEk({
-        FeedUrl: "https://arctoz00.github.io/canteen-rss-feed/feed.xml", // Indsæt din RSS-feed URL her
-        MaxCount: 10,
-        ShowDesc: true,
-        ShowPubDate: true,
-        DescCharacterLimit: 100
+<html lang="da">
+  <head>
+    <meta charset="UTF-8">
+    <title>Canteen Menu Feed</title>
+    <!-- Inkludér jQuery fra CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Inkludér FeedEk plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/js/jquery.feedek.min.js"></script>
+    <!-- Inkludér FeedEk CSS (valgfrit for styling) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/css/feedek.min.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #rssFeed {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Canteen Menu Feed</h1>
+    <div id="rssFeed">Henter RSS-feed…</div>
+    <script>
+      $(document).ready(function() {
+        $("#rssFeed").FeedEk({
+          FeedUrl: "https://arctoz00.github.io/canteen-rss-feed/feed.xml", // Udskift med din feed.xml URL
+          MaxCount: 10,
+          ShowDesc: true,
+          ShowPubDate: true,
+          DescCharacterLimit: 150,
+          TitleLinkTarget: "_blank"
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
+
