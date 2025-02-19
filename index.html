@@ -2,72 +2,20 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <title>Canteen Menu RSS Feed</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background: #ffffff;
-    }
-    .item {
-      margin-bottom: 20px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-    }
-    .title {
-      font-weight: bold;
-      font-size: 1.1em;
-      margin-bottom: 5px;
-    }
-    .description {
-      margin-top: 5px;
-    }
-    .pubDate {
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
+  <title>Raw RSS Feed</title>
 </head>
 <body>
-  <div id="feedContent">
-    <!-- RSS-feedindholdet indsættes her -->
-  </div>
-
+  <pre id="rawFeed">Henter RSS-feed…</pre>
   <script>
-    // Sæt den fulde URL til dit RSS-feed her:
-    var feedUrl = "https://arctoz00.github.io/canteen-rss-feed/feed.xml";
-
-    function loadRSS(url, callback) {
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", url, true);
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          callback(xhr.responseXML);
-        }
-      };
-      xhr.send(null);
-    }
-
-    function renderRSS(xml) {
-      var items = xml.getElementsByTagName("item");
-      var html = "";
-      for (var i = 0; i < items.length; i++) {
-        var title = items[i].getElementsByTagName("title")[0].textContent;
-        var link = items[i].getElementsByTagName("link")[0].textContent;
-        var description = items[i].getElementsByTagName("description")[0].textContent;
-        var pubDate = items[i].getElementsByTagName("pubDate")[0].textContent;
-        html += "<div class='item'>";
-        html += "<div class='title'><a href='" + link + "' target='_blank'>" + title + "</a></div>";
-        html += "<div class='description'>" + description + "</div>";
-        html += "<div class='pubDate'>" + pubDate + "</div>";
-        html += "</div>";
-      }
-      document.getElementById("feedContent").innerHTML = html;
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-      loadRSS(feedUrl, renderRSS);
-    });
+    // Hent RSS-feedet og udskriv det som ren tekst
+    fetch('https://arctoz00.github.io/canteen-rss-feed/feed.xml')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('rawFeed').textContent = data;
+      })
+      .catch(error => {
+        document.getElementById('rawFeed').textContent = 'Fejl ved hentning af feed: ' + error;
+      });
   </script>
 </body>
 </html>
