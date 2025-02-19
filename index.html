@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="da">
-  <head>
-    <meta charset="UTF-8">
-    <title>RSS Feed</title>
-  </head>
-  <body>
-    <h1>Velkommen</h1>
-    <p>Se vores RSS feed: <a href="feed.xml">feed.xml</a></p>
-  </body>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>RSS Feed</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/js/jquery.feedek.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/css/feedek.min.css" />
+</head>
+<body>
+  <div id="rssFeed"></div>
+  <script>
+    $(document).ready(function() {
+      $("#rssFeed").FeedEk({
+        FeedUrl: "https://arctoz00.github.io/canteen-rss-feed/feed.xml", // Indsæt din RSS-feed URL her
+        MaxCount: 10,
+        ShowDesc: true,
+        ShowPubDate: true,
+        DescCharacterLimit: 100
+      });
+    });
+  </script>
+</body>
 </html>
