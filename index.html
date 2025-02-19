@@ -1,43 +1,115 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8">
-    <title>Canteen Menu Feed</title>
-    <!-- Inkludér jQuery fra CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Inkludér FeedEk plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/js/jquery.feedek.min.js"></script>
-    <!-- Inkludér FeedEk CSS (valgfrit for styling) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/css/feedek.min.css" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
-      }
-      h1 {
-        text-align: center;
-      }
-      #rssFeed {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Canteen Menu Feed</h1>
-    <div id="rssFeed">Henter RSS-feed…</div>
-    <script>
-      $(document).ready(function() {
-        $("#rssFeed").FeedEk({
-          FeedUrl: "https://arctoz00.github.io/canteen-rss-feed/feed.xml", // Udskift med din feed.xml URL
-          MaxCount: 10,
-          ShowDesc: true,
-          ShowPubDate: true,
-          DescCharacterLimit: 150,
-          TitleLinkTarget: "_blank"
+<head>
+  <meta charset="UTF-8">
+  <title>Canteen Menu Feed Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    #rssFeed {
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #fff;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .feed-item {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .feed-title {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .feed-description {
+      margin-top: 5px;
+      white-space: nowrap;  /* For ticker-effekt: teksten er på én linje */
+      overflow: hidden;
+    }
+    .feed-pubDate {
+      font-size: 0.9em;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Canteen Menu Feed</h1>
+  <div id="rssFeed">Henter RSS-feed…</div>
+
+  <script>
+    async function loadFeed() {
+      try {
+        const response = await fetch('https://arctoz00.github.io/canteen-rss-feed/feed.xml');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const xmlText = await response.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+
+        // Hent channel-information (valgfrit)
+        const channel = xmlDoc.querySelector("channel");
+        const channelTitle = channel.querySelector("title").textContent;
+        const channelDescription = channel.querySelector("description").textContent;
+        const channelLink = channel.querySelector("link").textContent;
+
+        // Hent alle item-elementer
+        const items = xmlDoc.querySelectorAll("item");
+
+        // Ryd containeren
+        const feedContainer = document.getElementById("rssFeed");
+        feedContainer.innerHTML = "";
+
+        // For ticker-effekt kan vi samle alle item-beskrivelser i én lang linje
+        let tickerText = "";
+
+        items.forEach(item => {
+          const itemTitle = item.querySelector("title") ? item.querySelector("title").textContent : "";
+          const itemDescription = item.querySelector("description") ? item.querySelector("description").textContent : "";
+          const itemPubDate = item.querySelector("pubDate") ? item.querySelector("pubDate").textContent : "";
+          
+          // Tilføj hver items titel og beskrivelse til tickerText med separator
+          tickerText += `${itemTitle}: ${itemDescription} | `;
         });
-      });
-    </script>
-  </body>
+
+        // Fjern det sidste separator-tegn
+        tickerText = tickerText.slice(0, -3);
+
+        // Opret en ticker div og indsæt teksten
+        const tickerDiv = document.createElement("div");
+        tickerDiv.classList.add("feed-item");
+        tickerDiv.innerHTML = `<div class="feed-description">${tickerText}</div>`;
+        feedContainer.appendChild(tickerDiv);
+
+        // Hvis du vil have en simpel ticker-effekt, kan du bruge CSS-animation eller JavaScript.
+        // Her er et eksempel på en simpel CSS-animation:
+        tickerDiv.querySelector(".feed-description").style.animation = "ticker 30s linear infinite";
+
+      } catch (error) {
+        console.error("Error loading feed:", error);
+        document.getElementById("rssFeed").textContent = "Fejl ved hentning af RSS-feed.";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadFeed);
+
+    // CSS keyframes for ticker-effekten (indsættes via JavaScript i head, alternativt kan du sætte det i style-tag)
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes ticker {
+        0%   { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
 </html>
 
