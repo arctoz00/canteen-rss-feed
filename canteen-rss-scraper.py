@@ -11,7 +11,7 @@ from feedgen.feed import FeedGenerator
 
 # URL til canteen-menuen
 MENU_URL = "https://hubnordic.madkastel.dk/"
-# Vælg filnavn til dit RSS-feed (fx feed.xml)
+# Filnavn til dit RSS-feed (f.eks. feed.xml)
 RSS_FILE = "feed.xml"
 
 def get_rendered_html():
@@ -30,24 +30,24 @@ def get_rendered_html():
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)  # Ekstra ventetid for at sikre JavaScript-indlæst indhold
+    time.sleep(2)  # Ekstra ventetid for at sikre at JavaScript-indhold er loadet
+    
     html = driver.page_source
     driver.quit()
     return html
 
 def scrape_weekly_menus():
     """
-    Parser den renderede HTML og udtrækker de ugentlige menuer for hver hub.
-    Returnerer en dictionary med format:
+    Parser den renderede HTML og udtrækker ugentlige menuer for hver hub.
+    Returnerer en dict:
        { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
-    Hvis der findes flere sektioner for samme hub, merges dataene.
+    Hvis samme hub optræder flere gange, merges dataene.
     """
     html = get_rendered_html()
     soup = BeautifulSoup(html, "html.parser")
     
     hub_divs = soup.find_all("div", class_="et_pb_text_inner")
     menus_by_hub = {}
-    
     valid_days = ['mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag', 'søndag']
     
     for div in hub_divs:
@@ -55,6 +55,7 @@ def scrape_weekly_menus():
         if not header:
             continue
         hub_header_text = header.get_text(separator=" ", strip=True)
+        
         # Normaliser hub-navnet
         if "hub1" in hub_header_text.lower():
             hub_name = "HUB1 – Kays Verdenskøkken"
@@ -82,6 +83,7 @@ def scrape_weekly_menus():
                 if current_day:
                     hub_menus[current_day].append(text)
         
+        # Merge data, hvis hub_name allerede findes
         if hub_name in menus_by_hub:
             for day, items in hub_menus.items():
                 if day in menus_by_hub[hub_name]:
@@ -95,8 +97,8 @@ def scrape_weekly_menus():
 
 def get_today_menus(menus_by_hub):
     """
-    Udtrækker dagens menu for hver hub (HUB1, HUB2, HUB3) fra de ugentlige data.
-    Returnerer en liste med én streng pr. hub, fx "HUB2: ...menu...".
+    Finder dagens menu for hver hub (HUB1, HUB2, HUB3) og returnerer en liste med formatet:
+    "HUB-navn: retter".
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -126,12 +128,13 @@ def get_today_menus(menus_by_hub):
 
 def generate_rss(menu_items):
     """
-    Genererer et RSS-feed med dagens menuer og gemmer det i RSS_FILE.
-    Hvert hub bliver et separat <item> med standardfelter (title, link, description, pubDate, guid).
+    Genererer et RSS-feed med et <item> for hver hub. 
+    Bruger feedgen og dens 'atom' extension for at undgå _elem-fejlen.
     """
-    # Opret FeedGenerator og sæt kanal-information
     fg = FeedGenerator()
-    fg.load_extension('atom')  # For at kunne tilføje atom:link
+    # Load 'atom' extension (avoids using fg._elem directly)
+    fg.load_extension('atom')
+    
     today_str = datetime.date.today().strftime("%A, %d %B %Y")
     fg.title(f"Canteen Menu - {today_str}")
     fg.link(href=MENU_URL)
@@ -139,14 +142,14 @@ def generate_rss(menu_items):
     fg.language("da")
     fg.lastBuildDate(datetime.datetime.now(pytz.utc))
     
-    # Tilføj atom:link til channel
+    # Use the official atom_link method
     fg.atom_link({
         'href': MENU_URL,
         'rel': 'self',
         'type': 'application/rss+xml'
     })
     
-    # Opret et item for hver hub i menu_items
+    # Opret items
     for i, item in enumerate(menu_items):
         parts = item.split(":", 1)
         if len(parts) < 2:
@@ -159,10 +162,10 @@ def generate_rss(menu_items):
         entry.link(href=MENU_URL)
         entry.description(hub_menu)
         entry.pubDate(datetime.datetime.now(pytz.utc))
+        
         guid_value = f"urn:canteen:{hub_name.replace(' ', '').lower()}-{datetime.datetime.now().strftime('%Y%m%d')}-{i}"
         entry.guid(guid_value, isPermaLink=False)
     
-    # Generer og skriv RSS-feedet til fil
     fg.rss_file(RSS_FILE)
     print("✅ RSS feed opdateret!")
 
@@ -173,4 +176,3 @@ if __name__ == "__main__":
     for menu in today_menus:
         print(menu)
     generate_rss(today_menus)
-
