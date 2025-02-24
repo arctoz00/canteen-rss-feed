@@ -10,10 +10,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 
-# URL til canteen-menuen og feed URL (brug evt. den faktiske feed URL til atom:link)
 MENU_URL = "https://hubnordic.madkastel.dk/"
-# Hvis feedet hostes et andet sted, kan du opdatere FEED_URL her (det bruges til atom:link)
-FEED_URL = "https://arctoz00.github.io/canteen-rss-feed/feed.xml"
+FEED_URL = "https://arctoz00.github.io/canteen-rss-feed/feed.xml"  # Opdater denne til din faktiske feed-URL
 RSS_FILE = "feed.xml"
 
 def get_rendered_html():
@@ -27,21 +25,21 @@ def get_rendered_html():
     
     driver.get(MENU_URL)
     try:
-        # Øger timeout til 60 sekunder
+        # Øger timeout til 60 sekunder for at sikre, at siden loader helt
         wait = WebDriverWait(driver, 60)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)  # Ekstra ventetid for at sikre at alt indhold er loadet
+    time.sleep(2)  # Ekstra ventetid
     html = driver.page_source
     driver.quit()
     return html
 
 def scrape_weekly_menus():
     """
-    Parser den fuldt renderede HTML og udtrækker de ugentlige menuer for hver hub.
-    Returnerer en dict i formatet:
-      { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
+    Parser den fuldt renderede HTML og udtrækker ugentlige menuer for hver hub.
+    Returnerer en dict med formatet:
+       { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
     Hvis samme hub optræder flere gange, merges dataene.
     """
     html = get_rendered_html()
@@ -49,7 +47,7 @@ def scrape_weekly_menus():
     
     hub_divs = soup.find_all("div", class_="et_pb_text_inner")
     menus_by_hub = {}
-    valid_days = ['mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag', 'søndag']
+    valid_days = ['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']
     
     for div in hub_divs:
         header = div.find("h4")
@@ -96,7 +94,7 @@ def scrape_weekly_menus():
 def get_today_menus(menus_by_hub):
     """
     Udtrækker dagens menu for hver hub (kun HUB1, HUB2 og HUB3) ud fra de ugentlige data.
-    Returnerer en liste med én streng per hub, fx "HUB2: menu-text".
+    Returnerer en liste med én streng per hub, f.eks. "HUB2: menu-text".
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -154,7 +152,7 @@ def generate_rss(menu_items):
         hub_name = parts[0].strip()
         hub_menu = parts[1].strip()
         entry = fg.add_entry()
-        # Vi omslutter title og description med CDATA ved at sætte det manuelt i strengen
+        # Omslut title og description med CDATA
         entry.title(f"<![CDATA[{hub_name}]]>")
         entry.link(href=MENU_URL)
         entry.description(f"<![CDATA[{hub_menu}]]>")
@@ -171,7 +169,7 @@ def generate_rss(menu_items):
     atom_link_str = f'    <atom:link href="{FEED_URL}" rel="self" type="application/rss+xml"/>\n'
     rss_str = rss_str.replace("<channel>", "<channel>\n" + atom_link_str, 1)
     
-    # Sørg for, at CDATA ikke er escaped – erstat &lt;![CDATA[ med <![CDATA[ osv.
+    # Sørg for, at CDATA ikke er escaped
     rss_str = rss_str.replace("&lt;![CDATA[", "<![CDATA[").replace("]]&gt;", "]]>")
     
     # Tilføj isPermaLink="false" til alle <guid> elementer og omslut med CDATA
