@@ -1,6 +1,7 @@
 import time
 import datetime
 import pytz
+import re
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -14,7 +15,7 @@ RSS_FILE = "feed.xml"
 
 def get_rendered_html():
     """
-    Loads the webpage via Selenium in headless mode and returns rendered HTML.
+    Loader siden med Selenium i headless mode og returnerer den fuldt renderede HTML.
     """
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -23,22 +24,21 @@ def get_rendered_html():
     
     driver.get(MENU_URL)
     try:
-        wait = WebDriverWait(driver, 15)
+        wait = WebDriverWait(driver, 60)  # Øger timeout til 60 sekunder
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)
-    
+    time.sleep(2)  # Ekstra ventetid for at sikre, at alt JavaScript-indhold er loadet
     html = driver.page_source
     driver.quit()
     return html
 
 def scrape_weekly_menus():
     """
-    Parses the rendered HTML and extracts weekly menus for each hub.
-    Returns a dict of the form:
-      { hub_name: { day_in_lowercase: [list of menu items] } }
-    If a hub appears multiple times, merges the data.
+    Parser den renderede HTML og udtrækker ugentlige menuer for hver hub.
+    Returnerer en dictionary med formatet:
+      { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
+    Hvis der findes flere sektioner for samme hub, merges dataene.
     """
     html = get_rendered_html()
     soup = BeautifulSoup(html, "html.parser")
@@ -52,8 +52,6 @@ def scrape_weekly_menus():
         if not header:
             continue
         hub_header_text = header.get_text(separator=" ", strip=True)
-        
-        # Normalize hub name
         if "hub1" in hub_header_text.lower():
             hub_name = "HUB1 – Kays Verdenskøkken"
         elif "hu b2" in hub_header_text.lower() or "hub2" in hub_header_text.lower():
@@ -65,7 +63,6 @@ def scrape_weekly_menus():
         
         hub_menus = {}
         current_day = None
-        
         for p in div.find_all("p"):
             text = p.get_text(separator=" ", strip=True)
             candidate = text.replace(":", "").strip().lower()
@@ -80,7 +77,6 @@ def scrape_weekly_menus():
                 if current_day:
                     hub_menus[current_day].append(text)
         
-        # Merge if hub_name already in dict
         if hub_name in menus_by_hub:
             for day, items in hub_menus.items():
                 if day in menus_by_hub[hub_name]:
@@ -94,10 +90,10 @@ def scrape_weekly_menus():
 
 def get_today_menus(menus_by_hub):
     """
-    Extracts today's menu for each hub (HUB1, HUB2, HUB3).
-    Returns a list of strings, e.g., "HUB2: some menu text".
+    Udtrækker dagens menu for hver hub (kun HUB1, HUB2, HUB3) ud fra de ugentlige data.
+    Returnerer en liste med én streng per hub, fx "HUB2: menu-text".
     """
-    weekday_map = {
+    weekday_mapping = {
         "Monday": "mandag",
         "Tuesday": "tirsdag",
         "Wednesday": "onsdag",
@@ -107,32 +103,34 @@ def get_today_menus(menus_by_hub):
         "Sunday": "søndag"
     }
     today_en = datetime.datetime.today().strftime("%A")
-    today_da = weekday_map.get(today_en, "").lower()
+    today_da = weekday_mapping.get(today_en, "").lower()
     
     print("Systemets dag (engelsk):", today_en)
     print("Mapper til (dansk):", today_da)
     
-    allowed_hubs = ["hub1","hub2","hub3"]
+    allowed_keywords = ["hub1", "hub2", "hub3"]
     today_menus = []
     
     for hub, menu_dict in menus_by_hub.items():
-        if not any(keyword in hub.lower() for keyword in allowed_hubs):
+        if not any(keyword in hub.lower() for keyword in allowed_keywords):
             continue
         if today_da in menu_dict and menu_dict[today_da]:
             menu_text = " | ".join(menu_dict[today_da])
             today_menus.append(f"{hub}: {menu_text}")
-    
     return today_menus
 
 def generate_rss(menu_items):
     """
-    Creates an RSS feed with one <item> per hub. Uses feedgen's atom extension
-    to add <atom:link>. Avoids using fg._elem references.
+    Genererer et RSS-feed med et <item> per hub og gemmer det i RSS_FILE.
+    Hvert item indeholder:
+      - title (hub-navn)
+      - link (MENU_URL)
+      - description (hub-menu)
+      - pubDate
+      - guid (unik)
+    Efter genereringen indsættes et <atom:link>-element manuelt i XML-strengen.
     """
     fg = FeedGenerator()
-    # Load the atom extension to add atom:link
-    fg.load_extension('atom')
-    
     today_str = datetime.date.today().strftime("%A, %d %B %Y")
     fg.title(f"Canteen Menu - {today_str}")
     fg.link(href=MENU_URL)
@@ -140,32 +138,30 @@ def generate_rss(menu_items):
     fg.language("da")
     fg.lastBuildDate(datetime.datetime.now(pytz.utc))
     
-    # Official atom_link usage
-    fg.atom_link({
-        'href': MENU_URL,
-        'rel': 'self',
-        'type': 'application/rss+xml'
-    })
-    
-    # Create one RSS item for each hub in menu_items
     for i, item in enumerate(menu_items):
         parts = item.split(":", 1)
         if len(parts) < 2:
             continue
         hub_name = parts[0].strip()
         hub_menu = parts[1].strip()
-        
         entry = fg.add_entry()
         entry.title(hub_name)
         entry.link(href=MENU_URL)
         entry.description(hub_menu)
         entry.pubDate(datetime.datetime.now(pytz.utc))
-        
         guid_value = f"urn:canteen:{hub_name.replace(' ', '').lower()}-{datetime.datetime.now().strftime('%Y%m%d')}-{i}"
-        entry.guid(guid_value, isPermaLink=False)
+        entry.guid(guid_value)
     
-    # Save the RSS feed to file
-    fg.rss_file(RSS_FILE)
+    # Generer RSS XML-streng
+    rss_bytes = fg.rss_str(pretty=True)
+    rss_str = rss_bytes.decode("utf-8")
+    
+    # Indsæt manuelt et <atom:link>-element lige efter <channel>
+    atom_link_str = f'    <atom:link href="{MENU_URL}" rel="self" type="application/rss+xml"/>\n'
+    rss_str = rss_str.replace("<channel>", "<channel>\n" + atom_link_str, 1)
+    
+    with open(RSS_FILE, "w", encoding="utf-8") as f:
+        f.write(rss_str)
     print("✅ RSS feed opdateret!")
 
 if __name__ == "__main__":
