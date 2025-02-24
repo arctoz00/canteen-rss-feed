@@ -28,15 +28,16 @@ def get_rendered_html():
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)  # Ekstra ventetid
+    time.sleep(2)
+    
     html = driver.page_source
     driver.quit()
     return html
 
 def scrape_weekly_menus():
     """
-    Parser den renderede HTML og udtrækker de ugentlige menuer for hver hub.
-    Returnerer en dict med formatet:
+    Parser den fuldt renderede HTML og udtrækker ugentlige menuer for hver hub.
+    Returnerer en dict i formatet:
        { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
     Hvis samme hub optræder flere gange, merges dataene.
     """
@@ -129,9 +130,14 @@ def generate_rss(menu_items):
       - <pubDate> i RFC-822 format
       - <guid> med attribut isPermaLink="false"
     Channel-elementet indeholder metadata inkl. et <atom:link>.
+    Efter genereringen foretages regex-udskiftninger, så elementerne inde i hvert <item> omdøbes:
+      - <title> -> <headline>
+      - <pubDate> -> <date>
     """
     fg = FeedGenerator()
     today_str = datetime.date.today().strftime("%A, %d %B %Y")
+    
+    # Channel metadata
     fg.title(f"Canteen Menu - {today_str}")
     fg.link(href=MENU_URL)
     fg.description("Dagligt opdateret canteen-menu")
@@ -147,6 +153,7 @@ def generate_rss(menu_items):
         hub_name = parts[0].strip()
         hub_menu = parts[1].strip()
         entry = fg.add_entry()
+        # Wrap title and description in CDATA
         entry.title(f"<![CDATA[{hub_name}]]>")
         entry.link(href=MENU_URL)
         entry.description(f"<![CDATA[{hub_menu}]]>")
@@ -155,7 +162,7 @@ def generate_rss(menu_items):
         guid_value = f"urn:canteen:{clean_hub_name}-{datetime.datetime.now().strftime('%Y%m%d')}-{i}"
         entry.guid(guid_value)
     
-    # Generer RSS XML-strengen
+    # Generer RSS XML-streng
     rss_bytes = fg.rss_str(pretty=True)
     rss_str = rss_bytes.decode("utf-8")
     
@@ -163,12 +170,25 @@ def generate_rss(menu_items):
     atom_link_str = f'    <atom:link href="{MENU_URL}" rel="self" type="application/rss+xml"/>\n'
     rss_str = rss_str.replace("<channel>", "<channel>\n" + atom_link_str, 1)
     
-    # Tilføj isPermaLink="false" til alle <guid> elementer og omslut med CDATA
-    rss_str = re.sub(r'<guid>(.*?)</guid>', r'<guid isPermaLink="false"><![CDATA[\1]]></guid>', rss_str)
+    # Udfør regex-substitutioner for at erstatte tags inden for hvert <item> (men ikke i channel)
+    def replace_item_tags(match):
+        item_xml = match.group(0)
+        # Erstat <title> og </title> med <headline> og </headline>
+        item_xml = item_xml.replace("<title><![CDATA[", "<headline><![CDATA[")
+        item_xml = item_xml.replace("]]></title>", "]]></headline>")
+        # Erstat <pubDate> og </pubDate> med <date> og </date>
+        item_xml = item_xml.replace("<pubDate>", "<date>")
+        item_xml = item_xml.replace("</pubDate>", "</date>")
+        return item_xml
+    
+    rss_str = re.sub(r'(<item>.*?</item>)', replace_item_tags, rss_str, flags=re.DOTALL)
     
     # Wrap channel title and description with CDATA (kun én gang)
     rss_str = re.sub(r'<title>(.*?)</title>', r'<title><![CDATA[\1]]></title>', rss_str, count=1)
     rss_str = re.sub(r'<description>(.*?)</description>', r'<description><![CDATA[\1]]></description>', rss_str, count=1)
+    
+    # Indsæt isPermaLink="false" i alle <guid> elementer og omslut med CDATA
+    rss_str = re.sub(r'<guid>(.*?)</guid>', r'<guid isPermaLink="false"><![CDATA[\1]]></guid>', rss_str)
     
     with open(RSS_FILE, "w", encoding="utf-8") as f:
         f.write(rss_str)
