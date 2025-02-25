@@ -2,8 +2,8 @@ name: Opdater Canteen RSS Feed
 
 on:
   schedule:
-    - cron: "0 9 * * *"  # Kører dagligt kl. 06:00 UTC - tilpas efter behov
-  workflow_dispatch:       # Mulighed for manuelt at udløse workflow'en
+    - cron: "0 9 * * *"  # Kører dagligt kl. 09:00 UTC
+  workflow_dispatch:
 
 jobs:
   update-feed:
@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -32,5 +34,4 @@ jobs:
           git add feed.xml
           git commit -m "Opdateret RSS feed" || echo "Ingen ændringer at committe"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/arctoz00/canteen-rss-feed.git HEAD:main
-
 
