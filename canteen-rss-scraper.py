@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 
 MENU_URL = "https://hubnordic.madkastel.dk/"
-FEED_URL = "https://arctoz00.github.io/canteen-rss-feed/feed.xml"  # Opdater denne til din faktiske feed-URL
+FEED_URL = "https://arctoz00.github.io/canteen-rss-feed/feed.xml"  # Opdater denne, hvis nødvendigt
 RSS_FILE = "feed.xml"
 
 def get_rendered_html():
@@ -25,12 +25,12 @@ def get_rendered_html():
     
     driver.get(MENU_URL)
     try:
-        # Øger timeout til 60 sekunder for at sikre, at siden loader helt
+        # Øger timeout til 60 sekunder
         wait = WebDriverWait(driver, 60)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)  # Ekstra ventetid
+    time.sleep(2)  # Ekstra ventetid for at sikre, at alt er loadet
     html = driver.page_source
     driver.quit()
     return html
@@ -39,7 +39,7 @@ def scrape_weekly_menus():
     """
     Parser den fuldt renderede HTML og udtrækker ugentlige menuer for hver hub.
     Returnerer en dict med formatet:
-       { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
+      { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
     Hvis samme hub optræder flere gange, merges dataene.
     """
     html = get_rendered_html()
@@ -47,7 +47,7 @@ def scrape_weekly_menus():
     
     hub_divs = soup.find_all("div", class_="et_pb_text_inner")
     menus_by_hub = {}
-    valid_days = ['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']
+    valid_days = ['mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag', 'søndag']
     
     for div in hub_divs:
         header = div.find("h4")
@@ -94,7 +94,7 @@ def scrape_weekly_menus():
 def get_today_menus(menus_by_hub):
     """
     Udtrækker dagens menu for hver hub (kun HUB1, HUB2 og HUB3) ud fra de ugentlige data.
-    Returnerer en liste med én streng per hub, f.eks. "HUB2: menu-text".
+    Returnerer en liste med én streng per hub, fx "HUB2: menu-text".
     """
     weekday_mapping = {
         "Monday": "mandag",
