@@ -11,12 +11,12 @@ from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 
 MENU_URL = "https://hubnordic.madkastel.dk/"
-FEED_URL = "https://arctoz00.github.io/canteen-rss-feed/feed.xml"  # Opdater til din faktiske feed-URL
+FEED_URL = "https://arctoz00.github.io/canteen-rss-feed/feed.xml"  # Update to your actual feed URL
 RSS_FILE = "feed.xml"
 
 def get_rendered_html():
     """
-    Loader siden med Selenium i headless mode og returnerer den fuldt renderede HTML.
+    Loads the page using Selenium in headless mode and returns the fully rendered HTML.
     """
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -25,22 +25,22 @@ def get_rendered_html():
     
     driver.get(MENU_URL)
     try:
-        # Øger timeout til 60 sekunder
+        # Increase timeout to 60 seconds to ensure the page fully loads
         wait = WebDriverWait(driver, 60)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)  # Ekstra ventetid for at sikre, at alt er loadet
+    time.sleep(2)  # Extra wait to ensure all content is loaded
     html = driver.page_source
     driver.quit()
     return html
 
 def scrape_weekly_menus():
     """
-    Parser den fuldt renderede HTML og udtrækker ugentlige menuer for hver hub.
-    Returnerer en dict med formatet:
-       { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
-    Hvis samme hub optræder flere gange, merges dataene.
+    Parses the fully rendered HTML and extracts weekly menus for each hub.
+    Returns a dictionary in the format:
+       { hub_name: { day (lowercase): [list of menu texts] } }
+    If the same hub appears more than once, the data is merged.
     """
     html = get_rendered_html()
     soup = BeautifulSoup(html, "html.parser")
@@ -54,7 +54,7 @@ def scrape_weekly_menus():
         if not header:
             continue
         hub_header_text = header.get_text(separator=" ", strip=True)
-        # Normaliser hub-navnet
+        # Normalize hub name
         if "hub1" in hub_header_text.lower():
             hub_name = "HUB1 – Kays Verdenskøkken"
         elif "hu b2" in hub_header_text.lower() or "hub2" in hub_header_text.lower():
@@ -93,8 +93,9 @@ def scrape_weekly_menus():
 
 def get_today_menus(menus_by_hub):
     """
-    Udtrækker dagens menu for hver hub (kun HUB1, HUB2 og HUB3) ud fra de ugentlige data.
-    Returnerer en liste med én streng per hub, f.eks. "HUB2: menu-text".
+    Extracts today's menu for each hub (only HUB1, HUB2, and HUB3)
+    from the weekly data. Returns a list with one string per hub, e.g.,
+    "HUB2: menu-text".
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -124,14 +125,14 @@ def get_today_menus(menus_by_hub):
 
 def generate_rss(menu_items):
     """
-    Genererer et RSS-feed med et <item> per hub og gemmer det i RSS_FILE.
-    Hvert item indeholder:
-      - <title> (hub-navn) omsluttet af CDATA
+    Generates an RSS feed with one <item> per hub and saves it to RSS_FILE.
+    Each item includes:
+      - <title> (hub name) wrapped in CDATA
       - <link> (MENU_URL)
-      - <description> (hub-menu) omsluttet af CDATA
-      - <pubDate> i RFC-822 format
-      - <guid> med attribut isPermaLink="false"
-    Channel-elementet indeholder metadata inkl. et <atom:link> og et <docs>-element.
+      - <description> (hub menu) wrapped in CDATA
+      - <pubDate> in RFC-822 format
+      - <guid> with attribute isPermaLink="false"
+    The channel includes metadata with an <atom:link> and a <docs> element.
     """
     fg = FeedGenerator()
     today_str = datetime.date.today().strftime("%A, %d %B %Y")
@@ -144,6 +145,7 @@ def generate_rss(menu_items):
     fg.lastBuildDate(datetime.datetime.now(pytz.utc))
     fg.generator("Python feedgen")
     fg.ttl(15)
+    fg.docs("http://www.rssboard.org/rss-specification")
     
     for i, item in enumerate(menu_items):
         parts = item.split(":", 1)
@@ -152,7 +154,6 @@ def generate_rss(menu_items):
         hub_name = parts[0].strip()
         hub_menu = parts[1].strip()
         entry = fg.add_entry()
-        # Omslut title og description med CDATA
         entry.title(f"<![CDATA[{hub_name}]]>")
         entry.link(href=MENU_URL)
         entry.description(f"<![CDATA[{hub_menu}]]>")
@@ -161,25 +162,27 @@ def generate_rss(menu_items):
         guid_value = f"urn:canteen:{clean_hub_name}-{datetime.datetime.now().strftime('%Y%m%d')}-{i}"
         entry.guid(guid_value)
     
-    # Generer RSS XML-streng
+    # Generate RSS XML string
     rss_bytes = fg.rss_str(pretty=True)
     rss_str = rss_bytes.decode("utf-8")
     
-    # Indsæt manuelt et <atom:link> element lige efter <channel>
+    # Insert manually an <atom:link> element right after <channel>
     atom_link_str = f'    <atom:link href="{FEED_URL}" rel="self" type="application/rss+xml"/>\n'
     rss_str = rss_str.replace("<channel>", "<channel>\n" + atom_link_str, 1)
     
-    # Indsæt et <docs> element lige efter <atom:link>
-    docs_str = '    <docs>http://www.rssboard.org/rss-specification</docs>\n'
-    rss_str = rss_str.replace(atom_link_str, atom_link_str + docs_str, 1)
+    # Insert namespaces into the <rss> tag (to match BBC structure)
+    rss_str = re.sub(
+        r'<rss version="2.0">',
+        r'<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">',
+        rss_str, count=1)
     
-    # Sørg for, at CDATA ikke er escaped
+    # Ensure CDATA sections are not escaped
     rss_str = rss_str.replace("&lt;![CDATA[", "<![CDATA[").replace("]]&gt;", "]]>")
     
-    # Tilføj isPermaLink="false" til alle <guid> elementer og omslut med CDATA
+    # Add isPermaLink="false" to all <guid> elements and wrap them with CDATA
     rss_str = re.sub(r'<guid>(.*?)</guid>', r'<guid isPermaLink="false"><![CDATA[\1]]></guid>', rss_str)
     
-    # Wrap channel title and description with CDATA (kun én gang)
+    # Wrap channel title and description with CDATA (only once)
     rss_str = re.sub(r'<title>(.*?)</title>', r'<title><![CDATA[\1]]></title>', rss_str, count=1)
     rss_str = re.sub(r'<description>(.*?)</description>', r'<description><![CDATA[\1]]></description>', rss_str, count=1)
     
@@ -194,3 +197,4 @@ if __name__ == "__main__":
     for menu in today_menus:
         print(menu)
     generate_rss(today_menus)
+
