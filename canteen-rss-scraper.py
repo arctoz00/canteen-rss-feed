@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 
 MENU_URL = "https://hubnordic.madkastel.dk/"
-FEED_URL = "https://arctoz00.github.io/canteen-rss-feed/feed.xml"  # Opdater denne, hvis nødvendigt
+FEED_URL = "https://arctoz00.github.io/canteen-rss-feed/feed.xml"  # Opdater til din faktiske feed-URL
 RSS_FILE = "feed.xml"
 
 def get_rendered_html():
@@ -39,7 +39,7 @@ def scrape_weekly_menus():
     """
     Parser den fuldt renderede HTML og udtrækker ugentlige menuer for hver hub.
     Returnerer en dict med formatet:
-      { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
+       { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
     Hvis samme hub optræder flere gange, merges dataene.
     """
     html = get_rendered_html()
@@ -47,7 +47,7 @@ def scrape_weekly_menus():
     
     hub_divs = soup.find_all("div", class_="et_pb_text_inner")
     menus_by_hub = {}
-    valid_days = ['mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag', 'søndag']
+    valid_days = ['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']
     
     for div in hub_divs:
         header = div.find("h4")
@@ -94,7 +94,7 @@ def scrape_weekly_menus():
 def get_today_menus(menus_by_hub):
     """
     Udtrækker dagens menu for hver hub (kun HUB1, HUB2 og HUB3) ud fra de ugentlige data.
-    Returnerer en liste med én streng per hub, fx "HUB2: menu-text".
+    Returnerer en liste med én streng per hub, f.eks. "HUB2: menu-text".
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -131,7 +131,7 @@ def generate_rss(menu_items):
       - <description> (hub-menu) omsluttet af CDATA
       - <pubDate> i RFC-822 format
       - <guid> med attribut isPermaLink="false"
-    Channel-elementet indeholder metadata inkl. et <atom:link>.
+    Channel-elementet indeholder metadata inkl. et <atom:link> og et <docs>-element.
     """
     fg = FeedGenerator()
     today_str = datetime.date.today().strftime("%A, %d %B %Y")
@@ -168,6 +168,10 @@ def generate_rss(menu_items):
     # Indsæt manuelt et <atom:link> element lige efter <channel>
     atom_link_str = f'    <atom:link href="{FEED_URL}" rel="self" type="application/rss+xml"/>\n'
     rss_str = rss_str.replace("<channel>", "<channel>\n" + atom_link_str, 1)
+    
+    # Indsæt et <docs> element lige efter <atom:link>
+    docs_str = '    <docs>http://www.rssboard.org/rss-specification</docs>\n'
+    rss_str = rss_str.replace(atom_link_str, atom_link_str + docs_str, 1)
     
     # Sørg for, at CDATA ikke er escaped
     rss_str = rss_str.replace("&lt;![CDATA[", "<![CDATA[").replace("]]&gt;", "]]>")
