@@ -3,50 +3,34 @@
   <channel>
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
 
-    <title><![CDATA[Canteen Menu - Thursday, 13 March 2025]]></title>
+    <title><![CDATA[Canteen Menu - Friday, 14 March 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-<<<<<<< HEAD
-    <lastBuildDate>Thu, 13 Mar 2025 09:15:39 +0000</lastBuildDate>
-=======
-    <lastBuildDate>Thu, 13 Mar 2025 09:17:17 +0000</lastBuildDate>
->>>>>>> d6a6ced7ab95f1c141b5b3b5845c4c0a8d79e9d1
+    <lastBuildDate>Fri, 14 Mar 2025 09:17:27 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
       <title><![CDATA[HUB3]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[Fiskefrikadeller – Lun kartoffelsalat, selleri remoulade og vinaigrette | Vegetar: | Grøntsagsfrikadeller – Lun kartoffelsalat, selleri remoulade og vinaigrette]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3-20250313-2</guid>
-<<<<<<< HEAD
-      <pubDate>Thu, 13 Mar 2025 09:15:39 +0000</pubDate>
-=======
-      <pubDate>Thu, 13 Mar 2025 09:17:17 +0000</pubDate>
->>>>>>> d6a6ced7ab95f1c141b5b3b5845c4c0a8d79e9d1
+      <description><![CDATA[Mexican pulled pork bowl – Pico de gallo, lime og crème fraiche. På siden brød | Vegetar: | Mexican black bean bowl – Pico de gallo, lime og crème fraiche. På siden brød]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3-20250314-2</guid>
+      <pubDate>Fri, 14 Mar 2025 09:17:27 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB2]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[Okse hakkebøf med svampe a la creme, ristede kartofler og toppet med ærter vendt med persille og koldpresset rapsolie | Vegetar | Soja boller med svampe a la creme, ristede kartofler og toppet med ærter vendt med persille og koldpresset rapsolie]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2-20250313-1</guid>
-<<<<<<< HEAD
-      <pubDate>Thu, 13 Mar 2025 09:15:39 +0000</pubDate>
-=======
-      <pubDate>Thu, 13 Mar 2025 09:17:17 +0000</pubDate>
->>>>>>> d6a6ced7ab95f1c141b5b3b5845c4c0a8d79e9d1
+      <description><![CDATA[Oksekøds pizza toppet med trøffelcreme, soltørrede-tomatsalsa, rucola og pesto | Vegetar | Ærteprotein pizza toppet med trøffelcreme, soltørrede-tomatsalsa, rucola og pesto]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2-20250314-1</guid>
+      <pubDate>Fri, 14 Mar 2025 09:17:27 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays Verdenskøkken]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[Urtebagt loins af gris med let røget pommes de tern, skilt kærnemælkssauce | Vegetar | Urtebagt loins af selleri med let røget pommes de tern, skilt kærnemælkssauce]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken-20250313-0</guid>
-<<<<<<< HEAD
-      <pubDate>Thu, 13 Mar 2025 09:15:39 +0000</pubDate>
-=======
-      <pubDate>Thu, 13 Mar 2025 09:17:17 +0000</pubDate>
->>>>>>> d6a6ced7ab95f1c141b5b3b5845c4c0a8d79e9d1
+      <description><![CDATA[Pariserbøf med tilbehør | Vegetar | ”vegetar Pariserbøf” med tilbehør]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken-20250314-0</guid>
+      <pubDate>Fri, 14 Mar 2025 09:17:27 +0000</pubDate>
     </item>
   </channel>
 </rss>
