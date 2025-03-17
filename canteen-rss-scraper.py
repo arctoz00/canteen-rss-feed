@@ -25,11 +25,12 @@ def get_rendered_html():
     
     driver.get(MENU_URL)
     try:
-        wait = WebDriverWait(driver, 60)  # Øger timeout til 60 sekunder
+        # Øger timeout til 60 sekunder for at sikre, at siden loader helt
+        wait = WebDriverWait(driver, 60)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)
+    time.sleep(2)  # Ekstra ventetid
     html = driver.page_source
     driver.quit()
     return html
@@ -39,19 +40,19 @@ def scrape_weekly_menus():
     Parser den fuldt renderede HTML og udtrækker de ugentlige menuer for hver hub.
     Returnerer en dict med formatet:
        { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
-    Hvis samme hub optræder flere gange, merges dataene.
     
     Ændringer:
-      - HUB1 opdeles nu i to separate hubs:
-          "HUB1 – Kays" og "HUB1 – Kays Verdenskøkken" (afhængigt af om headeren indeholder "verdenskøkken").
-      - "GLOBETROTTER MENU" og "Vegetar" (og lignende) bliver til de daglige menuer.
-      - Hvis der ikke findes et eksplicit dagstegn, tilføjes disse menuer kun én gang pr. dag (mandag til fredag).
+    - HUB1 opdeles nu i to separate hubs: "HUB1 – Kays" og "HUB1 – Kays Verdenskøkken".
+    - "GLOBETROTTER MENU" og "Vegetar" (og lignende) tilføjes som daglige menuer (mandag til fredag),
+      mens specifikke dage (fx "onsdag") kun tilføjes til den pågældende dag.
+    - Til sidst de-duplikeres alle lister, så samme menu kun vises én gang per dag.
     """
     html = get_rendered_html()
     soup = BeautifulSoup(html, "html.parser")
     
     hub_divs = soup.find_all("div", class_="et_pb_text_inner")
     menus_by_hub = {}
+    
     valid_days = ['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']
     daily_days = ['mandag','tirsdag','onsdag','torsdag','fredag']
     
@@ -63,7 +64,7 @@ def scrape_weekly_menus():
         raw_header = header.get_text(separator=" ", strip=True)
         lower_header = raw_header.lower()
         
-        # Bestem hub-navnet
+        # Bestem hub-navnet: skel mellem HUB1 – Kays og HUB1 – Kays Verdenskøkken
         if "hub1" in lower_header:
             if "verdenskøkken" in lower_header:
                 hub_name = "HUB1 – Kays Verdenskøkken"
@@ -74,8 +75,8 @@ def scrape_weekly_menus():
         elif "hub3" in lower_header:
             hub_name = "HUB3"
         else:
-            continue
-        
+            continue  # Spring denne div over, hvis den ikke matcher
+    
         block_menus = {}
         current_day = None
         collected_items = []  # Samler menuer, der ikke er knyttet til en specifik dag
@@ -83,15 +84,14 @@ def scrape_weekly_menus():
         for p in div.find_all("p"):
             text = p.get_text(separator=" ", strip=True)
             candidate = text.replace(":", "").strip().lower()
-            # Hvis teksten præcist matcher en dag (f.eks. "mandag")
+            # Hvis teksten præcist matcher en dag
             if candidate in valid_days:
                 current_day = candidate
                 if current_day not in block_menus:
                     block_menus[current_day] = []
             else:
-                # Hvis teksten indeholder "globetrotter menu" eller "vegetar", antag at det er en daglig menu
+                # Hvis teksten indeholder "globetrotter menu" eller "vegetar", antag daglig menu
                 if "globetrotter menu" in candidate or "vegetar" in candidate:
-                    # Tilføj til daily_items, men undgå dublering
                     if text not in collected_items:
                         collected_items.append(text)
                 else:
@@ -101,11 +101,11 @@ def scrape_weekly_menus():
                         if text not in collected_items:
                             collected_items.append(text)
         
-        # Hvis der ikke er fundet specifikke dage, og vi har collected_items (daglige menuer)
+        # Hvis der ikke blev fundet specifikke dage og vi har collected_items, antages disse at være daglige
         if not block_menus and collected_items:
             block_menus = { day: collected_items.copy() for day in daily_days }
         else:
-            # For alle dage (mandag-fredag) tilføjes de daily_items, men undgå dublering
+            # Tilføj daily items til alle hverdage uden dublering
             for d in daily_days:
                 if d not in block_menus:
                     block_menus[d] = collected_items.copy()
@@ -127,7 +127,6 @@ def scrape_weekly_menus():
     # De-duplikér alle lister for at sikre, at ingen dubleringer forekommer
     for hub in menus_by_hub:
         for day in menus_by_hub[hub]:
-            # Brug dict.fromkeys for at fjerne dubletter mens rækkefølgen bevares
             menus_by_hub[hub][day] = list(dict.fromkeys(menus_by_hub[hub][day]))
     
     return menus_by_hub
@@ -231,3 +230,4 @@ if __name__ == "__main__":
     for menu in today_menus:
         print(menu)
     generate_rss(today_menus)
+
