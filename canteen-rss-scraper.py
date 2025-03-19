@@ -131,7 +131,7 @@ def get_today_menus(menus_by_hub):
     Udtrækker dagens menu for hver hub (HUB1 – Kays, HUB1 – Kays Verdenskøkken, HUB2, HUB3)
     ud fra de ugentlige data. Returnerer en liste med én streng per hub i formatet:
          "HUB-navn: menu-text"
-    hvor dubleringer fjernes, så hver hub kun vises én gang med sin respektive menu.
+    Hvor kun de fire ønskede hubs inkluderes, og hub-navnet og menuen vises samlet på én linje.
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -148,18 +148,22 @@ def get_today_menus(menus_by_hub):
     print("Systemets dag (engelsk):", today_en)
     print("Mapper til (dansk):", today_da)
     
+    ønskede_hubs = {"HUB1 – Kays", "HUB1 – Kays Verdenskøkken", "HUB2", "HUB3"}
     today_menus = []
+    
     for hub, menu_dict in menus_by_hub.items():
+        if hub not in ønskede_hubs:
+            continue
         if today_da in menu_dict and menu_dict[today_da]:
-            # Deduplicate og bevar rækkefølgen
             seen = set()
             unique_menu = []
             for item in menu_dict[today_da]:
-                if item not in seen:
+                normalized = " ".join(item.split())
+                if normalized not in seen:
+                    seen.add(normalized)
                     unique_menu.append(item)
-                    seen.add(item)
-            menu_str = " | ".join(unique_menu)
-            today_menus.append(f"{hub}: {menu_str}")
+            menu_text = " | ".join(unique_menu).replace("\n", " ").strip()
+            today_menus.append(f"{hub}: {menu_text}")
     return today_menus
 
 def generate_rss(menu_items):
@@ -184,7 +188,6 @@ def generate_rss(menu_items):
     fg.ttl(15)
     fg.docs("http://www.rssboard.org/rss-specification")
     
-    # Brug hele strengen fra get_today_menus til både title og description
     for i, item in enumerate(menu_items):
         entry = fg.add_entry()
         entry.title(f"<![CDATA[{item}]]>")
@@ -222,3 +225,4 @@ if __name__ == "__main__":
     for menu in today_menus:
         print(menu)
     generate_rss(today_menus)
+
