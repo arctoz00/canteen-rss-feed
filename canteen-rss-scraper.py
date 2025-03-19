@@ -25,16 +25,15 @@ def get_rendered_html():
     chrome_options.add_argument("--disable-dev-shm-usage")
     
     driver = webdriver.Chrome(options=chrome_options)
-    driver.implicitly_wait(30)  # Sætter implicit ventetid
+    driver.implicitly_wait(30)
     
     driver.get(MENU_URL)
     try:
-        # Øger timeout til 120 sekunder for at sikre, at siden loader helt
         wait = WebDriverWait(driver, 120)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)  # Ekstra ventetid
+    time.sleep(2)
     html = driver.page_source
     driver.quit()
     return html
@@ -68,7 +67,6 @@ def scrape_weekly_menus():
         raw_header = header.get_text(separator=" ", strip=True)
         lower_header = raw_header.lower()
         
-        # Skel mellem HUB1 – Kays og HUB1 – Kays Verdenskøkken
         if "hub1" in lower_header:
             if "verdenskøkken" in lower_header:
                 hub_name = "HUB1 – Kays Verdenskøkken"
@@ -135,7 +133,8 @@ def get_today_menus(menus_by_hub):
     Udtrækker dagens menu for hver hub (HUB1 – Kays, HUB1 – Kays Verdenskøkken, HUB2, HUB3)
     ud fra de ugentlige data. Returnerer en liste med én streng per hub i formatet:
          "HUB-navn: menu-text"
-    Hvor kun de fire ønskede hubs inkluderes, og hub-navn og menu er samlet på én linje.
+    Hvor kun de fire ønskede hubs inkluderes, og hub-navnet og menuen vises samlet på én linje.
+    Dubleringer fjernes ved at splitte den samlede streng og genopbygge den med unikke elementer.
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -159,14 +158,16 @@ def get_today_menus(menus_by_hub):
         if hub not in ønskede_hubs:
             continue
         if today_da in menu_dict and menu_dict[today_da]:
+            # Slå alle menu-linjer sammen og split derefter på " | " for at fjerne dubleringer
+            combined = " | ".join(menu_dict[today_da])
+            items = [item.strip() for item in combined.split("|") if item.strip()]
             seen = set()
-            unique_menu = []
-            for item in menu_dict[today_da]:
-                normalized = " ".join(item.split())
-                if normalized not in seen:
-                    seen.add(normalized)
-                    unique_menu.append(item)
-            menu_text = " | ".join(unique_menu).replace("\n", " ").strip()
+            unique_items = []
+            for it in items:
+                if it not in seen:
+                    seen.add(it)
+                    unique_items.append(it)
+            menu_text = " | ".join(unique_items)
             today_menus.append(f"{hub}: {menu_text}")
     return today_menus
 
@@ -229,3 +230,4 @@ if __name__ == "__main__":
     for menu in today_menus:
         print(menu)
     generate_rss(today_menus)
+
