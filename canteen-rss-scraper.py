@@ -30,7 +30,7 @@ def get_rendered_html():
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)
+    time.sleep(2)  # Ekstra ventetid
     html = driver.page_source
     driver.quit()
     return html
@@ -42,10 +42,10 @@ def scrape_weekly_menus():
        { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
     
     Ændringer:
-      - HUB1 opdeles i to separate hubs: "HUB1 – Kays" og "HUB1 – Kays Verdenskøkken" 
+      - HUB1 opdeles i to separate hubs: "HUB1 – Kays" og "HUB1 – Kays Verdenskøkken"
         (baseret på om headeren indeholder "verdenskøkken").
       - "GLOBETROTTER MENU" og "Vegetar" (og lignende) tilføjes som daglige menuer (mandag-fredag),
-        mens specifikke dage (f.eks. "onsdag") kun tilføjes til den pågældende dag.
+        mens specifikke dage (fx "onsdag") kun tilføjes til den pågældende dag.
     """
     html = get_rendered_html()
     soup = BeautifulSoup(html, "html.parser")
@@ -129,8 +129,9 @@ def scrape_weekly_menus():
 def get_today_menus(menus_by_hub):
     """
     Udtrækker dagens menu for hver hub (HUB1 – Kays, HUB1 – Kays Verdenskøkken, HUB2, HUB3)
-    ud fra de ugentlige data. Returnerer en liste med én streng per hub, f.eks. "HUB2: menu-text".
-    Dubleringer fjernes.
+    ud fra de ugentlige data. Returnerer en liste med én streng per hub i formatet:
+         "HUB-navn: menu-text"
+    hvor dubleringer fjernes, så hver hub kun vises én gang med sin respektive menu.
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -150,18 +151,23 @@ def get_today_menus(menus_by_hub):
     today_menus = []
     for hub, menu_dict in menus_by_hub.items():
         if today_da in menu_dict and menu_dict[today_da]:
-            deduped = list(dict.fromkeys(menu_dict[today_da]))
-            menu_text = " | ".join(deduped)
-            today_menus.append(f"{hub}: {menu_text}")
+            # Deduplicate og bevar rækkefølgen
+            seen = set()
+            unique_menu = []
+            for item in menu_dict[today_da]:
+                if item not in seen:
+                    unique_menu.append(item)
+                    seen.add(item)
+            menu_str = " | ".join(unique_menu)
+            today_menus.append(f"{hub}: {menu_str}")
     return today_menus
 
 def generate_rss(menu_items):
     """
     Genererer et RSS-feed med et <item> per hub og gemmer det i RSS_FILE.
     Hvert item indeholder:
-      - <title> (samlet hub-navn og menu) omsluttet af CDATA
+      - <title> og <description> med den samlede streng (hub-navn og menu) omsluttet af CDATA
       - <link> (MENU_URL)
-      - <description> (samlet hub-navn og menu) omsluttet af CDATA
       - <pubDate> i RFC-822 format
       - <guid> med attribut isPermaLink="false"
     Channel-elementet indeholder metadata inkl. et <atom:link> og et <docs>-element.
