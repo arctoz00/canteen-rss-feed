@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Monday, 17 March 2025]]></title>
+    <title><![CDATA[Canteen Menu - Wednesday, 19 March 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Mon, 17 Mar 2025 12:49:50 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 08:32:38 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3]]></title>
+      <title><![CDATA[HUB3: Dagens kage: Marokkansk appelsin kage | Vegetar: | Vegetarisk marokkansk tangine – Mynte yoghurt og couscous]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[Palæstinensisk kylling med mujadara – Linser og ris – Fatoush salat og friterede løg | Bagt aubergine med kærnemælk, sumak dressing og mujadara – Linser og ris – Fatoush salat og friterede løg | Vegetar: | Vegetarisk marokkansk tangine – Mynte yoghurt og couscous]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3-20250317-3</guid>
-      <pubDate>Mon, 17 Mar 2025 12:49:50 +0000</pubDate>
+      <description><![CDATA[HUB3: Dagens kage: Marokkansk appelsin kage | Vegetar: | Vegetarisk marokkansk tangine – Mynte yoghurt og couscous]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:dagenskage:marokkanskappelsinkage|vegetar:|vegetariskmarokkansktangine–mynteyoghurtogcouscous-20250319-3</guid>
+      <pubDate>Wed, 19 Mar 2025 08:32:38 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2]]></title>
+      <title><![CDATA[HUB2: Grøntsags Okonomiyaki med nudler og toppet med ristede sesamefrø of forårsløg. Hertil Okonomisauce, Japanske mayonnaise dressing og chilisauce a part | Onsdags Dessert | Hindbærkage | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[Oksekøds tarteletter fyldte med stuvede jordskokker og sene vinter grøntsager, toppet med ærteskud | Svampe tarteletter fyldte med stuvede jordskokker og sene vinter grøntsager, toppet med ærteskud | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2-20250317-2</guid>
-      <pubDate>Mon, 17 Mar 2025 12:49:50 +0000</pubDate>
+      <description><![CDATA[HUB2: Grøntsags Okonomiyaki med nudler og toppet med ristede sesamefrø of forårsløg. Hertil Okonomisauce, Japanske mayonnaise dressing og chilisauce a part | Onsdags Dessert | Hindbærkage | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:grøntsagsokonomiyakimednudlerogtoppetmedristedesesamefrøofforårsløg.hertilokonomisauce,japanskemayonnaisedressingogchilisauceapart|onsdagsdessert|hindbærkage|vegetar-20250319-2</guid>
+      <pubDate>Wed, 19 Mar 2025 08:32:38 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays Verdenskøkken]]></title>
+      <title><![CDATA[HUB1 – Kays Verdenskøkken: Hoisin udonnudler med sprød topping | HOMEBOUND MENU | Kalvecuvette med kartoffeltern, ristet jordskokker og kørvel sauce | Kartoffel roulade med cremet blomkåls pure, syltet cherrytomat og friteret rødbeder | GLOBETROTTER MENU | Bahn mi m/ citrongræs marineret kylling og vietnamesiske pickles | Vegetar | Bahn mi m/ citrongræs marineret tofu og vietnamesiske pickles | Svampe fyldt bagt peberfrugt med kartoffeltern, ristet jordskokker og vegetarisk kørvel sauce]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[GLOBETROTTER MENU | Bahn mi m/ citrongræs marineret kylling og vietnamesiske pickles | Vegetar | Bahn mi m/ citrongræs marineret tofu og vietnamesiske pickles | Svampe fyldt bagt peberfrugt med kartoffeltern, ristet jordskokker og vegetarisk kørvel sauce]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken-20250317-1</guid>
-      <pubDate>Mon, 17 Mar 2025 12:49:50 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays Verdenskøkken: Hoisin udonnudler med sprød topping | HOMEBOUND MENU | Kalvecuvette med kartoffeltern, ristet jordskokker og kørvel sauce | Kartoffel roulade med cremet blomkåls pure, syltet cherrytomat og friteret rødbeder | GLOBETROTTER MENU | Bahn mi m/ citrongræs marineret kylling og vietnamesiske pickles | Vegetar | Bahn mi m/ citrongræs marineret tofu og vietnamesiske pickles | Svampe fyldt bagt peberfrugt med kartoffeltern, ristet jordskokker og vegetarisk kørvel sauce]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:hoisinudonnudlermedsprødtopping|homeboundmenu|kalvecuvettemedkartoffeltern,ristetjordskokkerogkørvelsauce|kartoffelroulademedcremetblomkålspure,syltetcherrytomatogfriteretrødbeder|globetrottermenu|bahnmim/citrongræsmarineretkyllingogvietnamesiskepickles|vegetar|bahnmim/citrongræsmarinerettofuogvietnamesiskepickles|svampefyldtbagtpeberfrugtmedkartoffeltern,ristetjordskokkerogvegetariskkørvelsauce-20250319-1</guid>
+      <pubDate>Wed, 19 Mar 2025 08:32:38 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays]]></title>
+      <title><![CDATA[HUB1 – Kays: Vegetar | Vegetarisk butter chicken med basmati ris og chapati brød | Asiatisk vegetar suppe med nudler og sprøde grøntsager]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[Forlorenhare med dampet kartofler, skysauce og syltet rabarber | Grønsagsdeller med dampet kartofler, skysauce og syltet rabarber | Vegetar | Vegetarisk butter chicken med basmati ris og chapati brød | Asiatisk vegetar suppe med nudler og sprøde grøntsager]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays-20250317-0</guid>
-      <pubDate>Mon, 17 Mar 2025 12:49:50 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Vegetar | Vegetarisk butter chicken med basmati ris og chapati brød | Asiatisk vegetar suppe med nudler og sprøde grøntsager]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:vegetar|vegetariskbutterchickenmedbasmatirisogchapatibrød|asiatiskvegetarsuppemednudlerogsprødegrøntsager-20250319-0</guid>
+      <pubDate>Wed, 19 Mar 2025 08:32:38 +0000</pubDate>
     </item>
   </channel>
 </rss>
