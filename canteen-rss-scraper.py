@@ -47,8 +47,8 @@ def scrape_weekly_menus():
     Ændringer:
       - HUB1 opdeles i to separate hubs: "HUB1 – Kays" og "HUB1 – Kays Verdenskøkken"
         (baseret på om headeren indeholder "verdenskøkken").
-      - "GLOBETROTTER MENU" og "Vegetar" (og lignende) tilføjes som daglige menuer (mandag-fredag),
-        mens specifikke dage (fx "onsdag") kun tilføjes til den pågældende dag.
+      - "GLOBETROTTER MENU" og "Vegetar" (og lignende) tilføjes som daglige menuer,
+        men for HUB1 – Kays Verdenskøkken tilføjes de daglige menuer kun til mandag, tirsdag, torsdag og fredag.
     """
     html = get_rendered_html()
     soup = BeautifulSoup(html, "html.parser")
@@ -57,6 +57,7 @@ def scrape_weekly_menus():
     menus_by_hub = {}
     
     valid_days = ['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']
+    # Standard daglige hverdage for HUB1 – Kays og andre hubs
     daily_days = ['mandag','tirsdag','onsdag','torsdag','fredag']
     
     for div in hub_divs:
@@ -78,6 +79,12 @@ def scrape_weekly_menus():
             hub_name = "HUB3"
         else:
             continue
+        
+        # Hvis hub er HUB1 – Kays Verdenskøkken, definer de daglige dage uden onsdag
+        if hub_name == "HUB1 – Kays Verdenskøkken":
+            hub_daily_days = ['mandag', 'tirsdag', 'torsdag', 'fredag']
+        else:
+            hub_daily_days = daily_days
         
         block_menus = {}
         current_day = None
@@ -102,9 +109,9 @@ def scrape_weekly_menus():
                             collected_items.append(text)
         
         if not block_menus and collected_items:
-            block_menus = { day: collected_items.copy() for day in daily_days }
+            block_menus = { day: collected_items.copy() for day in hub_daily_days }
         else:
-            for d in daily_days:
+            for d in hub_daily_days:
                 if d not in block_menus:
                     block_menus[d] = collected_items.copy()
                 else:
@@ -121,7 +128,6 @@ def scrape_weekly_menus():
         else:
             menus_by_hub[hub_name] = block_menus
 
-    # De-duplikér alle lister for at sikre, at ingen dubleringer forekommer
     for hub in menus_by_hub:
         for day in menus_by_hub[hub]:
             menus_by_hub[hub][day] = list(dict.fromkeys(menus_by_hub[hub][day]))
@@ -134,7 +140,6 @@ def get_today_menus(menus_by_hub):
     ud fra de ugentlige data. Returnerer en liste med én streng per hub i formatet:
          "HUB-navn: menu-text"
     Hvor kun de fire ønskede hubs inkluderes, og hub-navnet og menuen vises samlet på én linje.
-    Dubleringer fjernes ved at splitte den samlede streng og genopbygge den med unikke elementer.
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -158,16 +163,14 @@ def get_today_menus(menus_by_hub):
         if hub not in ønskede_hubs:
             continue
         if today_da in menu_dict and menu_dict[today_da]:
-            # Slå alle menu-linjer sammen og split derefter på " | " for at fjerne dubleringer
-            combined = " | ".join(menu_dict[today_da])
-            items = [item.strip() for item in combined.split("|") if item.strip()]
             seen = set()
-            unique_items = []
-            for it in items:
-                if it not in seen:
-                    seen.add(it)
-                    unique_items.append(it)
-            menu_text = " | ".join(unique_items)
+            unique_menu = []
+            for item in menu_dict[today_da]:
+                normalized = " ".join(item.split())
+                if normalized not in seen:
+                    seen.add(normalized)
+                    unique_menu.append(item)
+            menu_text = " | ".join(unique_menu).replace("\n", " ").strip()
             today_menus.append(f"{hub}: {menu_text}")
     return today_menus
 
