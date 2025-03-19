@@ -21,12 +21,16 @@ def get_rendered_html():
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    
     driver = webdriver.Chrome(options=chrome_options)
+    driver.implicitly_wait(30)  # Sætter implicit ventetid
     
     driver.get(MENU_URL)
     try:
-        # Øger timeout til 60 sekunder for at sikre, at siden loader helt
-        wait = WebDriverWait(driver, 60)
+        # Øger timeout til 120 sekunder for at sikre, at siden loader helt
+        wait = WebDriverWait(driver, 120)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
@@ -131,7 +135,7 @@ def get_today_menus(menus_by_hub):
     Udtrækker dagens menu for hver hub (HUB1 – Kays, HUB1 – Kays Verdenskøkken, HUB2, HUB3)
     ud fra de ugentlige data. Returnerer en liste med én streng per hub i formatet:
          "HUB-navn: menu-text"
-    Hvor kun de fire ønskede hubs inkluderes, og hub-navnet og menuen vises samlet på én linje.
+    Hvor kun de fire ønskede hubs inkluderes, og hub-navn og menu er samlet på én linje.
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -225,4 +229,3 @@ if __name__ == "__main__":
     for menu in today_menus:
         print(menu)
     generate_rss(today_menus)
-
