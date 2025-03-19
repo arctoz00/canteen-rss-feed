@@ -30,7 +30,7 @@ def get_rendered_html():
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.et_pb_text_inner")))
     except Exception as e:
         print("Timed out waiting for content to load:", e)
-    time.sleep(2)  # Ekstra ventetid
+    time.sleep(2)
     html = driver.page_source
     driver.quit()
     return html
@@ -42,11 +42,10 @@ def scrape_weekly_menus():
        { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
     
     Ændringer:
-      - HUB1 opdeles nu i to separate hubs:
-          "HUB1 – Kays" og "HUB1 – Kays Verdenskøkken" (baseret på om headeren indeholder "verdenskøkken").
+      - HUB1 opdeles i to separate hubs: "HUB1 – Kays" og "HUB1 – Kays Verdenskøkken" 
+        (baseret på om headeren indeholder "verdenskøkken").
       - "GLOBETROTTER MENU" og "Vegetar" (og lignende) tilføjes som daglige menuer (mandag-fredag),
         mens specifikke dage (f.eks. "onsdag") kun tilføjes til den pågældende dag.
-      - Efterfølgende de-duplikeres menuerne for at undgå gentagelser.
     """
     html = get_rendered_html()
     soup = BeautifulSoup(html, "html.parser")
@@ -65,7 +64,7 @@ def scrape_weekly_menus():
         raw_header = header.get_text(separator=" ", strip=True)
         lower_header = raw_header.lower()
         
-        # Skelnen mellem HUB1 – Kays og HUB1 – Kays Verdenskøkken
+        # Skel mellem HUB1 – Kays og HUB1 – Kays Verdenskøkken
         if "hub1" in lower_header:
             if "verdenskøkken" in lower_header:
                 hub_name = "HUB1 – Kays Verdenskøkken"
@@ -80,18 +79,16 @@ def scrape_weekly_menus():
         
         block_menus = {}
         current_day = None
-        collected_items = []  # Samler menuer, der ikke er knyttet til en specifik dag
+        collected_items = []
         
         for p in div.find_all("p"):
             text = p.get_text(separator=" ", strip=True)
             candidate = text.replace(":", "").strip().lower()
-            # Hvis teksten præcist matcher en dag
             if candidate in valid_days:
                 current_day = candidate
                 if current_day not in block_menus:
                     block_menus[current_day] = []
             else:
-                # Hvis teksten indeholder "globetrotter menu" eller "vegetar", antages det at være daglig menu
                 if "globetrotter menu" in candidate or "vegetar" in candidate:
                     if text not in collected_items:
                         collected_items.append(text)
@@ -102,11 +99,9 @@ def scrape_weekly_menus():
                         if text not in collected_items:
                             collected_items.append(text)
         
-        # Hvis ingen specifikke dage fundet, og vi har collected_items, antages de at være daglige (mandag-fredag)
         if not block_menus and collected_items:
             block_menus = { day: collected_items.copy() for day in daily_days }
         else:
-            # Tilføj daily_items til alle hverdage uden dublering
             for d in daily_days:
                 if d not in block_menus:
                     block_menus[d] = collected_items.copy()
@@ -115,7 +110,6 @@ def scrape_weekly_menus():
                         if item not in block_menus[d]:
                             block_menus[d].append(item)
         
-        # Merge block_menus med overordnet dictionary
         if hub_name in menus_by_hub:
             for day, items in block_menus.items():
                 if day in menus_by_hub[hub_name]:
@@ -136,6 +130,7 @@ def get_today_menus(menus_by_hub):
     """
     Udtrækker dagens menu for hver hub (HUB1 – Kays, HUB1 – Kays Verdenskøkken, HUB2, HUB3)
     ud fra de ugentlige data. Returnerer en liste med én streng per hub, f.eks. "HUB2: menu-text".
+    Dubleringer fjernes.
     """
     weekday_mapping = {
         "Monday": "mandag",
@@ -155,8 +150,8 @@ def get_today_menus(menus_by_hub):
     today_menus = []
     for hub, menu_dict in menus_by_hub.items():
         if today_da in menu_dict and menu_dict[today_da]:
-            menu_text = " | ".join(menu_dict[today_da])
-            # Her bliver hub-navnet og menuen allerede sat sammen i én streng
+            deduped = list(dict.fromkeys(menu_dict[today_da]))
+            menu_text = " | ".join(deduped)
             today_menus.append(f"{hub}: {menu_text}")
     return today_menus
 
@@ -164,8 +159,9 @@ def generate_rss(menu_items):
     """
     Genererer et RSS-feed med et <item> per hub og gemmer det i RSS_FILE.
     Hvert item indeholder:
-      - <title> og <description> med hub-navn og menu (samlet på én linje) omsluttet af CDATA
+      - <title> (samlet hub-navn og menu) omsluttet af CDATA
       - <link> (MENU_URL)
+      - <description> (samlet hub-navn og menu) omsluttet af CDATA
       - <pubDate> i RFC-822 format
       - <guid> med attribut isPermaLink="false"
     Channel-elementet indeholder metadata inkl. et <atom:link> og et <docs>-element.
@@ -173,7 +169,6 @@ def generate_rss(menu_items):
     fg = FeedGenerator()
     today_str = datetime.date.today().strftime("%A, %d %B %Y")
     
-    # Channel metadata
     fg.title(f"Canteen Menu - {today_str}")
     fg.link(href=MENU_URL)
     fg.description("Dagligt opdateret canteen-menu")
@@ -183,7 +178,7 @@ def generate_rss(menu_items):
     fg.ttl(15)
     fg.docs("http://www.rssboard.org/rss-specification")
     
-    # Ændringen: Brug hele strengen fra get_today_menus uden at splitte den
+    # Brug hele strengen fra get_today_menus til både title og description
     for i, item in enumerate(menu_items):
         entry = fg.add_entry()
         entry.title(f"<![CDATA[{item}]]>")
@@ -194,25 +189,19 @@ def generate_rss(menu_items):
         guid_value = f"urn:canteen:{clean_item}-{datetime.datetime.now().strftime('%Y%m%d')}-{i}"
         entry.guid(guid_value)
     
-    # Generer RSS XML-streng
     rss_bytes = fg.rss_str(pretty=True)
     rss_str = rss_bytes.decode("utf-8")
     
-    # Indsæt manuelt et <atom:link> element lige efter <channel>
     atom_link_str = f'    <atom:link href="{FEED_URL}" rel="self" type="application/rss+xml"/>\n'
     rss_str = rss_str.replace("<channel>", "<channel>\n" + atom_link_str, 1)
     
-    # Indsæt et <docs> element lige efter <atom:link>
     docs_str = '    <docs>http://www.rssboard.org/rss-specification</docs>\n'
     rss_str = rss_str.replace(atom_link_str, atom_link_str + docs_str, 1)
     
-    # Sørg for, at CDATA ikke er escaped
     rss_str = rss_str.replace("&lt;![CDATA[", "<![CDATA[").replace("]]&gt;", "]]>")
     
-    # Tilføj isPermaLink="false" til alle <guid> elementer og omslut med CDATA
     rss_str = re.sub(r'<guid>(.*?)</guid>', r'<guid isPermaLink="false"><![CDATA[\1]]></guid>', rss_str)
     
-    # Wrap channel title and description with CDATA (kun én gang)
     rss_str = re.sub(r'<title>(.*?)</title>', r'<title><![CDATA[\1]]></title>', rss_str, count=1)
     rss_str = re.sub(r'<description>(.*?)</description>', r'<description><![CDATA[\1]]></description>', rss_str, count=1)
     
