@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Thursday, 20 March 2025]]></title>
+    <title><![CDATA[Canteen Menu - Friday, 21 March 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Thu, 20 Mar 2025 09:17:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Mar 2025 09:17:07 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Krydder medister – Syltede rødbeder, grønlangkål og bagte kartofler | Stegt spidskål med lys miso, sprødt og urter – Syltede rødbeder, grønlangkål og bagte kartofler | Vegetar: | Vegetarisk marokkansk tangine – Mynte yoghurt og couscous]]></title>
+      <title><![CDATA[HUB3: Bahn Mi med hoisin og citrongræs marineret oksekød – Syltet daikon, koriander, gulerod og chili mayonnaise | Bahn Mi med hoisin og citrongræs marineret tofu – Syltet daikon, koriander, gulerod og chili mayonnaise | Vegetar: | Vegetarisk marokkansk tangine – Mynte yoghurt og couscous]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Krydder medister – Syltede rødbeder, grønlangkål og bagte kartofler | Stegt spidskål med lys miso, sprødt og urter – Syltede rødbeder, grønlangkål og bagte kartofler | Vegetar: | Vegetarisk marokkansk tangine – Mynte yoghurt og couscous]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:kryddermedister–syltederødbeder,grønlangkålogbagtekartofler|stegtspidskålmedlysmiso,sprødtogurter–syltederødbeder,grønlangkålogbagtekartofler|vegetar:|vegetariskmarokkansktangine–mynteyoghurtogcouscous-20250320-3</guid>
-      <pubDate>Thu, 20 Mar 2025 09:17:51 +0000</pubDate>
+      <description><![CDATA[HUB3: Bahn Mi med hoisin og citrongræs marineret oksekød – Syltet daikon, koriander, gulerod og chili mayonnaise | Bahn Mi med hoisin og citrongræs marineret tofu – Syltet daikon, koriander, gulerod og chili mayonnaise | Vegetar: | Vegetarisk marokkansk tangine – Mynte yoghurt og couscous]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:bahnmimedhoisinogcitrongræsmarineretoksekød–syltetdaikon,koriander,gulerodogchilimayonnaise|bahnmimedhoisinogcitrongræsmarinerettofu–syltetdaikon,koriander,gulerodogchilimayonnaise|vegetar:|vegetariskmarokkansktangine–mynteyoghurtogcouscous-20250321-3</guid>
+      <pubDate>Fri, 21 Mar 2025 09:17:07 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Adeje kylling med kanariske kartofler og toppet med let grøntsalat med urter. Hertil mojosauce og aioli a part | Grillet ost med kanariske kartofler og toppet med let grøntsalat med urter. Hertil mojosauce og aioli a part | Vegetar]]></title>
+      <title><![CDATA[HUB2: Flæskestegs sandwich med det hele. Hertil brunsauce og kartoffelchips a part | Nordisk krydret bhaji sandwich med det hele. Hertil brunsauce og kartoffelchips a part | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Adeje kylling med kanariske kartofler og toppet med let grøntsalat med urter. Hertil mojosauce og aioli a part | Grillet ost med kanariske kartofler og toppet med let grøntsalat med urter. Hertil mojosauce og aioli a part | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:adejekyllingmedkanariskekartoflerogtoppetmedletgrøntsalatmedurter.hertilmojosauceogaioliapart|grilletostmedkanariskekartoflerogtoppetmedletgrøntsalatmedurter.hertilmojosauceogaioliapart|vegetar-20250320-2</guid>
-      <pubDate>Thu, 20 Mar 2025 09:17:51 +0000</pubDate>
+      <description><![CDATA[HUB2: Flæskestegs sandwich med det hele. Hertil brunsauce og kartoffelchips a part | Nordisk krydret bhaji sandwich med det hele. Hertil brunsauce og kartoffelchips a part | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:flæskestegssandwichmeddethele.hertilbrunsauceogkartoffelchipsapart|nordiskkrydretbhajisandwichmeddethele.hertilbrunsauceogkartoffelchipsapart|vegetar-20250321-2</guid>
+      <pubDate>Fri, 21 Mar 2025 09:17:07 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Bahn mi m/ citrongræs marineret kylling og vietnamesiske pickles | Vegetar | Bahn mi m/ citrongræs marineret tofu og vietnamesiske pickles | Svampe fyldt bagt peberfrugt med kartoffeltern, ristet jordskokker og vegetarisk kørvel sauce]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
       <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Bahn mi m/ citrongræs marineret kylling og vietnamesiske pickles | Vegetar | Bahn mi m/ citrongræs marineret tofu og vietnamesiske pickles | Svampe fyldt bagt peberfrugt med kartoffeltern, ristet jordskokker og vegetarisk kørvel sauce]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|bahnmim/citrongræsmarineretkyllingogvietnamesiskepickles|vegetar|bahnmim/citrongræsmarinerettofuogvietnamesiskepickles|svampefyldtbagtpeberfrugtmedkartoffeltern,ristetjordskokkerogvegetariskkørvelsauce-20250320-1</guid>
-      <pubDate>Thu, 20 Mar 2025 09:17:51 +0000</pubDate>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|bahnmim/citrongræsmarineretkyllingogvietnamesiskepickles|vegetar|bahnmim/citrongræsmarinerettofuogvietnamesiskepickles|svampefyldtbagtpeberfrugtmedkartoffeltern,ristetjordskokkerogvegetariskkørvelsauce-20250321-1</guid>
+      <pubDate>Fri, 21 Mar 2025 09:17:07 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Cremet svampe risotto med pulled kalkun | Cremet svampe risotto med confiteret tomat | Vegetar | Vegetarisk butter chicken med basmati ris og chapati brød | Asiatisk vegetar suppe med nudler og sprøde grøntsager]]></title>
+      <title><![CDATA[HUB1 – Kays: Bao med sursød gris og syltet kål | Bao med sursød svampe og syltet kål | Vegetar | Vegetarisk butter chicken med basmati ris og chapati brød | Asiatisk vegetar suppe med nudler og sprøde grøntsager]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Cremet svampe risotto med pulled kalkun | Cremet svampe risotto med confiteret tomat | Vegetar | Vegetarisk butter chicken med basmati ris og chapati brød | Asiatisk vegetar suppe med nudler og sprøde grøntsager]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:cremetsvamperisottomedpulledkalkun|cremetsvamperisottomedconfiterettomat|vegetar|vegetariskbutterchickenmedbasmatirisogchapatibrød|asiatiskvegetarsuppemednudlerogsprødegrøntsager-20250320-0</guid>
-      <pubDate>Thu, 20 Mar 2025 09:17:51 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Bao med sursød gris og syltet kål | Bao med sursød svampe og syltet kål | Vegetar | Vegetarisk butter chicken med basmati ris og chapati brød | Asiatisk vegetar suppe med nudler og sprøde grøntsager]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:baomedsursødgrisogsyltetkål|baomedsursødsvampeogsyltetkål|vegetar|vegetariskbutterchickenmedbasmatirisogchapatibrød|asiatiskvegetarsuppemednudlerogsprødegrøntsager-20250321-0</guid>
+      <pubDate>Fri, 21 Mar 2025 09:17:07 +0000</pubDate>
     </item>
   </channel>
 </rss>
