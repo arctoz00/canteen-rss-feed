@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Monday, 24 March 2025]]></title>
+    <title><![CDATA[Canteen Menu - Tuesday, 25 March 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Mon, 24 Mar 2025 09:18:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Mar 2025 09:17:48 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Harira – Nordafrikansk ret med braiseret lam, kikærter, bladkål, harissa og varme krydderier | Vegetar: | Vegetarisk Harira – Nordafrikansk ret med auberginer kikærter, bladkål, harissa og varme krydderier | Vegetarisk sausage rolls lavet på sorte bønner, varme krydderier, chili og butterdej]]></title>
+      <title><![CDATA[HUB3: Ovnstegt kylling, spidskål med hyldeblomst vinaigrette, bladkål og sauce velouté | Paneret grøntsagsbøffer, spidskål med hyldeblomst vinaigrette, bladkål og sauce velouté | Vegetar: | Vegetarisk Harira – Nordafrikansk ret med auberginer kikærter, bladkål, harissa og varme krydderier | Vegetarisk sausage rolls lavet på sorte bønner, varme krydderier, chili og butterdej]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Harira – Nordafrikansk ret med braiseret lam, kikærter, bladkål, harissa og varme krydderier | Vegetar: | Vegetarisk Harira – Nordafrikansk ret med auberginer kikærter, bladkål, harissa og varme krydderier | Vegetarisk sausage rolls lavet på sorte bønner, varme krydderier, chili og butterdej]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:harira–nordafrikanskretmedbraiseretlam,kikærter,bladkål,harissaogvarmekrydderier|vegetar:|vegetariskharira–nordafrikanskretmedauberginerkikærter,bladkål,harissaogvarmekrydderier|vegetarisksausagerollslavetpåsortebønner,varmekrydderier,chiliogbutterdej-20250324-3</guid>
-      <pubDate>Mon, 24 Mar 2025 09:18:53 +0000</pubDate>
+      <description><![CDATA[HUB3: Ovnstegt kylling, spidskål med hyldeblomst vinaigrette, bladkål og sauce velouté | Paneret grøntsagsbøffer, spidskål med hyldeblomst vinaigrette, bladkål og sauce velouté | Vegetar: | Vegetarisk Harira – Nordafrikansk ret med auberginer kikærter, bladkål, harissa og varme krydderier | Vegetarisk sausage rolls lavet på sorte bønner, varme krydderier, chili og butterdej]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:ovnstegtkylling,spidskålmedhyldeblomstvinaigrette,bladkålogsaucevelouté|paneretgrøntsagsbøffer,spidskålmedhyldeblomstvinaigrette,bladkålogsaucevelouté|vegetar:|vegetariskharira–nordafrikanskretmedauberginerkikærter,bladkål,harissaogvarmekrydderier|vegetarisksausagerollslavetpåsortebønner,varmekrydderier,chiliogbutterdej-20250325-3</guid>
+      <pubDate>Tue, 25 Mar 2025 09:17:48 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Okse Jægergryde med masser af grøntsager og basmati ris, toppet med hakket persille | Tomat-kikærtegryde med masser af grøntsager og basmati ris, toppet med hakket persille | Vegetar]]></title>
+      <title><![CDATA[HUB2: Vildsvin nudel stir-fry med masser af grøntsager, toppet med forårsløg. Hertil chilisauce og citron a part | Tofu nudel stir-fry med masser af grøntsager, toppet med forårsløg. Hertil chilisauce og citron a part | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Okse Jægergryde med masser af grøntsager og basmati ris, toppet med hakket persille | Tomat-kikærtegryde med masser af grøntsager og basmati ris, toppet med hakket persille | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:oksejægergrydemedmasserafgrøntsagerogbasmatiris,toppetmedhakketpersille|tomat-kikærtegrydemedmasserafgrøntsagerogbasmatiris,toppetmedhakketpersille|vegetar-20250324-2</guid>
-      <pubDate>Mon, 24 Mar 2025 09:18:53 +0000</pubDate>
+      <description><![CDATA[HUB2: Vildsvin nudel stir-fry med masser af grøntsager, toppet med forårsløg. Hertil chilisauce og citron a part | Tofu nudel stir-fry med masser af grøntsager, toppet med forårsløg. Hertil chilisauce og citron a part | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:vildsvinnudelstir-frymedmasserafgrøntsager,toppetmedforårsløg.hertilchilisauceogcitronapart|tofunudelstir-frymedmasserafgrøntsager,toppetmedforårsløg.hertilchilisauceogcitronapart|vegetar-20250325-2</guid>
+      <pubDate>Tue, 25 Mar 2025 09:17:48 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays Verdenskøkken: Dal Bhat med lam, fattoush og myntedressing | GLOBETROTTER MENU]]></title>
+      <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays Verdenskøkken: Dal Bhat med lam, fattoush og myntedressing | GLOBETROTTER MENU]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:dalbhatmedlam,fattoushogmyntedressing|globetrottermenu-20250324-1</guid>
-      <pubDate>Mon, 24 Mar 2025 09:18:53 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu-20250325-1</guid>
+      <pubDate>Tue, 25 Mar 2025 09:17:48 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays: Mandag Glaseret skinke med stuvet spinat og kartofler | Vegetar Glaseret selleribøf med stuvet spinat og kartofler | Tirsdag Stegt flæsk med persillesauce, kartofler og rødbeder | Vegetar Sprøde panerede tempeh med persillesauce, kartofler og rødbeder | Onsdag Linsecurry med kokosmælk og hjemmebagt naan | Torsdag Traditionel italiensk lasagne med bolognese/linser og frisk salat | Vegetar Linse- og auberginelasagne med frisk salat | Fredag Fish’n Chips med pommes frites og sauce tatar | Vegetar Crispy panerede seitan-“fish” med pommes frites og sauce tatar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
       <description><![CDATA[HUB1 – Kays: Mandag Glaseret skinke med stuvet spinat og kartofler | Vegetar Glaseret selleribøf med stuvet spinat og kartofler | Tirsdag Stegt flæsk med persillesauce, kartofler og rødbeder | Vegetar Sprøde panerede tempeh med persillesauce, kartofler og rødbeder | Onsdag Linsecurry med kokosmælk og hjemmebagt naan | Torsdag Traditionel italiensk lasagne med bolognese/linser og frisk salat | Vegetar Linse- og auberginelasagne med frisk salat | Fredag Fish’n Chips med pommes frites og sauce tatar | Vegetar Crispy panerede seitan-“fish” med pommes frites og sauce tatar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:mandagglaseretskinkemedstuvetspinatogkartofler|vegetarglaseretselleribøfmedstuvetspinatogkartofler|tirsdagstegtflæskmedpersillesauce,kartoflerogrødbeder|vegetarsprødepaneredetempehmedpersillesauce,kartoflerogrødbeder|onsdaglinsecurrymedkokosmælkoghjemmebagtnaan|torsdagtraditionelitaliensklasagnemedbolognese/linserogfrisksalat|vegetarlinse-ogauberginelasagnemedfrisksalat|fredagfish’nchipsmedpommesfritesogsaucetatar|vegetarcrispypaneredeseitan-“fish”medpommesfritesogsaucetatar-20250324-0</guid>
-      <pubDate>Mon, 24 Mar 2025 09:18:53 +0000</pubDate>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:mandagglaseretskinkemedstuvetspinatogkartofler|vegetarglaseretselleribøfmedstuvetspinatogkartofler|tirsdagstegtflæskmedpersillesauce,kartoflerogrødbeder|vegetarsprødepaneredetempehmedpersillesauce,kartoflerogrødbeder|onsdaglinsecurrymedkokosmælkoghjemmebagtnaan|torsdagtraditionelitaliensklasagnemedbolognese/linserogfrisksalat|vegetarlinse-ogauberginelasagnemedfrisksalat|fredagfish’nchipsmedpommesfritesogsaucetatar|vegetarcrispypaneredeseitan-“fish”medpommesfritesogsaucetatar-20250325-0</guid>
+      <pubDate>Tue, 25 Mar 2025 09:17:48 +0000</pubDate>
     </item>
   </channel>
 </rss>
