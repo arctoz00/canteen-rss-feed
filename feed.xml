@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Thursday, 27 March 2025]]></title>
+    <title><![CDATA[Canteen Menu - Friday, 28 March 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Thu, 27 Mar 2025 08:20:56 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Mar 2025 08:21:07 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Bagt mørksej med cremet orzo, strandkrabbebisque og safran aioli | Bagt porre med cremet orzo, grøntsagsfond og safran aioli | Vegetar: | Vegetarisk Harira – Nordafrikansk ret med auberginer kikærter, bladkål, harissa og varme krydderier | Vegetarisk sausage rolls lavet på sorte bønner, varme krydderier, chili og butterdej]]></title>
+      <title><![CDATA[HUB3: Sausage rolls på vildtkød og butterdej | Serveres med sprød salat og dijonnaise | Vegetar: | Vegetarisk Harira – Nordafrikansk ret med auberginer kikærter, bladkål, harissa og varme krydderier | Vegetarisk sausage rolls lavet på sorte bønner, varme krydderier, chili og butterdej]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Bagt mørksej med cremet orzo, strandkrabbebisque og safran aioli | Bagt porre med cremet orzo, grøntsagsfond og safran aioli | Vegetar: | Vegetarisk Harira – Nordafrikansk ret med auberginer kikærter, bladkål, harissa og varme krydderier | Vegetarisk sausage rolls lavet på sorte bønner, varme krydderier, chili og butterdej]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:bagtmørksejmedcremetorzo,strandkrabbebisqueogsafranaioli|bagtporremedcremetorzo,grøntsagsfondogsafranaioli|vegetar:|vegetariskharira–nordafrikanskretmedauberginerkikærter,bladkål,harissaogvarmekrydderier|vegetarisksausagerollslavetpåsortebønner,varmekrydderier,chiliogbutterdej-20250327-3</guid>
-      <pubDate>Thu, 27 Mar 2025 08:20:56 +0000</pubDate>
+      <description><![CDATA[HUB3: Sausage rolls på vildtkød og butterdej | Serveres med sprød salat og dijonnaise | Vegetar: | Vegetarisk Harira – Nordafrikansk ret med auberginer kikærter, bladkål, harissa og varme krydderier | Vegetarisk sausage rolls lavet på sorte bønner, varme krydderier, chili og butterdej]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:sausagerollspåvildtkødogbutterdej|serveresmedsprødsalatogdijonnaise|vegetar:|vegetariskharira–nordafrikanskretmedauberginerkikærter,bladkål,harissaogvarmekrydderier|vegetarisksausagerollslavetpåsortebønner,varmekrydderier,chiliogbutterdej-20250328-3</guid>
+      <pubDate>Fri, 28 Mar 2025 08:21:07 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Kylling Paprikash med kartoffelmos og toppet med peberfrugtsalsa | Svampe Paprikash med kartoffelmos og toppet med peberfrugtsalsa | Vegetar]]></title>
+      <title><![CDATA[HUB2: Fish and chips, med torsk, ristet kartofler og tatar sauce | Paneret paneer med ristede kartofler, toppet med krydderurtesalat, hertil tatarsauce. | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Kylling Paprikash med kartoffelmos og toppet med peberfrugtsalsa | Svampe Paprikash med kartoffelmos og toppet med peberfrugtsalsa | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:kyllingpaprikashmedkartoffelmosogtoppetmedpeberfrugtsalsa|svampepaprikashmedkartoffelmosogtoppetmedpeberfrugtsalsa|vegetar-20250327-2</guid>
-      <pubDate>Thu, 27 Mar 2025 08:20:56 +0000</pubDate>
+      <description><![CDATA[HUB2: Fish and chips, med torsk, ristet kartofler og tatar sauce | Paneret paneer med ristede kartofler, toppet med krydderurtesalat, hertil tatarsauce. | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:fishandchips,medtorsk,ristetkartoflerogtatarsauce|paneretpaneermedristedekartofler,toppetmedkrydderurtesalat,hertiltatarsauce.|vegetar-20250328-2</guid>
+      <pubDate>Fri, 28 Mar 2025 08:21:07 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Dal Bhat med lam, fattoush og myntedressing | Bemærk: Samme menu serveres mandag, tirsdag, torsdag og fredag. Onsdag har sin egen (vegetar)menu.]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
       <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Dal Bhat med lam, fattoush og myntedressing | Bemærk: Samme menu serveres mandag, tirsdag, torsdag og fredag. Onsdag har sin egen (vegetar)menu.]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag-tirsdag-torsdag-fredag|dalbhatmedlam,fattoushogmyntedressing|bemærk:sammemenuserveresmandag,tirsdag,torsdagogfredag.onsdagharsinegen(vegetar)menu.-20250327-1</guid>
-      <pubDate>Thu, 27 Mar 2025 08:20:56 +0000</pubDate>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag-tirsdag-torsdag-fredag|dalbhatmedlam,fattoushogmyntedressing|bemærk:sammemenuserveresmandag,tirsdag,torsdagogfredag.onsdagharsinegen(vegetar)menu.-20250328-1</guid>
+      <pubDate>Fri, 28 Mar 2025 08:21:07 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays: Mandag Glaseret skinke med stuvet spinat og kartofler | Vegetar Glaseret selleribøf med stuvet spinat og kartofler | Tirsdag Stegt flæsk med persillesauce, kartofler og rødbeder | Vegetar Sprøde panerede tempeh med persillesauce, kartofler og rødbeder | Onsdag Linsecurry med kokosmælk og hjemmebagt naan | Torsdag Traditionel italiensk lasagne med bolognese/linser og frisk salat | Vegetar Linse- og auberginelasagne med frisk salat | Fredag Fish’n Chips med pommes frites og sauce tatar | Vegetar Crispy panerede seitan-“fish” med pommes frites og sauce tatar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
       <description><![CDATA[HUB1 – Kays: Mandag Glaseret skinke med stuvet spinat og kartofler | Vegetar Glaseret selleribøf med stuvet spinat og kartofler | Tirsdag Stegt flæsk med persillesauce, kartofler og rødbeder | Vegetar Sprøde panerede tempeh med persillesauce, kartofler og rødbeder | Onsdag Linsecurry med kokosmælk og hjemmebagt naan | Torsdag Traditionel italiensk lasagne med bolognese/linser og frisk salat | Vegetar Linse- og auberginelasagne med frisk salat | Fredag Fish’n Chips med pommes frites og sauce tatar | Vegetar Crispy panerede seitan-“fish” med pommes frites og sauce tatar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:mandagglaseretskinkemedstuvetspinatogkartofler|vegetarglaseretselleribøfmedstuvetspinatogkartofler|tirsdagstegtflæskmedpersillesauce,kartoflerogrødbeder|vegetarsprødepaneredetempehmedpersillesauce,kartoflerogrødbeder|onsdaglinsecurrymedkokosmælkoghjemmebagtnaan|torsdagtraditionelitaliensklasagnemedbolognese/linserogfrisksalat|vegetarlinse-ogauberginelasagnemedfrisksalat|fredagfish’nchipsmedpommesfritesogsaucetatar|vegetarcrispypaneredeseitan-“fish”medpommesfritesogsaucetatar-20250327-0</guid>
-      <pubDate>Thu, 27 Mar 2025 08:20:56 +0000</pubDate>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:mandagglaseretskinkemedstuvetspinatogkartofler|vegetarglaseretselleribøfmedstuvetspinatogkartofler|tirsdagstegtflæskmedpersillesauce,kartoflerogrødbeder|vegetarsprødepaneredetempehmedpersillesauce,kartoflerogrødbeder|onsdaglinsecurrymedkokosmælkoghjemmebagtnaan|torsdagtraditionelitaliensklasagnemedbolognese/linserogfrisksalat|vegetarlinse-ogauberginelasagnemedfrisksalat|fredagfish’nchipsmedpommesfritesogsaucetatar|vegetarcrispypaneredeseitan-“fish”medpommesfritesogsaucetatar-20250328-0</guid>
+      <pubDate>Fri, 28 Mar 2025 08:21:07 +0000</pubDate>
     </item>
   </channel>
 </rss>
