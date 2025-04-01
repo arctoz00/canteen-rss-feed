@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Monday, 31 March 2025]]></title>
+    <title><![CDATA[Canteen Menu - Tuesday, 01 April 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Mon, 31 Mar 2025 08:22:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Apr 2025 08:21:40 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Chili con carne med ris og creme fraiche | Chili sin carne med soya fars, ris og creme fraiche | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></title>
+      <title><![CDATA[HUB3: Græsk bøf, fladbrød, tzatziki og frisk salat med løg, tomat og agurk | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Chili con carne med ris og creme fraiche | Chili sin carne med soya fars, ris og creme fraiche | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:chiliconcarnemedrisogcremefraiche|chilisincarnemedsoyafars,risogcremefraiche|vegetar:|vegetariskgyros,fladbrød,tzatzikiogfrisksalatmedløg,tomatogagurk|pølsevognenkommerforbimeddetheleogharvegetarpølsermed-20250331-3</guid>
-      <pubDate>Mon, 31 Mar 2025 08:22:42 +0000</pubDate>
+      <description><![CDATA[HUB3: Græsk bøf, fladbrød, tzatziki og frisk salat med løg, tomat og agurk | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:græskbøf,fladbrød,tzatzikiogfrisksalatmedløg,tomatogagurk|vegetar:|vegetariskgyros,fladbrød,tzatzikiogfrisksalatmedløg,tomatogagurk|pølsevognenkommerforbimeddetheleogharvegetarpølsermed-20250401-3</guid>
+      <pubDate>Tue, 01 Apr 2025 08:21:40 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Pasta bolognese med parmesanost og chilisovs a parte | Pasta bolognese med ærteprotein, parmesanost og chilisovs a parte | Vegetar:]]></title>
+      <title><![CDATA[HUB2: Svenske köttbullar med kartoffelmos, gräddsås og syltede tranbær | Bønnekugler med kartoffelmos, gräddsås og syltede tranbær | Vegetar:]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Pasta bolognese med parmesanost og chilisovs a parte | Pasta bolognese med ærteprotein, parmesanost og chilisovs a parte | Vegetar:]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:pastabolognesemedparmesanostogchilisovsaparte|pastabolognesemedærteprotein,parmesanostogchilisovsaparte|vegetar:-20250331-2</guid>
-      <pubDate>Mon, 31 Mar 2025 08:22:42 +0000</pubDate>
+      <description><![CDATA[HUB2: Svenske köttbullar med kartoffelmos, gräddsås og syltede tranbær | Bønnekugler med kartoffelmos, gräddsås og syltede tranbær | Vegetar:]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:svenskeköttbullarmedkartoffelmos,gräddsåsogsyltedetranbær|bønnekuglermedkartoffelmos,gräddsåsogsyltedetranbær|vegetar:-20250401-2</guid>
+      <pubDate>Tue, 01 Apr 2025 08:21:40 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Nasi Goreng med kylling, æg en cocotte og rejechips]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
       <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Nasi Goreng med kylling, æg en cocotte og rejechips]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag-tirsdag-torsdag-fredag|nasigorengmedkylling,ægencocotteogrejechips-20250331-1</guid>
-      <pubDate>Mon, 31 Mar 2025 08:22:42 +0000</pubDate>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag-tirsdag-torsdag-fredag|nasigorengmedkylling,ægencocotteogrejechips-20250401-1</guid>
+      <pubDate>Tue, 01 Apr 2025 08:21:40 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Hakkebøffer med bløde løg, skysauce, surt og dampet kartofler | Veggie bøffer med bløde løg, skysauce, surt og dampet kartofler | Vegetar]]></title>
+      <title><![CDATA[HUB1 – Kays: spicy kalkun med nudler og snittet grønt | Spicy vegansk ”hakkekød” med nudler og snittet grønt | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Hakkebøffer med bløde løg, skysauce, surt og dampet kartofler | Veggie bøffer med bløde løg, skysauce, surt og dampet kartofler | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:hakkebøffermedblødeløg,skysauce,surtogdampetkartofler|veggiebøffermedblødeløg,skysauce,surtogdampetkartofler|vegetar-20250331-0</guid>
-      <pubDate>Mon, 31 Mar 2025 08:22:42 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: spicy kalkun med nudler og snittet grønt | Spicy vegansk ”hakkekød” med nudler og snittet grønt | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:spicykalkunmednudlerogsnittetgrønt|spicyvegansk”hakkekød”mednudlerogsnittetgrønt|vegetar-20250401-0</guid>
+      <pubDate>Tue, 01 Apr 2025 08:21:40 +0000</pubDate>
     </item>
   </channel>
 </rss>
