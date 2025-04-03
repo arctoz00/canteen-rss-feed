@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Wednesday, 02 April 2025]]></title>
+    <title><![CDATA[Canteen Menu - Thursday, 03 April 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Wed, 02 Apr 2025 08:21:58 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Apr 2025 08:21:39 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Rød karry med peberfrugt, hvidkål, haricots vert, gulerødder og ris | DAGENS KAGE: Panna cotta med rabarber kompot | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></title>
+      <title><![CDATA[HUB3: Høns i asparges i tartelet | Svampe i asparges i tartelet | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Rød karry med peberfrugt, hvidkål, haricots vert, gulerødder og ris | DAGENS KAGE: Panna cotta med rabarber kompot | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:rødkarrymedpeberfrugt,hvidkål,haricotsvert,gulerødderogris|dagenskage:pannacottamedrabarberkompot|vegetar:|vegetariskgyros,fladbrød,tzatzikiogfrisksalatmedløg,tomatogagurk|pølsevognenkommerforbimeddetheleogharvegetarpølsermed-20250402-3</guid>
-      <pubDate>Wed, 02 Apr 2025 08:21:58 +0000</pubDate>
+      <description><![CDATA[HUB3: Høns i asparges i tartelet | Svampe i asparges i tartelet | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:hønsiaspargesitartelet|svampeiaspargesitartelet|vegetar:|vegetariskgyros,fladbrød,tzatzikiogfrisksalatmedløg,tomatogagurk|pølsevognenkommerforbimeddetheleogharvegetarpølsermed-20250403-3</guid>
+      <pubDate>Thu, 03 Apr 2025 08:21:39 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Tortilla med bønneragout, salsa, sprøde grøntsager og creme fraiche | Dagens kage: Bærkage | Vegetar:]]></title>
+      <title><![CDATA[HUB2: Dansk kylling i karry aka ris taffel | Blomkål i karry med ris taffel | Vegetar:]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Tortilla med bønneragout, salsa, sprøde grøntsager og creme fraiche | Dagens kage: Bærkage | Vegetar:]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:tortillamedbønneragout,salsa,sprødegrøntsagerogcremefraiche|dagenskage:bærkage|vegetar:-20250402-2</guid>
-      <pubDate>Wed, 02 Apr 2025 08:21:58 +0000</pubDate>
+      <description><![CDATA[HUB2: Dansk kylling i karry aka ris taffel | Blomkål i karry med ris taffel | Vegetar:]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:danskkyllingikarryakaristaffel|blomkålikarrymedristaffel|vegetar:-20250403-2</guid>
+      <pubDate>Thu, 03 Apr 2025 08:21:39 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays Verdenskøkken: Sri Lanka gryde med tofu og grøntsager | HOMEBOUND MENU | Mandag-tirsdag-torsdag-fredag | Økologisk hønsefrikassé med dampet små kartofler, hakket persille og syltet rabarber | Nøddetærte med pommes rösti og sauce verte | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing. | Dagens måltidssalat med vegansk protein samt topping og dressing.]]></title>
+      <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Nasi Goreng med kylling, æg en cocotte og rejechips]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays Verdenskøkken: Sri Lanka gryde med tofu og grøntsager | HOMEBOUND MENU | Mandag-tirsdag-torsdag-fredag | Økologisk hønsefrikassé med dampet små kartofler, hakket persille og syltet rabarber | Nøddetærte med pommes rösti og sauce verte | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing. | Dagens måltidssalat med vegansk protein samt topping og dressing.]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:srilankagrydemedtofuoggrøntsager|homeboundmenu|mandag-tirsdag-torsdag-fredag|økologiskhønsefrikassémeddampetsmåkartofler,hakketpersilleogsyltetrabarber|nøddetærtemedpommesröstiogsauceverte|sproutmenu|mandag,tirsdag,torsdagogfredag|dagensmåltidssalatmedvalgfritkød,fiskellerveganskproteinsamttoppingogdressing.|dagensmåltidssalatmedveganskproteinsamttoppingogdressing.-20250402-1</guid>
-      <pubDate>Wed, 02 Apr 2025 08:21:58 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Nasi Goreng med kylling, æg en cocotte og rejechips]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag-tirsdag-torsdag-fredag|nasigorengmedkylling,ægencocotteogrejechips-20250403-1</guid>
+      <pubDate>Thu, 03 Apr 2025 08:21:39 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Safran risotto med confiteret tomat og syltede bøgehatte | Vegetar]]></title>
+      <title><![CDATA[HUB1 – Kays: Pulledpork terrine med let røget kartoffeltern og blomkålspure | grønsagsterrine med let røget kartoffeltern og blomkålspure | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Safran risotto med confiteret tomat og syltede bøgehatte | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:safranrisottomedconfiterettomatogsyltedebøgehatte|vegetar-20250402-0</guid>
-      <pubDate>Wed, 02 Apr 2025 08:21:58 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Pulledpork terrine med let røget kartoffeltern og blomkålspure | grønsagsterrine med let røget kartoffeltern og blomkålspure | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:pulledporkterrinemedletrøgetkartoffelternogblomkålspure|grønsagsterrinemedletrøgetkartoffelternogblomkålspure|vegetar-20250403-0</guid>
+      <pubDate>Thu, 03 Apr 2025 08:21:39 +0000</pubDate>
     </item>
   </channel>
 </rss>
