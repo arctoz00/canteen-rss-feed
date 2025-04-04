@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Thursday, 03 April 2025]]></title>
+    <title><![CDATA[Canteen Menu - Friday, 04 April 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Thu, 03 Apr 2025 08:21:39 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Apr 2025 08:21:00 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Høns i asparges i tartelet | Svampe i asparges i tartelet | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></title>
+      <title><![CDATA[HUB3: Pølsevognen kommer forbi med det hele | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Høns i asparges i tartelet | Svampe i asparges i tartelet | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:hønsiaspargesitartelet|svampeiaspargesitartelet|vegetar:|vegetariskgyros,fladbrød,tzatzikiogfrisksalatmedløg,tomatogagurk|pølsevognenkommerforbimeddetheleogharvegetarpølsermed-20250403-3</guid>
-      <pubDate>Thu, 03 Apr 2025 08:21:39 +0000</pubDate>
+      <description><![CDATA[HUB3: Pølsevognen kommer forbi med det hele | Vegetar: | Vegetarisk gyros, fladbrød, tzatziki og frisk salatmed løg, tomat og agurk | Pølsevognen kommer forbi med det hele og har vegetar pølser med]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:pølsevognenkommerforbimeddethele|vegetar:|vegetariskgyros,fladbrød,tzatzikiogfrisksalatmedløg,tomatogagurk|pølsevognenkommerforbimeddetheleogharvegetarpølsermed-20250404-3</guid>
+      <pubDate>Fri, 04 Apr 2025 08:21:00 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Dansk kylling i karry aka ris taffel | Blomkål i karry med ris taffel | Vegetar:]]></title>
+      <title><![CDATA[HUB2: Pita kebab med salat, agurk, syltet kål, tomat, stærk chili og hvidløgs dressing | Pita falafel med salat, agurk, syltet kål, tomat, stærk chili og hvidløgs dressing | Vegetar:]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Dansk kylling i karry aka ris taffel | Blomkål i karry med ris taffel | Vegetar:]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:danskkyllingikarryakaristaffel|blomkålikarrymedristaffel|vegetar:-20250403-2</guid>
-      <pubDate>Thu, 03 Apr 2025 08:21:39 +0000</pubDate>
+      <description><![CDATA[HUB2: Pita kebab med salat, agurk, syltet kål, tomat, stærk chili og hvidløgs dressing | Pita falafel med salat, agurk, syltet kål, tomat, stærk chili og hvidløgs dressing | Vegetar:]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:pitakebabmedsalat,agurk,syltetkål,tomat,stærkchilioghvidløgsdressing|pitafalafelmedsalat,agurk,syltetkål,tomat,stærkchilioghvidløgsdressing|vegetar:-20250404-2</guid>
+      <pubDate>Fri, 04 Apr 2025 08:21:00 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Nasi Goreng med kylling, æg en cocotte og rejechips]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
       <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Nasi Goreng med kylling, æg en cocotte og rejechips]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag-tirsdag-torsdag-fredag|nasigorengmedkylling,ægencocotteogrejechips-20250403-1</guid>
-      <pubDate>Thu, 03 Apr 2025 08:21:39 +0000</pubDate>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag-tirsdag-torsdag-fredag|nasigorengmedkylling,ægencocotteogrejechips-20250404-1</guid>
+      <pubDate>Fri, 04 Apr 2025 08:21:00 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Pulledpork terrine med let røget kartoffeltern og blomkålspure | grønsagsterrine med let røget kartoffeltern og blomkålspure | Vegetar]]></title>
+      <title><![CDATA[HUB1 – Kays: Gourmet hotdog | Vegansk gourmet hotdog | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Pulledpork terrine med let røget kartoffeltern og blomkålspure | grønsagsterrine med let røget kartoffeltern og blomkålspure | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:pulledporkterrinemedletrøgetkartoffelternogblomkålspure|grønsagsterrinemedletrøgetkartoffelternogblomkålspure|vegetar-20250403-0</guid>
-      <pubDate>Thu, 03 Apr 2025 08:21:39 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Gourmet hotdog | Vegansk gourmet hotdog | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:gourmethotdog|veganskgourmethotdog|vegetar-20250404-0</guid>
+      <pubDate>Fri, 04 Apr 2025 08:21:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
