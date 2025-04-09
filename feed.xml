@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Tuesday, 08 April 2025]]></title>
+    <title><![CDATA[Canteen Menu - Wednesday, 09 April 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Tue, 08 Apr 2025 08:22:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Apr 2025 08:23:11 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Butterdejstærte med mørksej, spinat og mozzarella, hertil en sprød, frisk salat | Butterdejstærte med porre, spinat og mozzarella, hertil en sprød, frisk salat | Vegetar: | Vegetarisk butter chicken, ris, creme fraiche og koriander | Vegetarisk paprikagryde, med masser af grøntsager og bælgfrugter, grov kartoffelmos og persille]]></title>
+      <title><![CDATA[HUB3: Pasta ai funghi – cremet svampe pasta med salsa verde | Dagens kage: Mazarinkage med æbler, rabarber og creme fraiche a part | Vegetar: | Vegetarisk butter chicken, ris, creme fraiche og koriander | Vegetarisk paprikagryde, med masser af grøntsager og bælgfrugter, grov kartoffelmos og persille]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Butterdejstærte med mørksej, spinat og mozzarella, hertil en sprød, frisk salat | Butterdejstærte med porre, spinat og mozzarella, hertil en sprød, frisk salat | Vegetar: | Vegetarisk butter chicken, ris, creme fraiche og koriander | Vegetarisk paprikagryde, med masser af grøntsager og bælgfrugter, grov kartoffelmos og persille]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:butterdejstærtemedmørksej,spinatogmozzarella,hertilensprød,frisksalat|butterdejstærtemedporre,spinatogmozzarella,hertilensprød,frisksalat|vegetar:|vegetariskbutterchicken,ris,cremefraicheogkoriander|vegetariskpaprikagryde,medmasserafgrøntsagerogbælgfrugter,grovkartoffelmosogpersille-20250408-3</guid>
-      <pubDate>Tue, 08 Apr 2025 08:22:32 +0000</pubDate>
+      <description><![CDATA[HUB3: Pasta ai funghi – cremet svampe pasta med salsa verde | Dagens kage: Mazarinkage med æbler, rabarber og creme fraiche a part | Vegetar: | Vegetarisk butter chicken, ris, creme fraiche og koriander | Vegetarisk paprikagryde, med masser af grøntsager og bælgfrugter, grov kartoffelmos og persille]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:pastaaifunghi–cremetsvampepastamedsalsaverde|dagenskage:mazarinkagemedæbler,rabarberogcremefraicheapart|vegetar:|vegetariskbutterchicken,ris,cremefraicheogkoriander|vegetariskpaprikagryde,medmasserafgrøntsagerogbælgfrugter,grovkartoffelmosogpersille-20250409-3</guid>
+      <pubDate>Wed, 09 Apr 2025 08:23:11 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Look Chin, thailandske kødboller, nudler, broccoli, bønnespirer og pad thai sauce | Vegetar: | Tofu, nudler, broccoli, bønnespirer og vegetarisk pad thai sauce]]></title>
+      <title><![CDATA[HUB2: Tomatsuppe med hvidløgs ostebrød, suppehorn, creme fraiche og persille | Dagens kage: Chokolade kage | Vegetar: | Tofu, nudler, broccoli, bønnespirer og vegetarisk pad thai sauce]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Look Chin, thailandske kødboller, nudler, broccoli, bønnespirer og pad thai sauce | Vegetar: | Tofu, nudler, broccoli, bønnespirer og vegetarisk pad thai sauce]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:lookchin,thailandskekødboller,nudler,broccoli,bønnespirerogpadthaisauce|vegetar:|tofu,nudler,broccoli,bønnespirerogvegetariskpadthaisauce-20250408-2</guid>
-      <pubDate>Tue, 08 Apr 2025 08:22:32 +0000</pubDate>
+      <description><![CDATA[HUB2: Tomatsuppe med hvidløgs ostebrød, suppehorn, creme fraiche og persille | Dagens kage: Chokolade kage | Vegetar: | Tofu, nudler, broccoli, bønnespirer og vegetarisk pad thai sauce]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:tomatsuppemedhvidløgsostebrød,suppehorn,cremefraicheogpersille|dagenskage:chokoladekage|vegetar:|tofu,nudler,broccoli,bønnespirerogvegetariskpadthaisauce-20250409-2</guid>
+      <pubDate>Wed, 09 Apr 2025 08:23:11 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Pad see Ew med svinekød og sprød topping | Vegetar / Vegetarian | Vegetar pad see Ew med svampe og sprød topping | Onsdag Vegetar pad see Ew med svampe og sprød topping | HOMEBOUND MENU | Skipperlabsskov med ristet rugbrød, hjemme syltet rødbeder, pisket smør, purløg og grov sennep]]></title>
+      <title><![CDATA[HUB1 – Kays Verdenskøkken: Kartoffelsuppe med ristet kartofler i tern, parmesan flan, ramsløg olie og friske urter | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing. | Dagens måltidssalat med vegansk protein samt topping og dressing.]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag-tirsdag-torsdag-fredag | Pad see Ew med svinekød og sprød topping | Vegetar / Vegetarian | Vegetar pad see Ew med svampe og sprød topping | Onsdag Vegetar pad see Ew med svampe og sprød topping | HOMEBOUND MENU | Skipperlabsskov med ristet rugbrød, hjemme syltet rødbeder, pisket smør, purløg og grov sennep]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag-tirsdag-torsdag-fredag|padseeewmedsvinekødogsprødtopping|vegetar/vegetarian|vegetarpadseeewmedsvampeogsprødtopping|onsdagvegetarpadseeewmedsvampeogsprødtopping|homeboundmenu|skipperlabsskovmedristetrugbrød,hjemmesyltetrødbeder,pisketsmør,purløgoggrovsennep-20250408-1</guid>
-      <pubDate>Tue, 08 Apr 2025 08:22:32 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays Verdenskøkken: Kartoffelsuppe med ristet kartofler i tern, parmesan flan, ramsløg olie og friske urter | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing. | Dagens måltidssalat med vegansk protein samt topping og dressing.]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:kartoffelsuppemedristetkartofleritern,parmesanflan,ramsløgolieogfriskeurter|sproutmenu|mandag,tirsdag,torsdagogfredag|dagensmåltidssalatmedvalgfritkød,fiskellerveganskproteinsamttoppingogdressing.|dagensmåltidssalatmedveganskproteinsamttoppingogdressing.-20250409-1</guid>
+      <pubDate>Wed, 09 Apr 2025 08:23:11 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Dansk Farsbrød med kogte kartofler, stuvet ærter og sylt | Vegetar | Vegetar deller med kogte kartofler, stuvet ærter og sylt]]></title>
+      <title><![CDATA[HUB1 – Kays: Gnocchi i cremet franske skovsvampesauce med ristet vand kastanjer og friteret rødbeder | Vegetar | Vegetar deller med kogte kartofler, stuvet ærter og sylt]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Dansk Farsbrød med kogte kartofler, stuvet ærter og sylt | Vegetar | Vegetar deller med kogte kartofler, stuvet ærter og sylt]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:danskfarsbrødmedkogtekartofler,stuvetærterogsylt|vegetar|vegetardellermedkogtekartofler,stuvetærterogsylt-20250408-0</guid>
-      <pubDate>Tue, 08 Apr 2025 08:22:32 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Gnocchi i cremet franske skovsvampesauce med ristet vand kastanjer og friteret rødbeder | Vegetar | Vegetar deller med kogte kartofler, stuvet ærter og sylt]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:gnocchiicremetfranskeskovsvampesaucemedristetvandkastanjerogfriteretrødbeder|vegetar|vegetardellermedkogtekartofler,stuvetærterogsylt-20250409-0</guid>
+      <pubDate>Wed, 09 Apr 2025 08:23:11 +0000</pubDate>
     </item>
   </channel>
 </rss>
