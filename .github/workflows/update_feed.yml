@@ -2,7 +2,7 @@ name: Opdater Canteen RSS Feed
 
 on:
   schedule:
-    - cron: "0 8 * * *"  # Kører dagligt kl. 09:00 UTC
+    - cron: "0 8 * * *"  
   workflow_dispatch:
 
 jobs:
