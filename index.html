@@ -7,7 +7,6 @@
 <body>
   <pre id="rawFeed">Henter RSS-feed…</pre>
   <script>
-    // Hent RSS-feedet og udskriv det som ren tekst
     fetch('https://arctoz00.github.io/canteen-rss-feed/feed.xml')
       .then(response => response.text())
       .then(data => {
