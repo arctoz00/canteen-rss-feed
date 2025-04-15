@@ -15,9 +15,6 @@ FEED_URL = "https://arctoz00.github.io/canteen-rss-feed/feed.xml"  # Opdater til
 RSS_FILE = "feed.xml"
 
 def get_rendered_html():
-    """
-    Loader siden med Selenium i headless mode og returnerer den fuldt renderede HTML.
-    """
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")
@@ -39,17 +36,7 @@ def get_rendered_html():
     return html
 
 def scrape_weekly_menus():
-    """
-    Parser den fuldt renderede HTML og udtrækker de ugentlige menuer for hver hub.
-    Returnerer en dict med formatet:
-       { hub_navn: { dag (i små bogstaver): [liste af menu-tekster] } }
     
-    Ændringer:
-      - HUB1 opdeles i to separate hubs: "HUB1 – Kays" og "HUB1 – Kays Verdenskøkken"
-        (baseret på om headeren indeholder "verdenskøkken").
-      - "GLOBETROTTER MENU" og "Vegetar" (og lignende) tilføjes som daglige menuer,
-        men for HUB1 – Kays Verdenskøkken tilføjes de daglige menuer kun til mandag, tirsdag, torsdag og fredag.
-    """
     html = get_rendered_html()
     soup = BeautifulSoup(html, "html.parser")
     
@@ -57,7 +44,6 @@ def scrape_weekly_menus():
     menus_by_hub = {}
     
     valid_days = ['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']
-    # Standard daglige hverdage for HUB1 – Kays og andre hubs
     daily_days = ['mandag','tirsdag','onsdag','torsdag','fredag']
     
     for div in hub_divs:
@@ -80,7 +66,6 @@ def scrape_weekly_menus():
         else:
             continue
         
-        # Hvis hub er HUB1 – Kays Verdenskøkken, definer de daglige dage uden onsdag
         if hub_name == "HUB1 – Kays Verdenskøkken":
             hub_daily_days = ['mandag', 'tirsdag', 'torsdag', 'fredag']
         else:
@@ -135,12 +120,6 @@ def scrape_weekly_menus():
     return menus_by_hub
 
 def get_today_menus(menus_by_hub):
-    """
-    Udtrækker dagens menu for hver hub (HUB1 – Kays, HUB1 – Kays Verdenskøkken, HUB2, HUB3)
-    ud fra de ugentlige data. Returnerer en liste med én streng per hub i formatet:
-         "HUB-navn: menu-text"
-    Hvor kun de fire ønskede hubs inkluderes, og hub-navnet og menuen vises samlet på én linje.
-    """
     weekday_mapping = {
         "Monday": "mandag",
         "Tuesday": "tirsdag",
@@ -175,15 +154,6 @@ def get_today_menus(menus_by_hub):
     return today_menus
 
 def generate_rss(menu_items):
-    """
-    Genererer et RSS-feed med et <item> per hub og gemmer det i RSS_FILE.
-    Hvert item indeholder:
-      - <title> og <description> med den samlede streng (hub-navn og menu) omsluttet af CDATA
-      - <link> (MENU_URL)
-      - <pubDate> i RFC-822 format
-      - <guid> med attribut isPermaLink="false"
-    Channel-elementet indeholder metadata inkl. et <atom:link> og et <docs>-element.
-    """
     fg = FeedGenerator()
     today_str = datetime.date.today().strftime("%A, %d %B %Y")
     
