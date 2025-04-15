@@ -194,7 +194,7 @@ def generate_rss(menu_items):
     
     with open(RSS_FILE, "w", encoding="utf-8") as f:
         f.write(rss_str)
-    print("✅ RSS feed opdateret!")
+    print("RSS feed opdateret")
 
 if __name__ == "__main__":
     menus_by_hub = scrape_weekly_menus()
