@@ -4,34 +4,34 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Tuesday, 22 April 2025]]></title>
+    <title><![CDATA[Canteen Menu - Wednesday, 23 April 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Tue, 22 Apr 2025 08:22:05 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Apr 2025 08:22:01 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Pasta ragout in bianco, lavet på gris, pancetta, salvie, hvidvin, sødmælk og parmesan | Cremet svampe pasta med parmesan og persille | Vegetar:]]></title>
+      <title><![CDATA[HUB3: Blomkålssteak med butterbean hummus og zhoug | DAGENS KAGE: Banankage med mørk chokolade | Vegetar:]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Pasta ragout in bianco, lavet på gris, pancetta, salvie, hvidvin, sødmælk og parmesan | Cremet svampe pasta med parmesan og persille | Vegetar:]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:pastaragoutinbianco,lavetpågris,pancetta,salvie,hvidvin,sødmælkogparmesan|cremetsvampepastamedparmesanogpersille|vegetar:-20250422-2</guid>
-      <pubDate>Tue, 22 Apr 2025 08:22:05 +0000</pubDate>
+      <description><![CDATA[HUB3: Blomkålssteak med butterbean hummus og zhoug | DAGENS KAGE: Banankage med mørk chokolade | Vegetar:]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:blomkålssteakmedbutterbeanhummusogzhoug|dagenskage:banankagemedmørkchokolade|vegetar:-20250423-2</guid>
+      <pubDate>Wed, 23 Apr 2025 08:22:01 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Fiskefrikadeller med kartofler, remoulade, citron og dild | Grøntsagsfrikadeller med kartofler, remoulade, citron og dild | Vegetar:]]></title>
+      <title><![CDATA[HUB2: Blomkål i cremet karrysauce, basmati ris, koriander og chili sauce | Dagens kage: Chokolade kage | Vegetar:]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Fiskefrikadeller med kartofler, remoulade, citron og dild | Grøntsagsfrikadeller med kartofler, remoulade, citron og dild | Vegetar:]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:fiskefrikadellermedkartofler,remoulade,citronogdild|grøntsagsfrikadellermedkartofler,remoulade,citronogdild|vegetar:-20250422-1</guid>
-      <pubDate>Tue, 22 Apr 2025 08:22:05 +0000</pubDate>
+      <description><![CDATA[HUB2: Blomkål i cremet karrysauce, basmati ris, koriander og chili sauce | Dagens kage: Chokolade kage | Vegetar:]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:blomkålicremetkarrysauce,basmatiris,korianderogchilisauce|dagenskage:chokoladekage|vegetar:-20250423-1</guid>
+      <pubDate>Wed, 23 Apr 2025 08:22:01 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Butter chicken med hjemmelavet naanbrød, brændt kål, syrlige peberfrugt og dampet ris | med hjemmelavet naanbrød, brændt kål, syrlige peberfrugt og dampet ris | Vegetar | Vegetar butter chicken | Vegetar Pide med çoban salatasi]]></title>
+      <title><![CDATA[HUB1 – Kays: Fettuccine Alfredo med semidried tomater og syltet svampe | Vegetar | Vegetar butter chicken | Vegetar Pide med çoban salatasi]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Butter chicken med hjemmelavet naanbrød, brændt kål, syrlige peberfrugt og dampet ris | med hjemmelavet naanbrød, brændt kål, syrlige peberfrugt og dampet ris | Vegetar | Vegetar butter chicken | Vegetar Pide med çoban salatasi]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:butterchickenmedhjemmelavetnaanbrød,brændtkål,syrligepeberfrugtogdampetris|medhjemmelavetnaanbrød,brændtkål,syrligepeberfrugtogdampetris|vegetar|vegetarbutterchicken|vegetarpidemedçobansalatasi-20250422-0</guid>
-      <pubDate>Tue, 22 Apr 2025 08:22:05 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Fettuccine Alfredo med semidried tomater og syltet svampe | Vegetar | Vegetar butter chicken | Vegetar Pide med çoban salatasi]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:fettuccinealfredomedsemidriedtomaterogsyltetsvampe|vegetar|vegetarbutterchicken|vegetarpidemedçobansalatasi-20250423-0</guid>
+      <pubDate>Wed, 23 Apr 2025 08:22:01 +0000</pubDate>
     </item>
   </channel>
 </rss>
