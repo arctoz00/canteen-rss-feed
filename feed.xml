@@ -4,34 +4,34 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Wednesday, 23 April 2025]]></title>
+    <title><![CDATA[Canteen Menu - Thursday, 24 April 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Wed, 23 Apr 2025 08:22:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Apr 2025 08:22:03 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Blomkålssteak med butterbean hummus og zhoug | DAGENS KAGE: Banankage med mørk chokolade | Vegetar:]]></title>
+      <title><![CDATA[HUB3: Forårsfrikasse med kylling, asparges, spidskål, nye løg, hestebønner og aspargeskartofler | Forårsfrikasse med courgetter, stegte svampe, asparges, spidskål, nye løg, hestebønner og aspargeskartofler | Vegetar:]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Blomkålssteak med butterbean hummus og zhoug | DAGENS KAGE: Banankage med mørk chokolade | Vegetar:]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:blomkålssteakmedbutterbeanhummusogzhoug|dagenskage:banankagemedmørkchokolade|vegetar:-20250423-2</guid>
-      <pubDate>Wed, 23 Apr 2025 08:22:01 +0000</pubDate>
+      <description><![CDATA[HUB3: Forårsfrikasse med kylling, asparges, spidskål, nye løg, hestebønner og aspargeskartofler | Forårsfrikasse med courgetter, stegte svampe, asparges, spidskål, nye løg, hestebønner og aspargeskartofler | Vegetar:]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:forårsfrikassemedkylling,asparges,spidskål,nyeløg,hestebønnerogaspargeskartofler|forårsfrikassemedcourgetter,stegtesvampe,asparges,spidskål,nyeløg,hestebønnerogaspargeskartofler|vegetar:-20250424-2</guid>
+      <pubDate>Thu, 24 Apr 2025 08:22:03 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Blomkål i cremet karrysauce, basmati ris, koriander og chili sauce | Dagens kage: Chokolade kage | Vegetar:]]></title>
+      <title><![CDATA[HUB2: Pasta penne med hakket oksekød, svampe, spinat, fløde og persille | Pasta penne med ærteprotein, svampe, spinat, fløde og persille | Vegetar:]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Blomkål i cremet karrysauce, basmati ris, koriander og chili sauce | Dagens kage: Chokolade kage | Vegetar:]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:blomkålicremetkarrysauce,basmatiris,korianderogchilisauce|dagenskage:chokoladekage|vegetar:-20250423-1</guid>
-      <pubDate>Wed, 23 Apr 2025 08:22:01 +0000</pubDate>
+      <description><![CDATA[HUB2: Pasta penne med hakket oksekød, svampe, spinat, fløde og persille | Pasta penne med ærteprotein, svampe, spinat, fløde og persille | Vegetar:]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:pastapennemedhakketoksekød,svampe,spinat,flødeogpersille|pastapennemedærteprotein,svampe,spinat,flødeogpersille|vegetar:-20250424-1</guid>
+      <pubDate>Thu, 24 Apr 2025 08:22:03 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Fettuccine Alfredo med semidried tomater og syltet svampe | Vegetar | Vegetar butter chicken | Vegetar Pide med çoban salatasi]]></title>
+      <title><![CDATA[HUB1 – Kays: Asian Pork belly med nudler og sprøde grønsager | Asian tofu med nudler og sprøde grønsager | Vegetar | Vegetar butter chicken | Vegetar Pide med çoban salatasi]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Fettuccine Alfredo med semidried tomater og syltet svampe | Vegetar | Vegetar butter chicken | Vegetar Pide med çoban salatasi]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:fettuccinealfredomedsemidriedtomaterogsyltetsvampe|vegetar|vegetarbutterchicken|vegetarpidemedçobansalatasi-20250423-0</guid>
-      <pubDate>Wed, 23 Apr 2025 08:22:01 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Asian Pork belly med nudler og sprøde grønsager | Asian tofu med nudler og sprøde grønsager | Vegetar | Vegetar butter chicken | Vegetar Pide med çoban salatasi]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:asianporkbellymednudlerogsprødegrønsager|asiantofumednudlerogsprødegrønsager|vegetar|vegetarbutterchicken|vegetarpidemedçobansalatasi-20250424-0</guid>
+      <pubDate>Thu, 24 Apr 2025 08:22:03 +0000</pubDate>
     </item>
   </channel>
 </rss>
