@@ -4,34 +4,34 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Wednesday, 30 April 2025]]></title>
+    <title><![CDATA[Canteen Menu - Thursday, 01 May 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Wed, 30 Apr 2025 08:22:23 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 May 2025 08:21:47 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Pasta e fagioli med parmesan og bredbladet persille | Dagens kage: Chokoladekage med choko glasur | Vegetar:]]></title>
+      <title><![CDATA[HUB3: Farsbrød, kartoffelsalat med forårets sprøde grøntsager og ramsløg | Grøntsagsdeller, kartoffelsalat med forårets sprøde grøntsager og ramsløg | Vegetar:]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Pasta e fagioli med parmesan og bredbladet persille | Dagens kage: Chokoladekage med choko glasur | Vegetar:]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:pastaefagiolimedparmesanogbredbladetpersille|dagenskage:chokoladekagemedchokoglasur|vegetar:-20250430-2</guid>
-      <pubDate>Wed, 30 Apr 2025 08:22:23 +0000</pubDate>
+      <description><![CDATA[HUB3: Farsbrød, kartoffelsalat med forårets sprøde grøntsager og ramsløg | Grøntsagsdeller, kartoffelsalat med forårets sprøde grøntsager og ramsløg | Vegetar:]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:farsbrød,kartoffelsalatmedforåretssprødegrøntsagerogramsløg|grøntsagsdeller,kartoffelsalatmedforåretssprødegrøntsagerogramsløg|vegetar:-20250501-2</guid>
+      <pubDate>Thu, 01 May 2025 08:21:47 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Bygotto vendt med cremet græskarpuré, bagt græskar toppet med ristede svampe, syltet græskar og grøn olie. | Onsdagens dessert Citronkage 🍋 | Vegetar Skipperlabskovs med ærteprotein og bagt rødbede toppet med purløg. Hertil syltet rødbede, sennep og pisket kryddersmør a part | Vegetar Tofu i karry med ris og mango-/æblesalat på toppen. Hertil ristede kokosflager og rosiner a part . | Vegetar Chili sin carne med røde linser og kikærter. Serveres med nachos, creme fraiche, cheddarost, frisk koriander og chilisauce. | Vegetar Veganske nuggets med ovnfritter og spidskålssalat toppet med ristede jordnødder. Hertil chilimayo og sesamdressing a part .]]></title>
+      <title><![CDATA[HUB2: Chili con carne Serveres med nachos, creme fraiche, cheddarost, frisk koriander og chilisauce. | Vegetar Skipperlabskovs med ærteprotein og bagt rødbede toppet med purløg. Hertil syltet rødbede, sennep og pisket kryddersmør a part | Vegetar Tofu i karry med ris og mango-/æblesalat på toppen. Hertil ristede kokosflager og rosiner a part . | Vegetar Chili sin carne med røde linser og kikærter. Serveres med nachos, creme fraiche, cheddarost, frisk koriander og chilisauce. | Vegetar Veganske nuggets med ovnfritter og spidskålssalat toppet med ristede jordnødder. Hertil chilimayo og sesamdressing a part .]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Bygotto vendt med cremet græskarpuré, bagt græskar toppet med ristede svampe, syltet græskar og grøn olie. | Onsdagens dessert Citronkage 🍋 | Vegetar Skipperlabskovs med ærteprotein og bagt rødbede toppet med purløg. Hertil syltet rødbede, sennep og pisket kryddersmør a part | Vegetar Tofu i karry med ris og mango-/æblesalat på toppen. Hertil ristede kokosflager og rosiner a part . | Vegetar Chili sin carne med røde linser og kikærter. Serveres med nachos, creme fraiche, cheddarost, frisk koriander og chilisauce. | Vegetar Veganske nuggets med ovnfritter og spidskålssalat toppet med ristede jordnødder. Hertil chilimayo og sesamdressing a part .]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:bygottovendtmedcremetgræskarpuré,bagtgræskartoppetmedristedesvampe,syltetgræskaroggrønolie.|onsdagensdessertcitronkage🍋|vegetarskipperlabskovsmedærteproteinogbagtrødbedetoppetmedpurløg.hertilsyltetrødbede,sennepogpisketkryddersmørapart|vegetartofuikarrymedrisogmango-/æblesalatpåtoppen.hertilristedekokosflagerogrosinerapart.|vegetarchilisincarnemedrødelinserogkikærter.serveresmednachos,cremefraiche,cheddarost,friskkorianderogchilisauce.|vegetarveganskenuggetsmedovnfritterogspidskålssalattoppetmedristedejordnødder.hertilchilimayoogsesamdressingapart.-20250430-1</guid>
-      <pubDate>Wed, 30 Apr 2025 08:22:23 +0000</pubDate>
+      <description><![CDATA[HUB2: Chili con carne Serveres med nachos, creme fraiche, cheddarost, frisk koriander og chilisauce. | Vegetar Skipperlabskovs med ærteprotein og bagt rødbede toppet med purløg. Hertil syltet rødbede, sennep og pisket kryddersmør a part | Vegetar Tofu i karry med ris og mango-/æblesalat på toppen. Hertil ristede kokosflager og rosiner a part . | Vegetar Chili sin carne med røde linser og kikærter. Serveres med nachos, creme fraiche, cheddarost, frisk koriander og chilisauce. | Vegetar Veganske nuggets med ovnfritter og spidskålssalat toppet med ristede jordnødder. Hertil chilimayo og sesamdressing a part .]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:chiliconcarneserveresmednachos,cremefraiche,cheddarost,friskkorianderogchilisauce.|vegetarskipperlabskovsmedærteproteinogbagtrødbedetoppetmedpurløg.hertilsyltetrødbede,sennepogpisketkryddersmørapart|vegetartofuikarrymedrisogmango-/æblesalatpåtoppen.hertilristedekokosflagerogrosinerapart.|vegetarchilisincarnemedrødelinserogkikærter.serveresmednachos,cremefraiche,cheddarost,friskkorianderogchilisauce.|vegetarveganskenuggetsmedovnfritterogspidskålssalattoppetmedristedejordnødder.hertilchilimayoogsesamdressingapart.-20250501-1</guid>
+      <pubDate>Thu, 01 May 2025 08:21:47 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Koreansk bbq tofu med bao og kimchi salat | Vegetar | Vegetar paddy med stuvet kartofler og sprøde grøntsager | Vegetar Chicken tikka masala med dampet ris | Vegetar sandwich med surt og rødkålssalat]]></title>
+      <title><![CDATA[HUB1 – Kays: Okse nyertapper med chimichurri, bagte rodfrugter og | Grillet majspure | Stegte Auberginer med chimichurri, bagte rodfrugter og | Vegetar | Vegetar paddy med stuvet kartofler og sprøde grøntsager | Vegetar Chicken tikka masala med dampet ris | Vegetar sandwich med surt og rødkålssalat]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Koreansk bbq tofu med bao og kimchi salat | Vegetar | Vegetar paddy med stuvet kartofler og sprøde grøntsager | Vegetar Chicken tikka masala med dampet ris | Vegetar sandwich med surt og rødkålssalat]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:koreanskbbqtofumedbaoogkimchisalat|vegetar|vegetarpaddymedstuvetkartoflerogsprødegrøntsager|vegetarchickentikkamasalameddampetris|vegetarsandwichmedsurtogrødkålssalat-20250430-0</guid>
-      <pubDate>Wed, 30 Apr 2025 08:22:23 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Okse nyertapper med chimichurri, bagte rodfrugter og | Grillet majspure | Stegte Auberginer med chimichurri, bagte rodfrugter og | Vegetar | Vegetar paddy med stuvet kartofler og sprøde grøntsager | Vegetar Chicken tikka masala med dampet ris | Vegetar sandwich med surt og rødkålssalat]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:oksenyertappermedchimichurri,bagterodfrugterog|grilletmajspure|stegteauberginermedchimichurri,bagterodfrugterog|vegetar|vegetarpaddymedstuvetkartoflerogsprødegrøntsager|vegetarchickentikkamasalameddampetris|vegetarsandwichmedsurtogrødkålssalat-20250501-0</guid>
+      <pubDate>Thu, 01 May 2025 08:21:47 +0000</pubDate>
     </item>
   </channel>
 </rss>
