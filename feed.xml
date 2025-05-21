@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Tuesday, 20 May 2025]]></title>
+    <title><![CDATA[Canteen Menu - Wednesday, 21 May 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Tue, 20 May 2025 08:23:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 May 2025 08:22:50 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Mousaka, græsk salat og tzatziki | Vegetar | Vegetarisk mousaka, græsk salat og tzatziki]]></title>
+      <title><![CDATA[HUB3: Butterdejstærte med asparges, semi dried tomater, frisk ost, serveres med en frisk grøn salat | Dagens kage: Brownie | Vegetar | Vegetarisk mousaka, græsk salat og tzatziki]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Mousaka, græsk salat og tzatziki | Vegetar | Vegetarisk mousaka, græsk salat og tzatziki]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:mousaka,græsksalatogtzatziki|vegetar|vegetariskmousaka,græsksalatogtzatziki-20250520-3</guid>
-      <pubDate>Tue, 20 May 2025 08:23:47 +0000</pubDate>
+      <description><![CDATA[HUB3: Butterdejstærte med asparges, semi dried tomater, frisk ost, serveres med en frisk grøn salat | Dagens kage: Brownie | Vegetar | Vegetarisk mousaka, græsk salat og tzatziki]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:butterdejstærtemedasparges,semidriedtomater,friskost,serveresmedenfriskgrønsalat|dagenskage:brownie|vegetar|vegetariskmousaka,græsksalatogtzatziki-20250521-3</guid>
+      <pubDate>Wed, 21 May 2025 08:22:50 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Marineret svinemørbrad | Serveret med krydret bagekartoffel og grønt på toppen. Hertil bearnaise creme a part. | Vegetar: Brændende kærlighed | Vegetar: Marineret portobelle svamp | Vegetar: Grillet blomkål med cremet svampe-marsalasauce og ris. Toppet med grønkålssalat | Vegetar: Amerikansk halloumi-burger med marineret spidskålsalat og rucola serveret med fritter. Hertil chipotle mayonnaise og BBQ-ketchup a part.]]></title>
+      <title><![CDATA[HUB2: Pasta med kikærter, tomat samt persille på toppen. Hertil chilisauce og parmesanost a part | Onsdags dessert | Rabarber/jordbær trifli | Vegetar: Brændende kærlighed | Vegetar: Marineret portobelle svamp | Vegetar: Grillet blomkål med cremet svampe-marsalasauce og ris. Toppet med grønkålssalat | Vegetar: Amerikansk halloumi-burger med marineret spidskålsalat og rucola serveret med fritter. Hertil chipotle mayonnaise og BBQ-ketchup a part.]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Marineret svinemørbrad | Serveret med krydret bagekartoffel og grønt på toppen. Hertil bearnaise creme a part. | Vegetar: Brændende kærlighed | Vegetar: Marineret portobelle svamp | Vegetar: Grillet blomkål med cremet svampe-marsalasauce og ris. Toppet med grønkålssalat | Vegetar: Amerikansk halloumi-burger med marineret spidskålsalat og rucola serveret med fritter. Hertil chipotle mayonnaise og BBQ-ketchup a part.]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:marineretsvinemørbrad|serveretmedkrydretbagekartoffeloggrøntpåtoppen.hertilbearnaisecremeapart.|vegetar:brændendekærlighed|vegetar:marineretportobellesvamp|vegetar:grilletblomkålmedcremetsvampe-marsalasauceogris.toppetmedgrønkålssalat|vegetar:amerikanskhalloumi-burgermedmarineretspidskålsalatogrucolaserveretmedfritter.hertilchipotlemayonnaiseogbbq-ketchupapart.-20250520-2</guid>
-      <pubDate>Tue, 20 May 2025 08:23:47 +0000</pubDate>
+      <description><![CDATA[HUB2: Pasta med kikærter, tomat samt persille på toppen. Hertil chilisauce og parmesanost a part | Onsdags dessert | Rabarber/jordbær trifli | Vegetar: Brændende kærlighed | Vegetar: Marineret portobelle svamp | Vegetar: Grillet blomkål med cremet svampe-marsalasauce og ris. Toppet med grønkålssalat | Vegetar: Amerikansk halloumi-burger med marineret spidskålsalat og rucola serveret med fritter. Hertil chipotle mayonnaise og BBQ-ketchup a part.]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:pastamedkikærter,tomatsamtpersillepåtoppen.hertilchilisauceogparmesanostapart|onsdagsdessert|rabarber/jordbærtrifli|vegetar:brændendekærlighed|vegetar:marineretportobellesvamp|vegetar:grilletblomkålmedcremetsvampe-marsalasauceogris.toppetmedgrønkålssalat|vegetar:amerikanskhalloumi-burgermedmarineretspidskålsalatogrucolaserveretmedfritter.hertilchipotlemayonnaiseogbbq-ketchupapart.-20250521-2</guid>
+      <pubDate>Wed, 21 May 2025 08:22:50 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag Bao buns med chili marineret kylling, sprødt grøntsagsfyld og sesam mayo | Vegetar: Bao buns med chili marineret svampe | Tirsdag Bao buns med chili marineret kylling, sprødt grøntsagsfyld og sesam mayo | Onsdag vegetar dag Bao buns med chili marineret svampe | Torsdag Bao buns med chili marineret kylling, sprødt grøntsagsfyld og sesam mayo | Fredag Bao buns med chili marineret kylling, sprødt grøntsagsfyld og sesam mayo | HOMEBOUND MENU | Mandag Fisk med sauce tartare og små kartofler | Tirsdag Fisk med sauce tartare og små kartofler | Onsdag Bagt blomkål med bønnecreme og tomatsalat | Torsdag Kalvefrikasse med kartofler og forårsgrønt | Fredag Kalvefrikasse med kartofler og forårsgrønt | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing.]]></title>
+      <title><![CDATA[HUB1 – Kays Verdenskøkken: Dagens måltidssalat med vegansk protein samt topping og dressing.]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag Bao buns med chili marineret kylling, sprødt grøntsagsfyld og sesam mayo | Vegetar: Bao buns med chili marineret svampe | Tirsdag Bao buns med chili marineret kylling, sprødt grøntsagsfyld og sesam mayo | Onsdag vegetar dag Bao buns med chili marineret svampe | Torsdag Bao buns med chili marineret kylling, sprødt grøntsagsfyld og sesam mayo | Fredag Bao buns med chili marineret kylling, sprødt grøntsagsfyld og sesam mayo | HOMEBOUND MENU | Mandag Fisk med sauce tartare og små kartofler | Tirsdag Fisk med sauce tartare og små kartofler | Onsdag Bagt blomkål med bønnecreme og tomatsalat | Torsdag Kalvefrikasse med kartofler og forårsgrønt | Fredag Kalvefrikasse med kartofler og forårsgrønt | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing.]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandagbaobunsmedchilimarineretkylling,sprødtgrøntsagsfyldogsesammayo|vegetar:baobunsmedchilimarineretsvampe|tirsdagbaobunsmedchilimarineretkylling,sprødtgrøntsagsfyldogsesammayo|onsdagvegetardagbaobunsmedchilimarineretsvampe|torsdagbaobunsmedchilimarineretkylling,sprødtgrøntsagsfyldogsesammayo|fredagbaobunsmedchilimarineretkylling,sprødtgrøntsagsfyldogsesammayo|homeboundmenu|mandagfiskmedsaucetartareogsmåkartofler|tirsdagfiskmedsaucetartareogsmåkartofler|onsdagbagtblomkålmedbønnecremeogtomatsalat|torsdagkalvefrikassemedkartoflerogforårsgrønt|fredagkalvefrikassemedkartoflerogforårsgrønt|sproutmenu|mandag,tirsdag,torsdagogfredag|dagensmåltidssalatmedvalgfritkød,fiskellerveganskproteinsamttoppingogdressing.-20250520-1</guid>
-      <pubDate>Tue, 20 May 2025 08:23:47 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays Verdenskøkken: Dagens måltidssalat med vegansk protein samt topping og dressing.]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:dagensmåltidssalatmedveganskproteinsamttoppingogdressing.-20250521-1</guid>
+      <pubDate>Wed, 21 May 2025 08:22:50 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays: Mandag svensk pølseret med friske urter. | Vegetar: vegetar svensk pølseret med friske urter. | Tirsdag Afrikansk tangine af oksekød med syltet mad bananer og dampet ris. | Vegetar: vegetar afrikansk tangine med dampet ris. | Onsdag Peanut butter ramen med milde chili nudler og pak choi | Torsdag Spicy pork belly med lun hvedekerne salat og rabarber / cherry compot | Vegetar: spicy vegetar soya protein med lun hvedekerne salat og rabarber / cherry compot | Fredag Pariserbøf med ristet brød, æggeblomme, løg, capers peberrod, syltet rødbeder og pickles. | Vegetar: vegetar pariserbøf med ristet brød, løg, capers, peberrod, syltet rødbeder og pickles.]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
       <description><![CDATA[HUB1 – Kays: Mandag svensk pølseret med friske urter. | Vegetar: vegetar svensk pølseret med friske urter. | Tirsdag Afrikansk tangine af oksekød med syltet mad bananer og dampet ris. | Vegetar: vegetar afrikansk tangine med dampet ris. | Onsdag Peanut butter ramen med milde chili nudler og pak choi | Torsdag Spicy pork belly med lun hvedekerne salat og rabarber / cherry compot | Vegetar: spicy vegetar soya protein med lun hvedekerne salat og rabarber / cherry compot | Fredag Pariserbøf med ristet brød, æggeblomme, løg, capers peberrod, syltet rødbeder og pickles. | Vegetar: vegetar pariserbøf med ristet brød, løg, capers, peberrod, syltet rødbeder og pickles.]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:mandagsvenskpølseretmedfriskeurter.|vegetar:vegetarsvenskpølseretmedfriskeurter.|tirsdagafrikansktangineafoksekødmedsyltetmadbananerogdampetris.|vegetar:vegetarafrikansktanginemeddampetris.|onsdagpeanutbutterramenmedmildechilinudlerogpakchoi|torsdagspicyporkbellymedlunhvedekernesalatograbarber/cherrycompot|vegetar:spicyvegetarsoyaproteinmedlunhvedekernesalatograbarber/cherrycompot|fredagpariserbøfmedristetbrød,æggeblomme,løg,caperspeberrod,syltetrødbederogpickles.|vegetar:vegetarpariserbøfmedristetbrød,løg,capers,peberrod,syltetrødbederogpickles.-20250520-0</guid>
-      <pubDate>Tue, 20 May 2025 08:23:47 +0000</pubDate>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:mandagsvenskpølseretmedfriskeurter.|vegetar:vegetarsvenskpølseretmedfriskeurter.|tirsdagafrikansktangineafoksekødmedsyltetmadbananerogdampetris.|vegetar:vegetarafrikansktanginemeddampetris.|onsdagpeanutbutterramenmedmildechilinudlerogpakchoi|torsdagspicyporkbellymedlunhvedekernesalatograbarber/cherrycompot|vegetar:spicyvegetarsoyaproteinmedlunhvedekernesalatograbarber/cherrycompot|fredagpariserbøfmedristetbrød,æggeblomme,løg,caperspeberrod,syltetrødbederogpickles.|vegetar:vegetarpariserbøfmedristetbrød,løg,capers,peberrod,syltetrødbederogpickles.-20250521-0</guid>
+      <pubDate>Wed, 21 May 2025 08:22:50 +0000</pubDate>
     </item>
   </channel>
 </rss>
