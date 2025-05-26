@@ -4,13 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Saturday, 24 May 2025]]></title>
+    <title><![CDATA[Canteen Menu - Monday, 26 May 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Sat, 24 May 2025 08:19:44 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 08:33:54 +0000</lastBuildDate>
     <ttl>15</ttl>
+    <item>
+      <title><![CDATA[HUB3: Syd indisk kylling karry med citron ris og indisk salat | Vegetar | Syd indisk vegetar karry med citron ris og indisk salat]]></title>
+      <link>https://hubnordic.madkastel.dk/</link>
+      <description><![CDATA[HUB3: Syd indisk kylling karry med citron ris og indisk salat | Vegetar | Syd indisk vegetar karry med citron ris og indisk salat]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:sydindiskkyllingkarrymedcitronrisogindisksalat|vegetar|sydindiskvegetarkarrymedcitronrisogindisksalat-20250526-3</guid>
+      <pubDate>Mon, 26 May 2025 08:33:54 +0000</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[HUB2: Biksemad med oksekød, kartofler, løg og et spejlæg på toppen. Hertil rødbeder og | bearnaisecreme a part. | Biksemad med ærteprotein, kartofler, løg og et spejlæg på toppen. Hertil rødbeder | og bearnaisecreme a part. | Vegetar:]]></title>
+      <link>https://hubnordic.madkastel.dk/</link>
+      <description><![CDATA[HUB2: Biksemad med oksekød, kartofler, løg og et spejlæg på toppen. Hertil rødbeder og | bearnaisecreme a part. | Biksemad med ærteprotein, kartofler, løg og et spejlæg på toppen. Hertil rødbeder | og bearnaisecreme a part. | Vegetar:]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:biksemadmedoksekød,kartofler,løgogetspejlægpåtoppen.hertilrødbederog|bearnaisecremeapart.|biksemadmedærteprotein,kartofler,løgogetspejlægpåtoppen.hertilrødbeder|ogbearnaisecremeapart.|vegetar:-20250526-2</guid>
+      <pubDate>Mon, 26 May 2025 08:33:54 +0000</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag / Tirsdag / Fredag | Mexicanske Tortillas med krydret kylling, spicy tomatsalsa, lime marineret kål og raita | Mexicanske Tortillas med krydret vegetar kylling, spicy tomatsalsa, lime marineret kål og raita]]></title>
+      <link>https://hubnordic.madkastel.dk/</link>
+      <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag / Tirsdag / Fredag | Mexicanske Tortillas med krydret kylling, spicy tomatsalsa, lime marineret kål og raita | Mexicanske Tortillas med krydret vegetar kylling, spicy tomatsalsa, lime marineret kål og raita]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag/tirsdag/fredag|mexicansketortillasmedkrydretkylling,spicytomatsalsa,limemarineretkålograita|mexicansketortillasmedkrydretvegetarkylling,spicytomatsalsa,limemarineretkålograita-20250526-1</guid>
+      <pubDate>Mon, 26 May 2025 08:33:54 +0000</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[HUB1 – Kays: Krebinetter med stuvet grønt og dampet kartofler | Vegetar: Vegetar pattyes med stuvet grønt og dampet kartofler | Vegetar: Chili sin carne med ris og cremefraiche | Vegetar: Vegetar American burger og fries]]></title>
+      <link>https://hubnordic.madkastel.dk/</link>
+      <description><![CDATA[HUB1 – Kays: Krebinetter med stuvet grønt og dampet kartofler | Vegetar: Vegetar pattyes med stuvet grønt og dampet kartofler | Vegetar: Chili sin carne med ris og cremefraiche | Vegetar: Vegetar American burger og fries]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:krebinettermedstuvetgrøntogdampetkartofler|vegetar:vegetarpattyesmedstuvetgrøntogdampetkartofler|vegetar:chilisincarnemedrisogcremefraiche|vegetar:vegetaramericanburgerogfries-20250526-0</guid>
+      <pubDate>Mon, 26 May 2025 08:33:54 +0000</pubDate>
+    </item>
   </channel>
 </rss>
