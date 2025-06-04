@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Tuesday, 03 June 2025]]></title>
+    <title><![CDATA[Canteen Menu - Wednesday, 04 June 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Tue, 03 Jun 2025 08:24:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Jun 2025 08:23:48 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Gammeldags oksesteg, frikasse med forårsgrønt og ovnstegte kartofler | Bagte portobello svampe, frikasse med forårsgrønt og ovnstegte kartofler | Vegetar]]></title>
+      <title><![CDATA[HUB3: Spaghetti verde med nøddecrunch og parmesan | DAGENS KAGE: | Romkugler | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Gammeldags oksesteg, frikasse med forårsgrønt og ovnstegte kartofler | Bagte portobello svampe, frikasse med forårsgrønt og ovnstegte kartofler | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:gammeldagsoksesteg,frikassemedforårsgrøntogovnstegtekartofler|bagteportobellosvampe,frikassemedforårsgrøntogovnstegtekartofler|vegetar-20250603-3</guid>
-      <pubDate>Tue, 03 Jun 2025 08:24:33 +0000</pubDate>
+      <description><![CDATA[HUB3: Spaghetti verde med nøddecrunch og parmesan | DAGENS KAGE: | Romkugler | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:spaghettiverdemednøddecrunchogparmesan|dagenskage:|romkugler|vegetar-20250604-3</guid>
+      <pubDate>Wed, 04 Jun 2025 08:23:48 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Gratineret pasta med cremet sauce med bacon og svampe, toppet med persille og parmesanost a part | Gratineret pasta med cremet sauce med kikærter og svampe, toppet med persille og parmesanost a part | Klassiske frikadeller med kold kartoffelsalat med agurk og dild på toppen | Vegetar | Bagte squash med kold kartoffelsalat med agurk og dild på toppen]]></title>
+      <title><![CDATA[HUB2: One pot wok med nudler, kokosmælk og masser af lækre grønsager | Dagens kage | Koldskål med citron og vanilje, serveres med kammerjunker | Klassiske frikadeller med kold kartoffelsalat med agurk og dild på toppen | Vegetar | Bagte squash med kold kartoffelsalat med agurk og dild på toppen]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Gratineret pasta med cremet sauce med bacon og svampe, toppet med persille og parmesanost a part | Gratineret pasta med cremet sauce med kikærter og svampe, toppet med persille og parmesanost a part | Klassiske frikadeller med kold kartoffelsalat med agurk og dild på toppen | Vegetar | Bagte squash med kold kartoffelsalat med agurk og dild på toppen]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:gratineretpastamedcremetsaucemedbaconogsvampe,toppetmedpersilleogparmesanostapart|gratineretpastamedcremetsaucemedkikærterogsvampe,toppetmedpersilleogparmesanostapart|klassiskefrikadellermedkoldkartoffelsalatmedagurkogdildpåtoppen|vegetar|bagtesquashmedkoldkartoffelsalatmedagurkogdildpåtoppen-20250603-2</guid>
-      <pubDate>Tue, 03 Jun 2025 08:24:33 +0000</pubDate>
+      <description><![CDATA[HUB2: One pot wok med nudler, kokosmælk og masser af lækre grønsager | Dagens kage | Koldskål med citron og vanilje, serveres med kammerjunker | Klassiske frikadeller med kold kartoffelsalat med agurk og dild på toppen | Vegetar | Bagte squash med kold kartoffelsalat med agurk og dild på toppen]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:onepotwokmednudler,kokosmælkogmasseraflækregrønsager|dagenskage|koldskålmedcitronogvanilje,serveresmedkammerjunker|klassiskefrikadellermedkoldkartoffelsalatmedagurkogdildpåtoppen|vegetar|bagtesquashmedkoldkartoffelsalatmedagurkogdildpåtoppen-20250604-2</guid>
+      <pubDate>Wed, 04 Jun 2025 08:23:48 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag / tirsdag / torsdag / fredag | Okse Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | Vegetar: Svampe Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | Vegetariske tarteletter]]></title>
+      <title><![CDATA[HUB1 – Kays Verdenskøkken: HOMEBOUND MENU | Mandag / tirsdag | Rosa stegt Kalvecuvette med tomatiseret flødekartofler og grøn salat | Torsdag / fredag | Dagens fisk a la brændende kærlighed | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing. | Dagens måltidssalat med vegansk protein samt topping og dressing.]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU | Mandag / tirsdag / torsdag / fredag | Okse Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | Vegetar: Svampe Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | Vegetariske tarteletter]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenu|mandag/tirsdag/torsdag/fredag|okseteriyakimedasiatiskagurkesalat,syltetrødløg,pakchoyogdampetris|vegetar:svampeteriyakimedasiatiskagurkesalat,syltetrødløg,pakchoyogdampetris|vegetarisketarteletter-20250603-1</guid>
-      <pubDate>Tue, 03 Jun 2025 08:24:33 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays Verdenskøkken: HOMEBOUND MENU | Mandag / tirsdag | Rosa stegt Kalvecuvette med tomatiseret flødekartofler og grøn salat | Torsdag / fredag | Dagens fisk a la brændende kærlighed | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing. | Dagens måltidssalat med vegansk protein samt topping og dressing.]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:homeboundmenu|mandag/tirsdag|rosastegtkalvecuvettemedtomatiseretflødekartofleroggrønsalat|torsdag/fredag|dagensfiskalabrændendekærlighed|sproutmenu|mandag,tirsdag,torsdagogfredag|dagensmåltidssalatmedvalgfritkød,fiskellerveganskproteinsamttoppingogdressing.|dagensmåltidssalatmedveganskproteinsamttoppingogdressing.-20250604-1</guid>
+      <pubDate>Wed, 04 Jun 2025 08:23:48 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Asiatisk glaseret kyllingeboller med nudler og snittet grønt | Vegetar: Vegetar chunks med brun sauce, kartofler og surt | Vegetar: Asiatisk glaseret kyllingeprotein med nudler og snittet grønt | Vegetar: marineret tempeh med tabouleh og baba ghanoush | Vegetar: Gourmet vegetar hotdog]]></title>
+      <title><![CDATA[HUB1 – Kays: Gnocchi med spinat pesto, syltede cherrytomat, ristet kerner og brændt kål | Vegetar: Vegetar chunks med brun sauce, kartofler og surt | Vegetar: Asiatisk glaseret kyllingeprotein med nudler og snittet grønt | Vegetar: marineret tempeh med tabouleh og baba ghanoush | Vegetar: Gourmet vegetar hotdog]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Asiatisk glaseret kyllingeboller med nudler og snittet grønt | Vegetar: Vegetar chunks med brun sauce, kartofler og surt | Vegetar: Asiatisk glaseret kyllingeprotein med nudler og snittet grønt | Vegetar: marineret tempeh med tabouleh og baba ghanoush | Vegetar: Gourmet vegetar hotdog]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:asiatiskglaseretkyllingebollermednudlerogsnittetgrønt|vegetar:vegetarchunksmedbrunsauce,kartoflerogsurt|vegetar:asiatiskglaseretkyllingeproteinmednudlerogsnittetgrønt|vegetar:marinerettempehmedtaboulehogbabaghanoush|vegetar:gourmetvegetarhotdog-20250603-0</guid>
-      <pubDate>Tue, 03 Jun 2025 08:24:33 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Gnocchi med spinat pesto, syltede cherrytomat, ristet kerner og brændt kål | Vegetar: Vegetar chunks med brun sauce, kartofler og surt | Vegetar: Asiatisk glaseret kyllingeprotein med nudler og snittet grønt | Vegetar: marineret tempeh med tabouleh og baba ghanoush | Vegetar: Gourmet vegetar hotdog]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:gnocchimedspinatpesto,syltedecherrytomat,ristetkernerogbrændtkål|vegetar:vegetarchunksmedbrunsauce,kartoflerogsurt|vegetar:asiatiskglaseretkyllingeproteinmednudlerogsnittetgrønt|vegetar:marinerettempehmedtaboulehogbabaghanoush|vegetar:gourmetvegetarhotdog-20250604-0</guid>
+      <pubDate>Wed, 04 Jun 2025 08:23:48 +0000</pubDate>
     </item>
   </channel>
 </rss>
