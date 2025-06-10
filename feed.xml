@@ -4,13 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Monday, 09 June 2025]]></title>
+    <title><![CDATA[Canteen Menu - Tuesday, 10 June 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Mon, 09 Jun 2025 08:25:23 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jun 2025 08:24:15 +0000</lastBuildDate>
     <ttl>15</ttl>
+    <item>
+      <title><![CDATA[HUB3: Cremet pastaret med kylling og purløgsolie | Cremet svampe pasta med portobello og purløgsolie | Vegetar]]></title>
+      <link>https://hubnordic.madkastel.dk/</link>
+      <description><![CDATA[HUB3: Cremet pastaret med kylling og purløgsolie | Cremet svampe pasta med portobello og purløgsolie | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:cremetpastaretmedkyllingogpurløgsolie|cremetsvampepastamedportobelloogpurløgsolie|vegetar-20250610-3</guid>
+      <pubDate>Tue, 10 Jun 2025 08:24:15 +0000</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[HUB2: Æggekage med bacon, svampe. Hertil en lækker tomat salsa på toppen | Æggekage med ærter, svampe. Hertil en lækker tomat salsa på toppen | Vegetar]]></title>
+      <link>https://hubnordic.madkastel.dk/</link>
+      <description><![CDATA[HUB2: Æggekage med bacon, svampe. Hertil en lækker tomat salsa på toppen | Æggekage med ærter, svampe. Hertil en lækker tomat salsa på toppen | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:æggekagemedbacon,svampe.hertilenlækkertomatsalsapåtoppen|æggekagemedærter,svampe.hertilenlækkertomatsalsapåtoppen|vegetar-20250610-2</guid>
+      <pubDate>Tue, 10 Jun 2025 08:24:15 +0000</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU Tirsdag, Torsdag og Fredag | Okse Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | Vegetar: Svampe Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris]]></title>
+      <link>https://hubnordic.madkastel.dk/</link>
+      <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU Tirsdag, Torsdag og Fredag | Okse Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | Vegetar: Svampe Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenutirsdag,torsdagogfredag|okseteriyakimedasiatiskagurkesalat,syltetrødløg,pakchoyogdampetris|vegetar:svampeteriyakimedasiatiskagurkesalat,syltetrødløg,pakchoyogdampetris-20250610-1</guid>
+      <pubDate>Tue, 10 Jun 2025 08:24:15 +0000</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[HUB1 – Kays: Farsbrød med bagte beder og toppet med syrnet kålsalat og løvstik | Vegetar: Stegt tofu med bagte beder og toppet med syrnet kålsalat og løvstikkepesto | Vegetar: Vegetar chicken tikka masala med basmati ris | Vegetar: krydret falafel med pitabrød, salat, dressing og syltet chili]]></title>
+      <link>https://hubnordic.madkastel.dk/</link>
+      <description><![CDATA[HUB1 – Kays: Farsbrød med bagte beder og toppet med syrnet kålsalat og løvstik | Vegetar: Stegt tofu med bagte beder og toppet med syrnet kålsalat og løvstikkepesto | Vegetar: Vegetar chicken tikka masala med basmati ris | Vegetar: krydret falafel med pitabrød, salat, dressing og syltet chili]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:farsbrødmedbagtebederogtoppetmedsyrnetkålsalatogløvstik|vegetar:stegttofumedbagtebederogtoppetmedsyrnetkålsalatogløvstikkepesto|vegetar:vegetarchickentikkamasalamedbasmatiris|vegetar:krydretfalafelmedpitabrød,salat,dressingogsyltetchili-20250610-0</guid>
+      <pubDate>Tue, 10 Jun 2025 08:24:15 +0000</pubDate>
+    </item>
   </channel>
 </rss>
