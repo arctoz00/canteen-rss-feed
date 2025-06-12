@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Wednesday, 11 June 2025]]></title>
+    <title><![CDATA[Canteen Menu - Thursday, 12 June 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Wed, 11 Jun 2025 08:23:34 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 08:23:14 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Minestrone med suppehorn, sommergrønt, pesto og parmesan | Dagens kage | Pavlova med pisket yoghurt, jordbær, fersken og passionsfrugt | Vegetar]]></title>
+      <title><![CDATA[HUB3: Honning glaseret gris, kartofler og persillesovs | Miso glaseret spidskål og mandler, kartofler og persillesovs | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Minestrone med suppehorn, sommergrønt, pesto og parmesan | Dagens kage | Pavlova med pisket yoghurt, jordbær, fersken og passionsfrugt | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:minestronemedsuppehorn,sommergrønt,pestoogparmesan|dagenskage|pavlovamedpisketyoghurt,jordbær,ferskenogpassionsfrugt|vegetar-20250611-3</guid>
-      <pubDate>Wed, 11 Jun 2025 08:23:34 +0000</pubDate>
+      <description><![CDATA[HUB3: Honning glaseret gris, kartofler og persillesovs | Miso glaseret spidskål og mandler, kartofler og persillesovs | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:honningglaseretgris,kartoflerogpersillesovs|misoglaseretspidskålogmandler,kartoflerogpersillesovs|vegetar-20250612-3</guid>
+      <pubDate>Thu, 12 Jun 2025 08:23:14 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Gratineret pasta, med spinat, ricotta, flødeoste sauce med grønt på toppen. Hertil chilisauce, parmesanost a part. | Dagens kage | Jordbær kage | Vegetar]]></title>
+      <title><![CDATA[HUB2: Chili con carne. | Hertil nachos chips, creme fraiche, tomat salsa, avocado, lime og chili sauce | Chili sin carne. Hertil nachos chips, creme fraiche, tomat salsa, avocado, lime og chili sauce | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Gratineret pasta, med spinat, ricotta, flødeoste sauce med grønt på toppen. Hertil chilisauce, parmesanost a part. | Dagens kage | Jordbær kage | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:gratineretpasta,medspinat,ricotta,flødeostesaucemedgrøntpåtoppen.hertilchilisauce,parmesanostapart.|dagenskage|jordbærkage|vegetar-20250611-2</guid>
-      <pubDate>Wed, 11 Jun 2025 08:23:34 +0000</pubDate>
+      <description><![CDATA[HUB2: Chili con carne. | Hertil nachos chips, creme fraiche, tomat salsa, avocado, lime og chili sauce | Chili sin carne. Hertil nachos chips, creme fraiche, tomat salsa, avocado, lime og chili sauce | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:chiliconcarne.|hertilnachoschips,cremefraiche,tomatsalsa,avocado,limeogchilisauce|chilisincarne.hertilnachoschips,cremefraiche,tomatsalsa,avocado,limeogchilisauce|vegetar-20250612-2</guid>
+      <pubDate>Thu, 12 Jun 2025 08:23:14 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays Verdenskøkken: Svampe Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | HOMEBOUND MENU | Cassoulet med pommes allumettes | Torsdag / fredag | Honning/æble bbq marineret revelsben med bagt kartoffel | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing. | Dagens måltidssalat med vegansk protein samt topping og dressing.]]></title>
+      <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU Tirsdag, Torsdag og Fredag | Okse Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | Vegetar: Svampe Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays Verdenskøkken: Svampe Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | HOMEBOUND MENU | Cassoulet med pommes allumettes | Torsdag / fredag | Honning/æble bbq marineret revelsben med bagt kartoffel | SPROUT MENU | Mandag, tirsdag, torsdag og fredag | Dagens måltidssalat med valgfrit kød, fisk eller vegansk protein samt topping og dressing. | Dagens måltidssalat med vegansk protein samt topping og dressing.]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:svampeteriyakimedasiatiskagurkesalat,syltetrødløg,pakchoyogdampetris|homeboundmenu|cassouletmedpommesallumettes|torsdag/fredag|honning/æblebbqmarineretrevelsbenmedbagtkartoffel|sproutmenu|mandag,tirsdag,torsdagogfredag|dagensmåltidssalatmedvalgfritkød,fiskellerveganskproteinsamttoppingogdressing.|dagensmåltidssalatmedveganskproteinsamttoppingogdressing.-20250611-1</guid>
-      <pubDate>Wed, 11 Jun 2025 08:23:34 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU Tirsdag, Torsdag og Fredag | Okse Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris | Vegetar: Svampe Teriyaki med asiatisk agurkesalat, syltet rødløg, pak choy og dampet ris]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenutirsdag,torsdagogfredag|okseteriyakimedasiatiskagurkesalat,syltetrødløg,pakchoyogdampetris|vegetar:svampeteriyakimedasiatiskagurkesalat,syltetrødløg,pakchoyogdampetris-20250612-1</guid>
+      <pubDate>Thu, 12 Jun 2025 08:23:14 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Pasta alla Norma med parmesan og syltet bønner | Vegetar: Stegt tofu med bagte beder og toppet med syrnet kålsalat og løvstikkepesto | Vegetar: Vegetar chicken tikka masala med basmati ris | Vegetar: krydret falafel med pitabrød, salat, dressing og syltet chili]]></title>
+      <title><![CDATA[HUB1 – Kays: Chicken tikka masala med basmati ris | Vegetar: Stegt tofu med bagte beder og toppet med syrnet kålsalat og løvstikkepesto | Vegetar: Vegetar chicken tikka masala med basmati ris | Vegetar: krydret falafel med pitabrød, salat, dressing og syltet chili]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Pasta alla Norma med parmesan og syltet bønner | Vegetar: Stegt tofu med bagte beder og toppet med syrnet kålsalat og løvstikkepesto | Vegetar: Vegetar chicken tikka masala med basmati ris | Vegetar: krydret falafel med pitabrød, salat, dressing og syltet chili]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:pastaallanormamedparmesanogsyltetbønner|vegetar:stegttofumedbagtebederogtoppetmedsyrnetkålsalatogløvstikkepesto|vegetar:vegetarchickentikkamasalamedbasmatiris|vegetar:krydretfalafelmedpitabrød,salat,dressingogsyltetchili-20250611-0</guid>
-      <pubDate>Wed, 11 Jun 2025 08:23:34 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Chicken tikka masala med basmati ris | Vegetar: Stegt tofu med bagte beder og toppet med syrnet kålsalat og løvstikkepesto | Vegetar: Vegetar chicken tikka masala med basmati ris | Vegetar: krydret falafel med pitabrød, salat, dressing og syltet chili]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:chickentikkamasalamedbasmatiris|vegetar:stegttofumedbagtebederogtoppetmedsyrnetkålsalatogløvstikkepesto|vegetar:vegetarchickentikkamasalamedbasmatiris|vegetar:krydretfalafelmedpitabrød,salat,dressingogsyltetchili-20250612-0</guid>
+      <pubDate>Thu, 12 Jun 2025 08:23:14 +0000</pubDate>
     </item>
   </channel>
 </rss>
