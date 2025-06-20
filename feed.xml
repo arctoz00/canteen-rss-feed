@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Thursday, 19 June 2025]]></title>
+    <title><![CDATA[Canteen Menu - Friday, 20 June 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Thu, 19 Jun 2025 08:23:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jun 2025 08:22:54 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Biksemad lavet på gris med brasede kartofler, spejlæg, syltede rødbeder og ketchup | Vegetar | Vegetarisk biksemad lavet på svampe med brasede kartofler, spejlæg, syltede rødbeder og ketchup]]></title>
+      <title><![CDATA[HUB3: Filet-o-fish, sprød paneret torsk i brioche bolle, cheddarost, tartarsauce og iceberg salat | Sprød paneret courgette i brioche bolle, cheddar ost, tartarsauce og iceberg salat | Vegetar | Vegetarisk biksemad lavet på svampe med brasede kartofler, spejlæg, syltede rødbeder og ketchup]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Biksemad lavet på gris med brasede kartofler, spejlæg, syltede rødbeder og ketchup | Vegetar | Vegetarisk biksemad lavet på svampe med brasede kartofler, spejlæg, syltede rødbeder og ketchup]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:biksemadlavetpågrismedbrasedekartofler,spejlæg,syltederødbederogketchup|vegetar|vegetariskbiksemadlavetpåsvampemedbrasedekartofler,spejlæg,syltederødbederogketchup-20250619-3</guid>
-      <pubDate>Thu, 19 Jun 2025 08:23:28 +0000</pubDate>
+      <description><![CDATA[HUB3: Filet-o-fish, sprød paneret torsk i brioche bolle, cheddarost, tartarsauce og iceberg salat | Sprød paneret courgette i brioche bolle, cheddar ost, tartarsauce og iceberg salat | Vegetar | Vegetarisk biksemad lavet på svampe med brasede kartofler, spejlæg, syltede rødbeder og ketchup]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:filet-o-fish,sprødpanerettorskibriochebolle,cheddarost,tartarsauceogicebergsalat|sprødpaneretcourgetteibriochebolle,cheddarost,tartarsauceogicebergsalat|vegetar|vegetariskbiksemadlavetpåsvampemedbrasedekartofler,spejlæg,syltederødbederogketchup-20250620-3</guid>
+      <pubDate>Fri, 20 Jun 2025 08:22:54 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Kylling i rødkarry lavet på kokosmælk med perlebyg toppet med grønt. Hertil kokosflager, mangochutney og chilisauce | Bagt rodfrugter i rødkarry lavet på kokosmælk med perlebyg toppet med grønt. Hertil kokosflager, mangochutney og chilisauce | Vegetar]]></title>
+      <title><![CDATA[HUB2: Pulled pork burger (byg selv) | Pulled Portobello svamp burger (byg selv) | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Kylling i rødkarry lavet på kokosmælk med perlebyg toppet med grønt. Hertil kokosflager, mangochutney og chilisauce | Bagt rodfrugter i rødkarry lavet på kokosmælk med perlebyg toppet med grønt. Hertil kokosflager, mangochutney og chilisauce | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:kyllingirødkarrylavetpåkokosmælkmedperlebygtoppetmedgrønt.hertilkokosflager,mangochutneyogchilisauce|bagtrodfrugterirødkarrylavetpåkokosmælkmedperlebygtoppetmedgrønt.hertilkokosflager,mangochutneyogchilisauce|vegetar-20250619-2</guid>
-      <pubDate>Thu, 19 Jun 2025 08:23:28 +0000</pubDate>
+      <description><![CDATA[HUB2: Pulled pork burger (byg selv) | Pulled Portobello svamp burger (byg selv) | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:pulledporkburger(bygselv)|pulledportobellosvampburger(bygselv)|vegetar-20250620-2</guid>
+      <pubDate>Fri, 20 Jun 2025 08:22:54 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU Mandag, Tirsdag, Torsdag og Fredag | Grillet kylling i fladbrød med aji sauce og ristet majs | Vegetar: Grillet kylling i fladbrød med aji sauce og ristet majs | Vegetar: Grillet vegetar kyllingeprotein I fladbrød med aji sauce og]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
       <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU Mandag, Tirsdag, Torsdag og Fredag | Grillet kylling i fladbrød med aji sauce og ristet majs | Vegetar: Grillet kylling i fladbrød med aji sauce og ristet majs | Vegetar: Grillet vegetar kyllingeprotein I fladbrød med aji sauce og]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenumandag,tirsdag,torsdagogfredag|grilletkyllingifladbrødmedajisauceogristetmajs|vegetar:grilletkyllingifladbrødmedajisauceogristetmajs|vegetar:grilletvegetarkyllingeproteinifladbrødmedajisauceog-20250619-1</guid>
-      <pubDate>Thu, 19 Jun 2025 08:23:28 +0000</pubDate>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenumandag,tirsdag,torsdagogfredag|grilletkyllingifladbrødmedajisauceogristetmajs|vegetar:grilletkyllingifladbrødmedajisauceogristetmajs|vegetar:grilletvegetarkyllingeproteinifladbrødmedajisauceog-20250620-1</guid>
+      <pubDate>Fri, 20 Jun 2025 08:22:54 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Øl marineret / glaseret vildtsvine nakkefilet med lun perlebyg salat og | lys kørvel / trøffel sauce | Vegetar: Vegetar brændende kærlighed med ristet rugbrød, rødbeder og purløg | Vegetar: Vegetar chicken med mild chili cous cous, bagt fennikel og citron/bønne spread | Vegetar: Øl glaseret tofu med lun perlebyg salat og | Vegetar: Mexicanske pandekager med ristet protein, salsa, lyn syltet rødløg bønner og sprøde nachos]]></title>
+      <title><![CDATA[HUB1 – Kays: Mexicanske pandekager med ristet kød, salsa, lyn syltet rødløg, bønner og sprøde nachos | Vegetar: Vegetar brændende kærlighed med ristet rugbrød, rødbeder og purløg | Vegetar: Vegetar chicken med mild chili cous cous, bagt fennikel og citron/bønne spread | Vegetar: Øl glaseret tofu med lun perlebyg salat og | Vegetar: Mexicanske pandekager med ristet protein, salsa, lyn syltet rødløg bønner og sprøde nachos]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Øl marineret / glaseret vildtsvine nakkefilet med lun perlebyg salat og | lys kørvel / trøffel sauce | Vegetar: Vegetar brændende kærlighed med ristet rugbrød, rødbeder og purløg | Vegetar: Vegetar chicken med mild chili cous cous, bagt fennikel og citron/bønne spread | Vegetar: Øl glaseret tofu med lun perlebyg salat og | Vegetar: Mexicanske pandekager med ristet protein, salsa, lyn syltet rødløg bønner og sprøde nachos]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:ølmarineret/glaseretvildtsvinenakkefiletmedlunperlebygsalatog|lyskørvel/trøffelsauce|vegetar:vegetarbrændendekærlighedmedristetrugbrød,rødbederogpurløg|vegetar:vegetarchickenmedmildchilicouscous,bagtfennikelogcitron/bønnespread|vegetar:ølglaserettofumedlunperlebygsalatog|vegetar:mexicanskepandekagermedristetprotein,salsa,lynsyltetrødløgbønnerogsprødenachos-20250619-0</guid>
-      <pubDate>Thu, 19 Jun 2025 08:23:28 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Mexicanske pandekager med ristet kød, salsa, lyn syltet rødløg, bønner og sprøde nachos | Vegetar: Vegetar brændende kærlighed med ristet rugbrød, rødbeder og purløg | Vegetar: Vegetar chicken med mild chili cous cous, bagt fennikel og citron/bønne spread | Vegetar: Øl glaseret tofu med lun perlebyg salat og | Vegetar: Mexicanske pandekager med ristet protein, salsa, lyn syltet rødløg bønner og sprøde nachos]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:mexicanskepandekagermedristetkød,salsa,lynsyltetrødløg,bønnerogsprødenachos|vegetar:vegetarbrændendekærlighedmedristetrugbrød,rødbederogpurløg|vegetar:vegetarchickenmedmildchilicouscous,bagtfennikelogcitron/bønnespread|vegetar:ølglaserettofumedlunperlebygsalatog|vegetar:mexicanskepandekagermedristetprotein,salsa,lynsyltetrødløgbønnerogsprødenachos-20250620-0</guid>
+      <pubDate>Fri, 20 Jun 2025 08:22:54 +0000</pubDate>
     </item>
   </channel>
 </rss>
