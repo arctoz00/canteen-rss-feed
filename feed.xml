@@ -4,41 +4,41 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Monday, 23 June 2025]]></title>
+    <title><![CDATA[Canteen Menu - Tuesday, 24 June 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Mon, 23 Jun 2025 08:24:51 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 08:24:37 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Burmesisk gul karry med saftig kylling – En mild og aromatisk karry med cremet kokosmælk, gurkemeje, kartofler og frisk ingefær. Serveres med ris og frisk koriander, men kun til dem der har lyst. | Burmesisk gul karry med kikærter og squash – En mild og aromatisk karry med cremet kokosmælk, gurkemeje, kartofler og frisk ingefær. Serveres med ris og frisk koriander, men kun til dem der har lyst. | Vegetar | Vegetarisk Gratineret sandwich med spejleæg, smeltet emmentaler og grøn salat]]></title>
+      <title><![CDATA[HUB3: Italiensk fiskelagsagne med torsk -Krydret tomatsovs, kapers og sorte oliven. Smagt til med hvidløg, oregano, bechamel sovs og toppet med mozzarella ost. | Italiensk grøntsagslasagne med hvidebønner -Krydret tomatsovs, kapers og sorte oliven. Smagt til med hvidløg, oregano, bechamel sovs og toppet med mozzarella ost | Vegetar | Vegetarisk Gratineret sandwich med spejleæg, smeltet emmentaler og grøn salat]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Burmesisk gul karry med saftig kylling – En mild og aromatisk karry med cremet kokosmælk, gurkemeje, kartofler og frisk ingefær. Serveres med ris og frisk koriander, men kun til dem der har lyst. | Burmesisk gul karry med kikærter og squash – En mild og aromatisk karry med cremet kokosmælk, gurkemeje, kartofler og frisk ingefær. Serveres med ris og frisk koriander, men kun til dem der har lyst. | Vegetar | Vegetarisk Gratineret sandwich med spejleæg, smeltet emmentaler og grøn salat]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:burmesiskgulkarrymedsaftigkylling–enmildogaromatiskkarrymedcremetkokosmælk,gurkemeje,kartoflerogfriskingefær.serveresmedrisogfriskkoriander,menkuntildemderharlyst.|burmesiskgulkarrymedkikærterogsquash–enmildogaromatiskkarrymedcremetkokosmælk,gurkemeje,kartoflerogfriskingefær.serveresmedrisogfriskkoriander,menkuntildemderharlyst.|vegetar|vegetariskgratineretsandwichmedspejleæg,smeltetemmentaleroggrønsalat-20250623-3</guid>
-      <pubDate>Mon, 23 Jun 2025 08:24:51 +0000</pubDate>
+      <description><![CDATA[HUB3: Italiensk fiskelagsagne med torsk -Krydret tomatsovs, kapers og sorte oliven. Smagt til med hvidløg, oregano, bechamel sovs og toppet med mozzarella ost. | Italiensk grøntsagslasagne med hvidebønner -Krydret tomatsovs, kapers og sorte oliven. Smagt til med hvidløg, oregano, bechamel sovs og toppet med mozzarella ost | Vegetar | Vegetarisk Gratineret sandwich med spejleæg, smeltet emmentaler og grøn salat]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:italienskfiskelagsagnemedtorsk-krydrettomatsovs,kapersogsorteoliven.smagttilmedhvidløg,oregano,bechamelsovsogtoppetmedmozzarellaost.|italienskgrøntsagslasagnemedhvidebønner-krydrettomatsovs,kapersogsorteoliven.smagttilmedhvidløg,oregano,bechamelsovsogtoppetmedmozzarellaost|vegetar|vegetariskgratineretsandwichmedspejleæg,smeltetemmentaleroggrønsalat-20250624-3</guid>
+      <pubDate>Tue, 24 Jun 2025 08:24:37 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB2: Paneret fiske filet, med hjemmelavet remoulade med dild kartofler, hertil citron a part. | Paneret selleri, med hjemmelavet remoulade med dild kartofler, hertil citron a part. | Vegetar]]></title>
+      <title><![CDATA[HUB2: Pasta bolognese, toppet med persille og parmesanost a part | Pasta bolognese på kikærter, toppet med persille og parmesanost a part | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Paneret fiske filet, med hjemmelavet remoulade med dild kartofler, hertil citron a part. | Paneret selleri, med hjemmelavet remoulade med dild kartofler, hertil citron a part. | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:paneretfiskefilet,medhjemmelavetremoulademeddildkartofler,hertilcitronapart.|paneretselleri,medhjemmelavetremoulademeddildkartofler,hertilcitronapart.|vegetar-20250623-2</guid>
-      <pubDate>Mon, 23 Jun 2025 08:24:51 +0000</pubDate>
+      <description><![CDATA[HUB2: Pasta bolognese, toppet med persille og parmesanost a part | Pasta bolognese på kikærter, toppet med persille og parmesanost a part | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:pastabolognese,toppetmedpersilleogparmesanostapart|pastabolognesepåkikærter,toppetmedpersilleogparmesanostapart|vegetar-20250624-2</guid>
+      <pubDate>Tue, 24 Jun 2025 08:24:37 +0000</pubDate>
     </item>
     <item>
       <title><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU Mandag, Tirsdag, Torsdag og Fredag | Nordindisk Lammekarry med kikærter, spinat serveret med pilauris og indisk salat | Vegetar: Grillet kylling i fladbrød med aji sauce og ristet majs]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
       <description><![CDATA[HUB1 – Kays Verdenskøkken: GLOBETROTTER MENU Mandag, Tirsdag, Torsdag og Fredag | Nordindisk Lammekarry med kikærter, spinat serveret med pilauris og indisk salat | Vegetar: Grillet kylling i fladbrød med aji sauce og ristet majs]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenumandag,tirsdag,torsdagogfredag|nordindisklammekarrymedkikærter,spinatserveretmedpilaurisogindisksalat|vegetar:grilletkyllingifladbrødmedajisauceogristetmajs-20250623-1</guid>
-      <pubDate>Mon, 23 Jun 2025 08:24:51 +0000</pubDate>
+      <guid isPermaLink="false">urn:canteen:hub1–kaysverdenskøkken:globetrottermenumandag,tirsdag,torsdagogfredag|nordindisklammekarrymedkikærter,spinatserveretmedpilaurisogindisksalat|vegetar:grilletkyllingifladbrødmedajisauceogristetmajs-20250624-1</guid>
+      <pubDate>Tue, 24 Jun 2025 08:24:37 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Tarteletter med stuvet høns, syltet danske asparges og | hakket kruspersille | Vegetar: Vegetar tarteletter med sprøde grøntsager, syltet danske asparges og hakket kruspersille | Vegetar: Ungarsk Gullash med fermenteret ingridærter, nye danske økologiske kartofler, toppet med grønt | Vegetar: Cottage pie af hakket protein serveret med råsyltet tyttebær og saltet citroner | Vegetar: Vegetar Pulled burger med coleslaw og timian syltede cherrytomater og grillede salatløg]]></title>
+      <title><![CDATA[HUB1 – Kays: Ungarsk Gullash med gris fra öxenholm, nye danske økologiske kartofler, toppet med grønt | Vegetar: Vegetar tarteletter med sprøde grøntsager, syltet danske asparges og hakket kruspersille | Vegetar: Ungarsk Gullash med fermenteret ingridærter, nye danske økologiske kartofler, toppet med grønt | Vegetar: Cottage pie af hakket protein serveret med råsyltet tyttebær og saltet citroner | Vegetar: Vegetar Pulled burger med coleslaw og timian syltede cherrytomater og grillede salatløg]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Tarteletter med stuvet høns, syltet danske asparges og | hakket kruspersille | Vegetar: Vegetar tarteletter med sprøde grøntsager, syltet danske asparges og hakket kruspersille | Vegetar: Ungarsk Gullash med fermenteret ingridærter, nye danske økologiske kartofler, toppet med grønt | Vegetar: Cottage pie af hakket protein serveret med råsyltet tyttebær og saltet citroner | Vegetar: Vegetar Pulled burger med coleslaw og timian syltede cherrytomater og grillede salatløg]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:tartelettermedstuvethøns,syltetdanskeaspargesog|hakketkruspersille|vegetar:vegetartartelettermedsprødegrøntsager,syltetdanskeaspargesoghakketkruspersille|vegetar:ungarskgullashmedfermenteretingridærter,nyedanskeøkologiskekartofler,toppetmedgrønt|vegetar:cottagepieafhakketproteinserveretmedråsyltettyttebærogsaltetcitroner|vegetar:vegetarpulledburgermedcoleslawogtimiansyltedecherrytomateroggrilledesalatløg-20250623-0</guid>
-      <pubDate>Mon, 23 Jun 2025 08:24:51 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Ungarsk Gullash med gris fra öxenholm, nye danske økologiske kartofler, toppet med grønt | Vegetar: Vegetar tarteletter med sprøde grøntsager, syltet danske asparges og hakket kruspersille | Vegetar: Ungarsk Gullash med fermenteret ingridærter, nye danske økologiske kartofler, toppet med grønt | Vegetar: Cottage pie af hakket protein serveret med råsyltet tyttebær og saltet citroner | Vegetar: Vegetar Pulled burger med coleslaw og timian syltede cherrytomater og grillede salatløg]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:ungarskgullashmedgrisfraöxenholm,nyedanskeøkologiskekartofler,toppetmedgrønt|vegetar:vegetartartelettermedsprødegrøntsager,syltetdanskeaspargesoghakketkruspersille|vegetar:ungarskgullashmedfermenteretingridærter,nyedanskeøkologiskekartofler,toppetmedgrønt|vegetar:cottagepieafhakketproteinserveretmedråsyltettyttebærogsaltetcitroner|vegetar:vegetarpulledburgermedcoleslawogtimiansyltedecherrytomateroggrilledesalatløg-20250624-0</guid>
+      <pubDate>Tue, 24 Jun 2025 08:24:37 +0000</pubDate>
     </item>
   </channel>
 </rss>
