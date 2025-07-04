@@ -4,27 +4,27 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Thursday, 03 July 2025]]></title>
+    <title><![CDATA[Canteen Menu - Friday, 04 July 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Thu, 03 Jul 2025 08:23:21 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2025 08:23:35 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB2: Stegt svinemørbrad med selleri/blomkål mos, Madagaskar sovs samt grønne bønner vendt i smør og purløg. | Stegt Halloumi med selleri/blomkål mos, Madagaskar sovs samt grønne bønner vendt i smør og urter. | Vegetar]]></title>
+      <title><![CDATA[HUB2: BBQ Spareribs, majskolber og spidskålssalat | BBQ Portobello, majskolber og spidskålssalat | Vegetar]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Stegt svinemørbrad med selleri/blomkål mos, Madagaskar sovs samt grønne bønner vendt i smør og purløg. | Stegt Halloumi med selleri/blomkål mos, Madagaskar sovs samt grønne bønner vendt i smør og urter. | Vegetar]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:stegtsvinemørbradmedselleri/blomkålmos,madagaskarsovssamtgrønnebønnervendtismørogpurløg.|stegthalloumimedselleri/blomkålmos,madagaskarsovssamtgrønnebønnervendtismørogurter.|vegetar-20250703-1</guid>
-      <pubDate>Thu, 03 Jul 2025 08:23:21 +0000</pubDate>
+      <description><![CDATA[HUB2: BBQ Spareribs, majskolber og spidskålssalat | BBQ Portobello, majskolber og spidskålssalat | Vegetar]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:bbqspareribs,majskolberogspidskålssalat|bbqportobello,majskolberogspidskålssalat|vegetar-20250704-1</guid>
+      <pubDate>Fri, 04 Jul 2025 08:23:35 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Bagt hvid fisk a la puttanesca med rosmarin, kartofler og fennikel crudite | Vegetar: Langtidsstegt knoldselleri bøf med pommes saute af økologiske kartofler hertil brunet smørsauce og dampet ærter | Vegetar: Vietnamesisk tofu/nudel salat med sprøde grøntsager tilsmagt med varme krydderier og mild chili, grillet spidskål, ristet peanuts, serveret med nuoc cham sauce | Vegetar: kikærte stew a la puttanesca | Vegetar: vegetar kentucky fried chicken med pommes frites og chili mayo hjemmesyltet drueagurker]]></title>
+      <title><![CDATA[HUB1 – Kays: Kentucky fried chicken med pommes frites og chili mayo og hjemmesyltet drueagurker | Vegetar: Langtidsstegt knoldselleri bøf med pommes saute af økologiske kartofler hertil brunet smørsauce og dampet ærter | Vegetar: Vietnamesisk tofu/nudel salat med sprøde grøntsager tilsmagt med varme krydderier og mild chili, grillet spidskål, ristet peanuts, serveret med nuoc cham sauce | Vegetar: kikærte stew a la puttanesca | Vegetar: vegetar kentucky fried chicken med pommes frites og chili mayo hjemmesyltet drueagurker]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Bagt hvid fisk a la puttanesca med rosmarin, kartofler og fennikel crudite | Vegetar: Langtidsstegt knoldselleri bøf med pommes saute af økologiske kartofler hertil brunet smørsauce og dampet ærter | Vegetar: Vietnamesisk tofu/nudel salat med sprøde grøntsager tilsmagt med varme krydderier og mild chili, grillet spidskål, ristet peanuts, serveret med nuoc cham sauce | Vegetar: kikærte stew a la puttanesca | Vegetar: vegetar kentucky fried chicken med pommes frites og chili mayo hjemmesyltet drueagurker]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:bagthvidfiskalaputtanescamedrosmarin,kartoflerogfennikelcrudite|vegetar:langtidsstegtknoldselleribøfmedpommessauteaføkologiskekartoflerhertilbrunetsmørsauceogdampetærter|vegetar:vietnamesisktofu/nudelsalatmedsprødegrøntsagertilsmagtmedvarmekrydderierogmildchili,grilletspidskål,ristetpeanuts,serveretmednuocchamsauce|vegetar:kikærtestewalaputtanesca|vegetar:vegetarkentuckyfriedchickenmedpommesfritesogchilimayohjemmesyltetdrueagurker-20250703-0</guid>
-      <pubDate>Thu, 03 Jul 2025 08:23:21 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: Kentucky fried chicken med pommes frites og chili mayo og hjemmesyltet drueagurker | Vegetar: Langtidsstegt knoldselleri bøf med pommes saute af økologiske kartofler hertil brunet smørsauce og dampet ærter | Vegetar: Vietnamesisk tofu/nudel salat med sprøde grøntsager tilsmagt med varme krydderier og mild chili, grillet spidskål, ristet peanuts, serveret med nuoc cham sauce | Vegetar: kikærte stew a la puttanesca | Vegetar: vegetar kentucky fried chicken med pommes frites og chili mayo hjemmesyltet drueagurker]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:kentuckyfriedchickenmedpommesfritesogchilimayooghjemmesyltetdrueagurker|vegetar:langtidsstegtknoldselleribøfmedpommessauteaføkologiskekartoflerhertilbrunetsmørsauceogdampetærter|vegetar:vietnamesisktofu/nudelsalatmedsprødegrøntsagertilsmagtmedvarmekrydderierogmildchili,grilletspidskål,ristetpeanuts,serveretmednuocchamsauce|vegetar:kikærtestewalaputtanesca|vegetar:vegetarkentuckyfriedchickenmedpommesfritesogchilimayohjemmesyltetdrueagurker-20250704-0</guid>
+      <pubDate>Fri, 04 Jul 2025 08:23:35 +0000</pubDate>
     </item>
   </channel>
 </rss>
