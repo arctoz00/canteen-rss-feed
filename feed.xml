@@ -4,27 +4,27 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Tuesday, 08 July 2025]]></title>
+    <title><![CDATA[Canteen Menu - Wednesday, 09 July 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Tue, 08 Jul 2025 08:24:45 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jul 2025 08:24:02 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB2: Pad Krapow på Kronvildt | En krydret thailandsk ret med hakket kronvildt, fiskesauce, hvidløg, chili og den hellige, aromatiske thai basilikum samt friske forårsløg og jasminris. | En krydret thailandsk ret med marineret tofu, soyasauce lavet på svampe, hvidløg, chili og den hellige aromatiske thai basilikum samt friske forårsløg og jasminris. |  | Vegetar | Vegetarisk Pad Krapow | Vegetarisk ratatouille]]></title>
+      <title><![CDATA[HUB2: Zucchini fritters | Sprødstegte og saftige zucchini kager med cremet smørbønne pure og frisk grøn salat vendt i balsamico vinaigrette | Dagens kage : Mørk chokoladekage med saltede mandler |  | Vegetar | Vegetarisk Pad Krapow | Vegetarisk ratatouille]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Pad Krapow på Kronvildt | En krydret thailandsk ret med hakket kronvildt, fiskesauce, hvidløg, chili og den hellige, aromatiske thai basilikum samt friske forårsløg og jasminris. | En krydret thailandsk ret med marineret tofu, soyasauce lavet på svampe, hvidløg, chili og den hellige aromatiske thai basilikum samt friske forårsløg og jasminris. |  | Vegetar | Vegetarisk Pad Krapow | Vegetarisk ratatouille]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:padkrapowpåkronvildt|enkrydretthailandskretmedhakketkronvildt,fiskesauce,hvidløg,chiliogdenhellige,aromatiskethaibasilikumsamtfriskeforårsløgogjasminris.|enkrydretthailandskretmedmarinerettofu,soyasaucelavetpåsvampe,hvidløg,chiliogdenhelligearomatiskethaibasilikumsamtfriskeforårsløgogjasminris.||vegetar|vegetariskpadkrapow|vegetariskratatouille-20250708-1</guid>
-      <pubDate>Tue, 08 Jul 2025 08:24:45 +0000</pubDate>
+      <description><![CDATA[HUB2: Zucchini fritters | Sprødstegte og saftige zucchini kager med cremet smørbønne pure og frisk grøn salat vendt i balsamico vinaigrette | Dagens kage : Mørk chokoladekage med saltede mandler |  | Vegetar | Vegetarisk Pad Krapow | Vegetarisk ratatouille]]></description>
+      <guid isPermaLink="false">urn:canteen:hub2:zucchinifritters|sprødstegteogsaftigezucchinikagermedcremetsmørbønnepureogfriskgrønsalatvendtibalsamicovinaigrette|dagenskage:mørkchokoladekagemedsaltedemandler||vegetar|vegetariskpadkrapow|vegetariskratatouille-20250709-1</guid>
+      <pubDate>Wed, 09 Jul 2025 08:24:02 +0000</pubDate>
     </item>
     <item>
-      <title><![CDATA[HUB1 – Kays: Cacio e pepe med ristet Ventricina hertil frisk basilikum og confiteret tomater |  | Vegetar: Plante baseret kødboller med mild karrysauce tilsmagt med ananas hertil dampet ris | Vegetar: Cacio e pepe med ristet tempeh hertil frisk basilikum og confiteret tomater | Vegetar: Rødbede bygotto med danske æbler, saltet kerner hertil frisk spinat og friteret rødbeder | Vegetar: Pad krapow af hakket soya protein serveret med æg, friske forårsløg og ris | Vegetar: Cæsar vegetar paddies burger med hjemme syltet rødløg serveret med pommes de tern tilsmagt med mild trøffel]]></title>
+      <title><![CDATA[HUB1 – Kays: | Vegetar: Plante baseret kødboller med mild karrysauce tilsmagt med ananas hertil dampet ris | Vegetar: Cacio e pepe med ristet tempeh hertil frisk basilikum og confiteret tomater | Vegetar: Rødbede bygotto med danske æbler, saltet kerner hertil frisk spinat og friteret rødbeder | Vegetar: Pad krapow af hakket soya protein serveret med æg, friske forårsløg og ris | Vegetar: Cæsar vegetar paddies burger med hjemme syltet rødløg serveret med pommes de tern tilsmagt med mild trøffel]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Cacio e pepe med ristet Ventricina hertil frisk basilikum og confiteret tomater |  | Vegetar: Plante baseret kødboller med mild karrysauce tilsmagt med ananas hertil dampet ris | Vegetar: Cacio e pepe med ristet tempeh hertil frisk basilikum og confiteret tomater | Vegetar: Rødbede bygotto med danske æbler, saltet kerner hertil frisk spinat og friteret rødbeder | Vegetar: Pad krapow af hakket soya protein serveret med æg, friske forårsløg og ris | Vegetar: Cæsar vegetar paddies burger med hjemme syltet rødløg serveret med pommes de tern tilsmagt med mild trøffel]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:cacioepepemedristetventricinahertilfriskbasilikumogconfiterettomater||vegetar:plantebaseretkødbollermedmildkarrysaucetilsmagtmedananashertildampetris|vegetar:cacioepepemedristettempehhertilfriskbasilikumogconfiterettomater|vegetar:rødbedebygottomeddanskeæbler,saltetkernerhertilfriskspinatogfriteretrødbeder|vegetar:padkrapowafhakketsoyaproteinserveretmedæg,friskeforårsløgogris|vegetar:cæsarvegetarpaddiesburgermedhjemmesyltetrødløgserveretmedpommesdeterntilsmagtmedmildtrøffel-20250708-0</guid>
-      <pubDate>Tue, 08 Jul 2025 08:24:45 +0000</pubDate>
+      <description><![CDATA[HUB1 – Kays: | Vegetar: Plante baseret kødboller med mild karrysauce tilsmagt med ananas hertil dampet ris | Vegetar: Cacio e pepe med ristet tempeh hertil frisk basilikum og confiteret tomater | Vegetar: Rødbede bygotto med danske æbler, saltet kerner hertil frisk spinat og friteret rødbeder | Vegetar: Pad krapow af hakket soya protein serveret med æg, friske forårsløg og ris | Vegetar: Cæsar vegetar paddies burger med hjemme syltet rødløg serveret med pommes de tern tilsmagt med mild trøffel]]></description>
+      <guid isPermaLink="false">urn:canteen:hub1–kays:|vegetar:plantebaseretkødbollermedmildkarrysaucetilsmagtmedananashertildampetris|vegetar:cacioepepemedristettempehhertilfriskbasilikumogconfiterettomater|vegetar:rødbedebygottomeddanskeæbler,saltetkernerhertilfriskspinatogfriteretrødbeder|vegetar:padkrapowafhakketsoyaproteinserveretmedæg,friskeforårsløgogris|vegetar:cæsarvegetarpaddiesburgermedhjemmesyltetrødløgserveretmedpommesdeterntilsmagtmedmildtrøffel-20250709-0</guid>
+      <pubDate>Wed, 09 Jul 2025 08:24:02 +0000</pubDate>
     </item>
   </channel>
 </rss>
