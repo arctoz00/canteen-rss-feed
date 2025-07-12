@@ -4,27 +4,13 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Friday, 11 July 2025]]></title>
+    <title><![CDATA[Canteen Menu - Saturday, 12 July 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Fri, 11 Jul 2025 08:24:02 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jul 2025 08:21:01 +0000</lastBuildDate>
     <ttl>15</ttl>
-    <item>
-      <title><![CDATA[HUB2: Lakse Bao | Dampet blød bao bolle med stegt laks, sort sesam, spicy pickled daikon, sprød dansk økologisk sommerkål, hoisin sauce og chili sauce a part | Bao med østershatte | Dampet blød bao bolle med østershatte stegt i svampesoya, sort sesam, spicy pickled daikon, sprød dansk økologisk sommerkål, hoisin sauce og chili sauce a part |  | Vegetar | Vegetarisk Pad Krapow | Vegetarisk ratatouille]]></title>
-      <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB2: Lakse Bao | Dampet blød bao bolle med stegt laks, sort sesam, spicy pickled daikon, sprød dansk økologisk sommerkål, hoisin sauce og chili sauce a part | Bao med østershatte | Dampet blød bao bolle med østershatte stegt i svampesoya, sort sesam, spicy pickled daikon, sprød dansk økologisk sommerkål, hoisin sauce og chili sauce a part |  | Vegetar | Vegetarisk Pad Krapow | Vegetarisk ratatouille]]></description>
-      <guid isPermaLink="false">urn:canteen:hub2:laksebao|dampetblødbaobollemedstegtlaks,sortsesam,spicypickleddaikon,sprøddanskøkologisksommerkål,hoisinsauceogchilisauceapart|baomedøstershatte|dampetblødbaobollemedøstershattestegtisvampesoya,sortsesam,spicypickleddaikon,sprøddanskøkologisksommerkål,hoisinsauceogchilisauceapart||vegetar|vegetariskpadkrapow|vegetariskratatouille-20250711-1</guid>
-      <pubDate>Fri, 11 Jul 2025 08:24:02 +0000</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[HUB1 – Kays: Cæsar kyllingeburger med hjemme syltet rødløg serveret med pommes de tern tilsmagt med mild trøffel |  | Vegetar: Plante baseret kødboller med mild karrysauce tilsmagt med ananas hertil dampet ris | Vegetar: Cacio e pepe med ristet tempeh hertil frisk basilikum og confiteret tomater | Vegetar: Rødbede bygotto med danske æbler, saltet kerner hertil frisk spinat og friteret rødbeder | Vegetar: Pad krapow af hakket soya protein serveret med æg, friske forårsløg og ris | Vegetar: Cæsar vegetar paddies burger med hjemme syltet rødløg serveret med pommes de tern tilsmagt med mild trøffel]]></title>
-      <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB1 – Kays: Cæsar kyllingeburger med hjemme syltet rødløg serveret med pommes de tern tilsmagt med mild trøffel |  | Vegetar: Plante baseret kødboller med mild karrysauce tilsmagt med ananas hertil dampet ris | Vegetar: Cacio e pepe med ristet tempeh hertil frisk basilikum og confiteret tomater | Vegetar: Rødbede bygotto med danske æbler, saltet kerner hertil frisk spinat og friteret rødbeder | Vegetar: Pad krapow af hakket soya protein serveret med æg, friske forårsløg og ris | Vegetar: Cæsar vegetar paddies burger med hjemme syltet rødløg serveret med pommes de tern tilsmagt med mild trøffel]]></description>
-      <guid isPermaLink="false">urn:canteen:hub1–kays:cæsarkyllingeburgermedhjemmesyltetrødløgserveretmedpommesdeterntilsmagtmedmildtrøffel||vegetar:plantebaseretkødbollermedmildkarrysaucetilsmagtmedananashertildampetris|vegetar:cacioepepemedristettempehhertilfriskbasilikumogconfiterettomater|vegetar:rødbedebygottomeddanskeæbler,saltetkernerhertilfriskspinatogfriteretrødbeder|vegetar:padkrapowafhakketsoyaproteinserveretmedæg,friskeforårsløgogris|vegetar:cæsarvegetarpaddiesburgermedhjemmesyltetrødløgserveretmedpommesdeterntilsmagtmedmildtrøffel-20250711-0</guid>
-      <pubDate>Fri, 11 Jul 2025 08:24:02 +0000</pubDate>
-    </item>
   </channel>
 </rss>
