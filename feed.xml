@@ -4,20 +4,20 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Tuesday, 30 September 2025]]></title>
+    <title><![CDATA[Canteen Menu - Wednesday, 01 October 2025]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Tue, 30 Sep 2025 08:23:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Oct 2025 08:22:25 +0000</lastBuildDate>
     <ttl>15</ttl>
     <item>
-      <title><![CDATA[HUB3: Italienske kødboller i tomatsauce | Saftige kødboller lavet af kalv og flæsk, vendt i en aromatisk tomatsauce med strejf af hvidløg og urter. Serveret med parmesan, brødkrummer og frisk basilikum | Linseboller lavet med kikærtemel og krydderier, lagt i en rig tomatsauce og serveret med parmesan og basilikum | Vegetarisk burrito | Vegetariske linseboller i tomatsauce | Vegetariske tarteletter med edamame bønner | Vegetarisk pitabrød med marineret tofu | Vegetarian Burrito | Vegetarian Lentil Balls in Tomato Sauce | Vegetarian Tartelets with Edamame Beans | Vegetarian Pita with Marinated Tofu]]></title>
+      <title><![CDATA[HUB3: Spansk frittata med grillede grøntsager | En lun og fyldig æggekage med stegte auberginer, peberfrugter og svampe. Serveret med en frisk og sprød salat ved siden af. | Dagens kage: Blomme-trifli med pisket fløde og knasende granola | Vegetarisk burrito | Vegetariske linseboller i tomatsauce | Vegetariske tarteletter med edamame bønner | Vegetarisk pitabrød med marineret tofu | Vegetarian Burrito | Vegetarian Lentil Balls in Tomato Sauce | Vegetarian Tartelets with Edamame Beans | Vegetarian Pita with Marinated Tofu]]></title>
       <link>https://hubnordic.madkastel.dk/</link>
-      <description><![CDATA[HUB3: Italienske kødboller i tomatsauce | Saftige kødboller lavet af kalv og flæsk, vendt i en aromatisk tomatsauce med strejf af hvidløg og urter. Serveret med parmesan, brødkrummer og frisk basilikum | Linseboller lavet med kikærtemel og krydderier, lagt i en rig tomatsauce og serveret med parmesan og basilikum | Vegetarisk burrito | Vegetariske linseboller i tomatsauce | Vegetariske tarteletter med edamame bønner | Vegetarisk pitabrød med marineret tofu | Vegetarian Burrito | Vegetarian Lentil Balls in Tomato Sauce | Vegetarian Tartelets with Edamame Beans | Vegetarian Pita with Marinated Tofu]]></description>
-      <guid isPermaLink="false">urn:canteen:hub3:italienskekødbolleritomatsauce|saftigekødbollerlavetafkalvogflæsk,vendtienaromatisktomatsaucemedstrejfafhvidløgogurter.serveretmedparmesan,brødkrummerogfriskbasilikum|linsebollerlavetmedkikærtemelogkrydderier,lagtienrigtomatsauceogserveretmedparmesanogbasilikum|vegetariskburrito|vegetariskelinsebolleritomatsauce|vegetarisketartelettermededamamebønner|vegetariskpitabrødmedmarinerettofu|vegetarianburrito|vegetarianlentilballsintomatosauce|vegetariantarteletswithedamamebeans|vegetarianpitawithmarinatedtofu-20250930-0</guid>
-      <pubDate>Tue, 30 Sep 2025 08:23:38 +0000</pubDate>
+      <description><![CDATA[HUB3: Spansk frittata med grillede grøntsager | En lun og fyldig æggekage med stegte auberginer, peberfrugter og svampe. Serveret med en frisk og sprød salat ved siden af. | Dagens kage: Blomme-trifli med pisket fløde og knasende granola | Vegetarisk burrito | Vegetariske linseboller i tomatsauce | Vegetariske tarteletter med edamame bønner | Vegetarisk pitabrød med marineret tofu | Vegetarian Burrito | Vegetarian Lentil Balls in Tomato Sauce | Vegetarian Tartelets with Edamame Beans | Vegetarian Pita with Marinated Tofu]]></description>
+      <guid isPermaLink="false">urn:canteen:hub3:spanskfrittatamedgrilledegrøntsager|enlunogfyldigæggekagemedstegteauberginer,peberfrugterogsvampe.serveretmedenfriskogsprødsalatvedsidenaf.|dagenskage:blomme-triflimedpisketflødeogknasendegranola|vegetariskburrito|vegetariskelinsebolleritomatsauce|vegetarisketartelettermededamamebønner|vegetariskpitabrødmedmarinerettofu|vegetarianburrito|vegetarianlentilballsintomatosauce|vegetariantarteletswithedamamebeans|vegetarianpitawithmarinatedtofu-20251001-0</guid>
+      <pubDate>Wed, 01 Oct 2025 08:22:25 +0000</pubDate>
     </item>
   </channel>
 </rss>
