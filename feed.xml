@@ -4,13 +4,13 @@
     <atom:link href="https://arctoz00.github.io/canteen-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
 
-    <title><![CDATA[Canteen Menu - Monday, 16 March 2026]]></title>
+    <title><![CDATA[Canteen Menu - Tuesday, 17 March 2026]]></title>
     <link>https://hubnordic.madkastel.dk/</link>
     <description><![CDATA[Dagligt opdateret canteen-menu]]></description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Python feedgen</generator>
     <language>da</language>
-    <lastBuildDate>Mon, 16 Mar 2026 08:56:08 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 08:53:38 +0000</lastBuildDate>
     <ttl>15</ttl>
   </channel>
 </rss>
